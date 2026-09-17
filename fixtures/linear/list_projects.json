@@ -1,0 +1,247 @@
+{
+  "total": 10,
+  "hasNextPage": false,
+  "_demo_note": "10 active Marketing projects: 7 onTrack, 2 atRisk (Lead scoring model 2.0, SEO content sprint), 1 offTrack (Brand refresh).",
+  "projects": [
+    {
+      "id": "00000000-0000-4000-8000-000000000601",
+      "name": "Website repositioning",
+      "url": "https://linear.app/orrery/project/website-repositioning-1/overview",
+      "state": "started",
+      "health": "onTrack",
+      "lead": {
+        "id": "00000000-0000-4000-8000-000000000501",
+        "name": "Maya Lindqvist",
+        "displayName": "maya"
+      },
+      "teams": [
+        {
+          "id": "00000000-0000-4000-8000-000000000401",
+          "key": "MAR",
+          "name": "Marketing"
+        }
+      ],
+      "startDate": "{{T-60d}}",
+      "targetDate": "{{T+20d}}",
+      "description": "Website repositioning: scoped and in flight.",
+      "progress": 0.2,
+      "updatedAt": "{{T-0d}}T16:00:00Z"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000602",
+      "name": "Q3 webinar series",
+      "url": "https://linear.app/orrery/project/q3-webinar-series-2/overview",
+      "state": "started",
+      "health": "onTrack",
+      "lead": {
+        "id": "00000000-0000-4000-8000-000000000502",
+        "name": "Priya Natarajan",
+        "displayName": "priya"
+      },
+      "teams": [
+        {
+          "id": "00000000-0000-4000-8000-000000000401",
+          "key": "MAR",
+          "name": "Marketing"
+        }
+      ],
+      "startDate": "{{T-57d}}",
+      "targetDate": "{{T+27d}}",
+      "description": "Q3 webinar series: scoped and in flight.",
+      "progress": 0.26,
+      "updatedAt": "{{T-1d}}T16:00:00Z"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000603",
+      "name": "Lead scoring model 2.0",
+      "url": "https://linear.app/orrery/project/lead-scoring-model-2.0-3/overview",
+      "state": "started",
+      "health": "atRisk",
+      "lead": {
+        "id": "00000000-0000-4000-8000-000000000503",
+        "name": "Tomas Reyes",
+        "displayName": "tomas"
+      },
+      "teams": [
+        {
+          "id": "00000000-0000-4000-8000-000000000401",
+          "key": "MAR",
+          "name": "Marketing"
+        }
+      ],
+      "startDate": "{{T-54d}}",
+      "targetDate": "{{T+34d}}",
+      "description": "Lead scoring model 2.0: scoped and in flight.",
+      "progress": 0.32,
+      "updatedAt": "{{T-2d}}T16:00:00Z"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000604",
+      "name": "Use-case library",
+      "url": "https://linear.app/orrery/project/use-case-library-4/overview",
+      "state": "started",
+      "health": "onTrack",
+      "lead": {
+        "id": "00000000-0000-4000-8000-000000000504",
+        "name": "Scott McKeighen",
+        "displayName": "scott"
+      },
+      "teams": [
+        {
+          "id": "00000000-0000-4000-8000-000000000401",
+          "key": "MAR",
+          "name": "Marketing"
+        }
+      ],
+      "startDate": "{{T-51d}}",
+      "targetDate": "{{T+41d}}",
+      "description": "Use-case library: scoped and in flight.",
+      "progress": 0.38,
+      "updatedAt": "{{T-3d}}T16:00:00Z"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000605",
+      "name": "Brand refresh",
+      "url": "https://linear.app/orrery/project/brand-refresh-5/overview",
+      "state": "started",
+      "health": "offTrack",
+      "lead": {
+        "id": "00000000-0000-4000-8000-000000000501",
+        "name": "Maya Lindqvist",
+        "displayName": "maya"
+      },
+      "teams": [
+        {
+          "id": "00000000-0000-4000-8000-000000000401",
+          "key": "MAR",
+          "name": "Marketing"
+        }
+      ],
+      "startDate": "{{T-48d}}",
+      "targetDate": "{{T+55d}}",
+      "description": "Brand refresh: scoped and in flight.",
+      "progress": 0.44,
+      "updatedAt": "{{T-4d}}T16:00:00Z"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000606",
+      "name": "Partner co-marketing",
+      "url": "https://linear.app/orrery/project/partner-co-marketing-6/overview",
+      "state": "started",
+      "health": "onTrack",
+      "lead": {
+        "id": "00000000-0000-4000-8000-000000000502",
+        "name": "Priya Natarajan",
+        "displayName": "priya"
+      },
+      "teams": [
+        {
+          "id": "00000000-0000-4000-8000-000000000401",
+          "key": "MAR",
+          "name": "Marketing"
+        }
+      ],
+      "startDate": "{{T-45d}}",
+      "targetDate": "{{T+55d}}",
+      "description": "Partner co-marketing: scoped and in flight.",
+      "progress": 0.5,
+      "updatedAt": "{{T-0d}}T16:00:00Z"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000607",
+      "name": "Event telemetry to CRM",
+      "url": "https://linear.app/orrery/project/event-telemetry-to-crm-7/overview",
+      "state": "started",
+      "health": "onTrack",
+      "lead": {
+        "id": "00000000-0000-4000-8000-000000000503",
+        "name": "Tomas Reyes",
+        "displayName": "tomas"
+      },
+      "teams": [
+        {
+          "id": "00000000-0000-4000-8000-000000000401",
+          "key": "MAR",
+          "name": "Marketing"
+        }
+      ],
+      "startDate": "{{T-42d}}",
+      "targetDate": "{{T+62d}}",
+      "description": "Event telemetry to CRM: scoped and in flight.",
+      "progress": 0.56,
+      "updatedAt": "{{T-1d}}T16:00:00Z"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000608",
+      "name": "SEO content sprint",
+      "url": "https://linear.app/orrery/project/seo-content-sprint-8/overview",
+      "state": "started",
+      "health": "atRisk",
+      "lead": {
+        "id": "00000000-0000-4000-8000-000000000504",
+        "name": "Scott McKeighen",
+        "displayName": "scott"
+      },
+      "teams": [
+        {
+          "id": "00000000-0000-4000-8000-000000000401",
+          "key": "MAR",
+          "name": "Marketing"
+        }
+      ],
+      "startDate": "{{T-39d}}",
+      "targetDate": "{{T+76d}}",
+      "description": "SEO content sprint: scoped and in flight.",
+      "progress": 0.62,
+      "updatedAt": "{{T-2d}}T16:00:00Z"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000609",
+      "name": "Customer stories program",
+      "url": "https://linear.app/orrery/project/customer-stories-program-9/overview",
+      "state": "started",
+      "health": "onTrack",
+      "lead": {
+        "id": "00000000-0000-4000-8000-000000000501",
+        "name": "Maya Lindqvist",
+        "displayName": "maya"
+      },
+      "teams": [
+        {
+          "id": "00000000-0000-4000-8000-000000000401",
+          "key": "MAR",
+          "name": "Marketing"
+        }
+      ],
+      "startDate": "{{T-36d}}",
+      "targetDate": "{{T+76d}}",
+      "description": "Customer stories program: scoped and in flight.",
+      "progress": 0.68,
+      "updatedAt": "{{T-3d}}T16:00:00Z"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000610",
+      "name": "Paid search restructure",
+      "url": "https://linear.app/orrery/project/paid-search-restructure-10/overview",
+      "state": "started",
+      "health": "onTrack",
+      "lead": {
+        "id": "00000000-0000-4000-8000-000000000502",
+        "name": "Priya Natarajan",
+        "displayName": "priya"
+      },
+      "teams": [
+        {
+          "id": "00000000-0000-4000-8000-000000000401",
+          "key": "MAR",
+          "name": "Marketing"
+        }
+      ],
+      "startDate": "{{T-33d}}",
+      "targetDate": "{{T+83d}}",
+      "description": "Paid search restructure: scoped and in flight.",
+      "progress": 0.74,
+      "updatedAt": "{{T-4d}}T16:00:00Z"
+    }
+  ]
+}

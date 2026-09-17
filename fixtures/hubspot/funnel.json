@@ -1,0 +1,25 @@
+{
+  "_note": "Static fallback only. scripts/demo/fixture_mcp.py derives the live demo numbers from the latest funnel_snapshots row in state/working/fleet.db and uses this file only when there is no database. SAL to SQL sits below the 35% threshold on purpose: this is the planted dip revops-watchdog must flag as MED.",
+  "as_of": "{{T+0d}}",
+  "month_to_date": {
+    "mels": 412,
+    "mqls": 71,
+    "mql_p1": 16,
+    "mql_p2": 39,
+    "mql_out": 16,
+    "sals": 42,
+    "sqls": 12,
+    "mql_to_sal_rate": 59.2,
+    "sal_to_sql_rate": 28.6,
+    "pipeline_value": 1126400.0,
+    "open_deals": 88
+  },
+  "baselines_4wk": {
+    "mqls": 68,
+    "sals": 40,
+    "sqls": 14,
+    "mql_to_sal_rate": 61.5,
+    "sal_to_sql_rate": 34.9,
+    "pipeline_value": 1094000.0
+  }
+}

@@ -1,0 +1,566 @@
+{
+  "total": 18,
+  "hasNextPage": false,
+  "endCursor": null,
+  "_demo_note": "18 open Marketing issues assigned across the four cadence members. MAR-7042 (Urgent) and MAR-7041 (High) are both due inside a week - the two chief-of-staff leads the AM brief with. Done and Canceled issues are already excluded.",
+  "issues": [
+    {
+      "id": "00000000-0000-4000-8000-0000000007041",
+      "identifier": "MAR-7041",
+      "title": "Rewrite the incident-response pillar page",
+      "url": "https://linear.app/orrery/issue/MAR-7041",
+      "state": {
+        "name": "In Progress",
+        "type": "started"
+      },
+      "priority": 2,
+      "priorityLabel": "High",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000502",
+        "name": "Priya Natarajan",
+        "displayName": "priya"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000601",
+        "name": "Website repositioning",
+        "url": "https://linear.app/orrery/project/website-repositioning-1/overview"
+      },
+      "dueDate": "{{T+4d}}",
+      "createdAt": "{{T-15d}}T16:04:00Z",
+      "updatedAt": "{{T-3d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007042",
+      "identifier": "MAR-7042",
+      "title": "Fix the SAL to SQL stage mapping in the lifecycle workflow",
+      "url": "https://linear.app/orrery/issue/MAR-7042",
+      "state": {
+        "name": "In Progress",
+        "type": "started"
+      },
+      "priority": 1,
+      "priorityLabel": "Urgent",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000504",
+        "name": "Scott McKeighen",
+        "displayName": "scott"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000603",
+        "name": "Lead scoring model 2.0",
+        "url": "https://linear.app/orrery/project/lead-scoring-model-2.0-3/overview"
+      },
+      "dueDate": "{{T+2d}}",
+      "createdAt": "{{T-16d}}T16:04:00Z",
+      "updatedAt": "{{T-4d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007043",
+      "identifier": "MAR-7043",
+      "title": "Ship the on-call fairness webinar landing page",
+      "url": "https://linear.app/orrery/issue/MAR-7043",
+      "state": {
+        "name": "In Review",
+        "type": "started"
+      },
+      "priority": 3,
+      "priorityLabel": "Medium",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000501",
+        "name": "Maya Lindqvist",
+        "displayName": "maya"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000602",
+        "name": "Q3 webinar series",
+        "url": "https://linear.app/orrery/project/q3-webinar-series-2/overview"
+      },
+      "dueDate": "{{T+9d}}",
+      "createdAt": "{{T-17d}}T16:04:00Z",
+      "updatedAt": "{{T-5d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007044",
+      "identifier": "MAR-7044",
+      "title": "Instrument demo-request CTA events in GA4",
+      "url": "https://linear.app/orrery/issue/MAR-7044",
+      "state": {
+        "name": "In Progress",
+        "type": "started"
+      },
+      "priority": 3,
+      "priorityLabel": "Medium",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000503",
+        "name": "Tomas Reyes",
+        "displayName": "tomas"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000607",
+        "name": "Event telemetry to CRM",
+        "url": "https://linear.app/orrery/project/event-telemetry-to-crm-7/overview"
+      },
+      "dueDate": "{{T+12d}}",
+      "createdAt": "{{T-18d}}T16:04:00Z",
+      "updatedAt": "{{T-0d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007045",
+      "identifier": "MAR-7045",
+      "title": "Draft the Calloway Robotics customer story",
+      "url": "https://linear.app/orrery/issue/MAR-7045",
+      "state": {
+        "name": "Todo",
+        "type": "unstarted"
+      },
+      "priority": 3,
+      "priorityLabel": "Medium",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000502",
+        "name": "Priya Natarajan",
+        "displayName": "priya"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000609",
+        "name": "Customer stories program",
+        "url": "https://linear.app/orrery/project/customer-stories-program-9/overview"
+      },
+      "dueDate": "{{T+16d}}",
+      "createdAt": "{{T-19d}}T16:04:00Z",
+      "updatedAt": "{{T-1d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007046",
+      "identifier": "MAR-7046",
+      "title": "Audit the Event registration sync workflow trigger",
+      "url": "https://linear.app/orrery/issue/MAR-7046",
+      "state": {
+        "name": "Todo",
+        "type": "unstarted"
+      },
+      "priority": 2,
+      "priorityLabel": "High",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000504",
+        "name": "Scott McKeighen",
+        "displayName": "scott"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000607",
+        "name": "Event telemetry to CRM",
+        "url": "https://linear.app/orrery/project/event-telemetry-to-crm-7/overview"
+      },
+      "dueDate": "{{T+21d}}",
+      "createdAt": "{{T-20d}}T16:04:00Z",
+      "updatedAt": "{{T-2d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007047",
+      "identifier": "MAR-7047",
+      "title": "New brand palette applied to the display ad set",
+      "url": "https://linear.app/orrery/issue/MAR-7047",
+      "state": {
+        "name": "In Progress",
+        "type": "started"
+      },
+      "priority": 3,
+      "priorityLabel": "Medium",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000503",
+        "name": "Tomas Reyes",
+        "displayName": "tomas"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000605",
+        "name": "Brand refresh",
+        "url": "https://linear.app/orrery/project/brand-refresh-5/overview"
+      },
+      "dueDate": "{{T+11d}}",
+      "createdAt": "{{T-12d}}T16:04:00Z",
+      "updatedAt": "{{T-3d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007048",
+      "identifier": "MAR-7048",
+      "title": "Consolidate the runbook templates into the use-case library",
+      "url": "https://linear.app/orrery/issue/MAR-7048",
+      "state": {
+        "name": "Todo",
+        "type": "unstarted"
+      },
+      "priority": 4,
+      "priorityLabel": "Low",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000502",
+        "name": "Priya Natarajan",
+        "displayName": "priya"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000604",
+        "name": "Use-case library",
+        "url": "https://linear.app/orrery/project/use-case-library-4/overview"
+      },
+      "dueDate": "{{T+25d}}",
+      "createdAt": "{{T-13d}}T16:04:00Z",
+      "updatedAt": "{{T-4d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007049",
+      "identifier": "MAR-7049",
+      "title": "Negative keyword sweep on Nonbrand - Incident Mgmt",
+      "url": "https://linear.app/orrery/issue/MAR-7049",
+      "state": {
+        "name": "In Progress",
+        "type": "started"
+      },
+      "priority": 3,
+      "priorityLabel": "Medium",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000501",
+        "name": "Maya Lindqvist",
+        "displayName": "maya"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000610",
+        "name": "Paid search restructure",
+        "url": "https://linear.app/orrery/project/paid-search-restructure-10/overview"
+      },
+      "dueDate": "{{T+8d}}",
+      "createdAt": "{{T-14d}}T16:04:00Z",
+      "updatedAt": "{{T-5d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007050",
+      "identifier": "MAR-7050",
+      "title": "Rewrite MTTR reporting section for the metrics guide",
+      "url": "https://linear.app/orrery/issue/MAR-7050",
+      "state": {
+        "name": "Todo",
+        "type": "unstarted"
+      },
+      "priority": 3,
+      "priorityLabel": "Medium",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000502",
+        "name": "Priya Natarajan",
+        "displayName": "priya"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000608",
+        "name": "SEO content sprint",
+        "url": "https://linear.app/orrery/project/seo-content-sprint-8/overview"
+      },
+      "dueDate": "{{T+18d}}",
+      "createdAt": "{{T-15d}}T16:04:00Z",
+      "updatedAt": "{{T-0d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007051",
+      "identifier": "MAR-7051",
+      "title": "Migrate the partner co-marketing brief to the new template",
+      "url": "https://linear.app/orrery/issue/MAR-7051",
+      "state": {
+        "name": "Todo",
+        "type": "unstarted"
+      },
+      "priority": 4,
+      "priorityLabel": "Low",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000501",
+        "name": "Maya Lindqvist",
+        "displayName": "maya"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000606",
+        "name": "Partner co-marketing",
+        "url": "https://linear.app/orrery/project/partner-co-marketing-6/overview"
+      },
+      "dueDate": "{{T+30d}}",
+      "createdAt": "{{T-16d}}T16:04:00Z",
+      "updatedAt": "{{T-1d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007052",
+      "identifier": "MAR-7052",
+      "title": "Add postmortem-culture FAQ block for AEO",
+      "url": "https://linear.app/orrery/issue/MAR-7052",
+      "state": {
+        "name": "In Progress",
+        "type": "started"
+      },
+      "priority": 3,
+      "priorityLabel": "Medium",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000502",
+        "name": "Priya Natarajan",
+        "displayName": "priya"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000608",
+        "name": "SEO content sprint",
+        "url": "https://linear.app/orrery/project/seo-content-sprint-8/overview"
+      },
+      "dueDate": "{{T+14d}}",
+      "createdAt": "{{T-17d}}T16:04:00Z",
+      "updatedAt": "{{T-2d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007053",
+      "identifier": "MAR-7053",
+      "title": "Wire Luma event registrations into the CRM contact object",
+      "url": "https://linear.app/orrery/issue/MAR-7053",
+      "state": {
+        "name": "In Review",
+        "type": "started"
+      },
+      "priority": 3,
+      "priorityLabel": "Medium",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000503",
+        "name": "Tomas Reyes",
+        "displayName": "tomas"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000607",
+        "name": "Event telemetry to CRM",
+        "url": "https://linear.app/orrery/project/event-telemetry-to-crm-7/overview"
+      },
+      "dueDate": "{{T+10d}}",
+      "createdAt": "{{T-18d}}T16:04:00Z",
+      "updatedAt": "{{T-3d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007054",
+      "identifier": "MAR-7054",
+      "title": "Refresh the pricing page proof points",
+      "url": "https://linear.app/orrery/issue/MAR-7054",
+      "state": {
+        "name": "Todo",
+        "type": "unstarted"
+      },
+      "priority": 3,
+      "priorityLabel": "Medium",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000501",
+        "name": "Maya Lindqvist",
+        "displayName": "maya"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000601",
+        "name": "Website repositioning",
+        "url": "https://linear.app/orrery/project/website-repositioning-1/overview"
+      },
+      "dueDate": "{{T+23d}}",
+      "createdAt": "{{T-19d}}T16:04:00Z",
+      "updatedAt": "{{T-4d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007055",
+      "identifier": "MAR-7055",
+      "title": "Scoring model 2.0: document the decay rules",
+      "url": "https://linear.app/orrery/issue/MAR-7055",
+      "state": {
+        "name": "Todo",
+        "type": "unstarted"
+      },
+      "priority": 3,
+      "priorityLabel": "Medium",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000504",
+        "name": "Scott McKeighen",
+        "displayName": "scott"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000603",
+        "name": "Lead scoring model 2.0",
+        "url": "https://linear.app/orrery/project/lead-scoring-model-2.0-3/overview"
+      },
+      "dueDate": "{{T+19d}}",
+      "createdAt": "{{T-20d}}T16:04:00Z",
+      "updatedAt": "{{T-5d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007056",
+      "identifier": "MAR-7056",
+      "title": "Design the alert-fatigue infographic set",
+      "url": "https://linear.app/orrery/issue/MAR-7056",
+      "state": {
+        "name": "Todo",
+        "type": "unstarted"
+      },
+      "priority": 4,
+      "priorityLabel": "Low",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000503",
+        "name": "Tomas Reyes",
+        "displayName": "tomas"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000605",
+        "name": "Brand refresh",
+        "url": "https://linear.app/orrery/project/brand-refresh-5/overview"
+      },
+      "dueDate": "{{T+28d}}",
+      "createdAt": "{{T-12d}}T16:04:00Z",
+      "updatedAt": "{{T-0d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007057",
+      "identifier": "MAR-7057",
+      "title": "Second customer story: Harborlight Health",
+      "url": "https://linear.app/orrery/issue/MAR-7057",
+      "state": {
+        "name": "Todo",
+        "type": "unstarted"
+      },
+      "priority": 4,
+      "priorityLabel": "Low",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000502",
+        "name": "Priya Natarajan",
+        "displayName": "priya"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000609",
+        "name": "Customer stories program",
+        "url": "https://linear.app/orrery/project/customer-stories-program-9/overview"
+      },
+      "dueDate": "{{T+33d}}",
+      "createdAt": "{{T-13d}}T16:04:00Z",
+      "updatedAt": "{{T-1d}}T12:20:00Z",
+      "labels": []
+    },
+    {
+      "id": "00000000-0000-4000-8000-0000000007058",
+      "identifier": "MAR-7058",
+      "title": "Quarterly search-console coverage review",
+      "url": "https://linear.app/orrery/issue/MAR-7058",
+      "state": {
+        "name": "Todo",
+        "type": "unstarted"
+      },
+      "priority": 4,
+      "priorityLabel": "Low",
+      "assignee": {
+        "id": "00000000-0000-4000-8000-000000000504",
+        "name": "Scott McKeighen",
+        "displayName": "scott"
+      },
+      "team": {
+        "id": "00000000-0000-4000-8000-000000000401",
+        "key": "MAR",
+        "name": "Marketing"
+      },
+      "project": {
+        "id": "00000000-0000-4000-8000-000000000608",
+        "name": "SEO content sprint",
+        "url": "https://linear.app/orrery/project/seo-content-sprint-8/overview"
+      },
+      "dueDate": "{{T+26d}}",
+      "createdAt": "{{T-14d}}T16:04:00Z",
+      "updatedAt": "{{T-2d}}T12:20:00Z",
+      "labels": []
+    }
+  ]
+}

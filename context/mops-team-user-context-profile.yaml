@@ -1,0 +1,253 @@
+team_user_context_profile:
+  version: "1.1"
+  title: "Team & User Context Profile – Scott McKeighen on Marketing & Revenue Operations"
+
+  team_context:
+    identity:
+      team_name: "Marketing & Revenue Operations"
+      functional_domain:
+        - "Marketing"
+        - "Sales"
+        - "Operations"
+      core_mandate: >
+        Marketing & Revenue Operations at {{COMPANY}} is a newly formalized team responsible for building
+        and maintaining the systems, processes, and data infrastructure that power the entire
+        go-to-market funnel—from self-serve signup to closed-won. Acting as the operational engine for
+        GTM, the team supports Marketing and Sales with automation, CRM management, reporting, and
+        lifecycle strategy across both the product-led and sales-assisted paths.
+
+    operations:
+      key_objectives_q3_q4:
+        - description: "Refactor and relaunch lead lifecycle stages in HubSpot"
+          status: "planned_for_q4"
+        - description: "Maintain and optimize newly launched lead scoring model"
+          status: "live_and_evolving"
+        - description: "Refresh and operationalize GTM content, lead generation, and attribution frameworks"
+          status: "in_progress"
+        - description: "Streamline GTM tech stack and automate lead handoff between Marketing and Sales"
+          status: "in_progress"
+        - description: "Initiate CRM integration of product usage data to enable hybrid PLG + Sales motion"
+          status: "initiated"
+
+      primary_metrics_kpis:
+        - "Qualified pipeline volume (by source, segment, and attribution)"
+        - "SAL-to-SQL conversion rate"
+        - "MQL velocity and funnel pacing vs. monthly targets"
+        - "Data hygiene benchmarks (property completeness, validation, duplicates)"
+        - "System uptime and operational reliability"
+        - "Lead handoff time and process efficiency"
+
+      core_responsibilities:
+        - "Own HubSpot marketing and sales architecture"
+        - "Govern lead scoring, lifecycle models, routing logic, and handoff"
+        - "Automate and optimize GTM processes across tools"
+        - "Produce attribution and pipeline reports"
+        - "Integrate product data into CRM"
+
+      key_workflows:
+        - name: "Lead Routing & Assignment"
+          description: "Distribute MQLs to appropriate Sales owners using HubSpot rules and criteria"
+          cadence: "daily"
+        - name: "Lifecycle Stage Management"
+          description: "Define and govern contact/company/deal lifecycle criteria and transitions"
+          cadence: "ongoing_weekly_QA"
+        - name: "Attribution Reporting"
+          description: "Deliver source-to-pipeline and multi-touch attribution reporting in HubSpot and `~~BI`"
+          cadence: "monthly"
+        - name: "Lead Scoring Optimization"
+          description: "Monitor and iterate on contact scoring models"
+          cadence: "bi_weekly"
+        - name: "GTM Tech Stack Maintenance"
+          description: "Triage and enhance tools (HubSpot, the `~~enrichment` cascade, {{ENRICHMENT_VENDOR}})"
+          cadence: "ongoing"
+        - name: "Internal Process Automation & Governance"
+          description: "Facilitate team sprints, documentation, tooling, and process layer for GTM execution"
+          cadence: "weekly_or_project_based"
+
+    tools_systems:
+      core_platforms:
+        - "HubSpot (`~~crm`)"
+        - "`~~enrichment` (Clay, Apollo)"
+        - "`~~automation` (Zapier)"
+        - "`~~BI` (Metabase)"
+      data_sources:
+        - "HubSpot"
+        - "{{ENRICHMENT_VENDOR}} ({{ENRICHMENT_DATA_PROVIDER}} + `~~enrichment`)"
+        - "Product workspace telemetry (planned)"
+      ai_tools_in_use:
+        - "ChatGPT (experimental)"
+        - "Other AI tools for content refresh, automation planning, GTM assistant tasks"
+
+    structure_culture:
+      team_size_roles: "Currently led by a senior individual contributor (Scott); formal team structure under development."
+      leadership:
+        reports_to: "{{HEAD_OF_MARKETING}}"
+        reports_to_title: "Head of Marketing"
+        collaborates_with:
+          - "COO"
+          - "GTM leads"
+      decision_making_style: "Consensus-driven and democratic; autonomy expected in execution."
+      communication_norms:
+        slack: "Daily async and informal comms"
+        video_meetings: "Zoom / Google Meet for sync meetings"
+        documentation: "Notion for documentation"
+        project_tickets: "Formal tickets used for structured project tracking"
+        tone:
+          informal: "Collegial, emoji-laden, meme-rich"
+          formal: "Direct and informative"
+
+    cross_functional_dependencies:
+      sales:
+        description: >
+          Sales leadership also serves as a de facto RevOps function. Sales engineering owns {{ENRICHMENT_VENDOR}}—
+          the internal enrichment-and-scoring service that cascades {{ENRICHMENT_DATA_PROVIDER}} and `~~enrichment`
+          firmographics into `~~crm`, orchestrates outbound cadences, and computes four account scores
+          (Prospect, Signup, Usage, MRR).
+        dependencies:
+          - "Feedback on inbound funnel quality"
+          - "CRM hygiene and updates"
+          - "Input on deal stage definitions and buyer role updates"
+          - "Ad-hoc prospect/company research requests"
+        notes: "Sellers are primary end-users of GTM Ops workflows; their adoption/feedback drives iteration."
+      marketing:
+        dependencies:
+          - "Campaign strategy"
+          - "Content creation"
+          - "Inbound demand generation"
+        notes: "Marketing defines success criteria for campaigns that GTM Ops operationalizes."
+
+    documentation_standards:
+      templates:
+        campaign_briefs_sops:
+          description: >
+            GTM Ops adopts Marketing’s standardized campaign brief template (Overview, Objective, Audience,
+            Core Benefits, Messaging, Competitive Landscape, Goals & KPIs, Channel Plan, Notes).
+          purpose: "Underpins SOPs and ensures alignment across teams."
+      tooling:
+        documentation: "Notion"
+        working_drafts:
+          - "Google Docs"
+          - "Google Sheets"
+      project_management: "Linear"
+      process_maps:
+        - "Flow charts"
+        - "Swimlane diagrams"
+        - "Object relationship diagrams"
+        - "Freeform text (supplemental)"
+      reports:
+        - "HubSpot"
+        - "GA4"
+        - "`~~BI`"
+
+  user_profile:
+    basic_info:
+      full_name: "Scott McKeighen"
+      title: "Senior Manager / Head of Marketing Operations"
+      manager_name: "{{HEAD_OF_MARKETING}}"
+      manager_title: "Head of Marketing"
+      manager_context: >
+        {{HEAD_OF_MARKETING_FIRST}} leads global marketing at {{COMPANY}}, including demand gen, brand, lifecycle, and content.
+        Prefers clear, direct communication; values cross-functional alignment, operational rigor, and autonomy
+        backed by measurable outcomes.
+
+    role_scope:
+      role_summary: >
+        I lead the buildout of GTM Operations at {{COMPANY}}, responsible for establishing and optimizing the systems,
+        workflows, and data models that power our marketing and sales funnel from end to end.
+      seniority_level: "Senior IC / Strategic Lead"
+      core_responsibilities:
+        - "Design and deploy lead lifecycle stages, scoring, and routing"
+        - "Manage HubSpot as system owner"
+        - "Own reporting and attribution models"
+        - "Drive process automation across GTM stack"
+        - "Govern GTM tool strategy and documentation"
+        - "Coordinate sprint planning and backlog execution for Marketing Ops"
+      decision_authority:
+        - "Admin access to GTM systems (HubSpot, the `~~enrichment` stack)"
+        - "Full ownership of workflow and automation logic"
+        - "Contributor to vendor/tool evaluation"
+        - "Participant in hiring for Ops and adjacent roles"
+        - "Budget decisions controlled by Marketing Leadership"
+      key_deliverables:
+        - "Scalable GTM workflows"
+        - "Lifecycle and attribution reports"
+        - "Internal SOPs and GTM governance docs"
+        - "Tool admin configs and QA"
+        - "Cross-functional sprint coordination"
+
+    working_style:
+      typical_day: >
+        Structured around deep-focus blocks for systems, documentation, and automation. Operates in sprint
+        cycles with minimal meetings and high ownership of projects.
+      task_preferences:
+        - "Batching"
+        - "Async execution"
+        - "Systemic thinking over ad hoc taskwork"
+        - "Enjoys complexity"
+      collaboration_style: "Highly autonomous but collaborative in planning and architecture; default async; sync for unblockers."
+
+  ai_interaction_preferences:
+    response_preferences:
+      preferred_tone: "Context-dependent: direct/professional for documentation; casual/creative for brainstorming."
+      response_format: "Structured sections with headings plus bullet checklists."
+      verbosity: "Concise for quick answers; detailed for planning, scoping, or architecture."
+    ai_boundaries:
+      human_in_loop_required_for:
+        - "External communications"
+        - "Tooling changes in production"
+        - "Budget-sensitive decisions"
+      sensitive_data_types:
+        - "Internal compensation"
+        - "Customer incident data"
+        - "Unreleased roadmap"
+      primary_ai_goals:
+        - "Accelerate planning, documentation, automation logic, and decision frameworks."
+        - "Act as a creative thought partner for GTM Ops."
+
+  current_context:
+    active_focus:
+      current_priorities:
+        - "Lifecycle stage revamp"
+        - "Attribution and reporting improvements"
+        - "GTM automation and tool governance"
+      active_projects:
+        - "Lead lifecycle redesign"
+        - "Product data integration planning"
+        - "RevOps/BDR alignment on MQL to SQL transitions"
+        - "Marketing content & funnel audit"
+        - "Scorecard for GTM metrics"
+      urgent_items:
+        - "Lifecycle rework to support quarterly target pacing"
+        - "Funnel diagnostics to uncover SQL gaps"
+        - "Refresh of content and lead-gen workflows before Q4"
+
+    constraints_adjustments:
+      current_constraints:
+        - "Limited bandwidth (lean team)"
+        - "Inbound generation needs rebuilding"
+        - "Product usage data not yet integrated"
+      temporary_ai_adjustments:
+        - "Prioritize speed and clarity over polish"
+        - "Suggest templates or process improvements when patterns are detected"
+        - "Watch for buried lifecycle inconsistencies"
+      key_deadlines:
+        lifecycle_rollout: "Q4 start"
+        funnel_rebuild_v1: "Before next quarterly planning cycle"
+        attribution_revamp: "Before Q4 pipeline targets finalize"
+
+    known_challenges:
+      lead_routing: >
+        Headcount-based AE assignment is brittle due to missing enrichment data; defaults to COO when incomplete.
+        Round robin is being considered as an alternative.
+      lifecycle_stages: >
+        Current lifecycle has redundant states (Prospect/Subscriber/Lead; MQL vs. PQL). Proposed redesign simplifies
+        to a streamlined path with “Detour” stages for acceleration.
+      deal_stages: >
+        Existing stages are overly granular. Proposed simplified sequence:
+        Discovery Scheduled → Value Identified → Demo & Business Case → Proposal → Quote & Signing → Won → Lost.
+      data_hygiene: >
+        CRM is plagued by duplicates and fragmented company records; free-tier workspaces are not unified with their
+        company records. No product usage data in CRM yet.
+      content_lifecycle_marketing: >
+        Organic content has grown stale, leading to traffic decline. No lifecycle marketing programs exist to
+        accelerate warm leads into MQLs, and nothing routes an active free-tier workspace toward a sales conversation.

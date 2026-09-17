@@ -1,0 +1,68 @@
+# Marketing PM — cadence configuration (Scribe extension).
+#
+# Read and validated by scripts/pm/config.py on every PM Tick (Librarian Protocol).
+# Anyone on the marketing team can edit this; changes live in git.
+#
+# Team times are PT (America/Los_Angeles). Per-member times are LOCAL to each
+# member's timezone. All times are 24h "HH:MM". Validation fails closed: a
+# malformed value here stops the Tick before it posts or captures anything.
+
+team:
+  monday_post_pt: "09:00"               # master stand-up + consolidated tag (09:00 to stagger after revops-watchdog 08:00 / performance-marketer 08:30 — single-writer SQLite; this is when everyone is @-tagged)
+  monday_response_deadline_pt: "23:59"  # EOD Monday PT
+  weekday_pulse_pt: "09:00"             # Tue-Fri Linear pulse (09:00 to stagger after revops-watchdog 08:00 / performance-marketer 08:30 — single-writer SQLite)
+  thursday_agenda_pt: "06:30"           # Thursday agenda draft
+
+# state_only (cycle 1: DMs off) | slack_first | meeting_first | hybrid (target, flipped at D3).
+accountability_mode: state_only
+
+# Slack channel for the stand-up post + thread anchor (deterministic; no channel-name search).
+team_channel_id: "C0DEMO0001"          # #team-marketing
+
+# Applied to any member without their own dm_quiet_hours_local override.
+dm_quiet_hours_default_local: ["19:00", "08:00"]
+
+# Internal owner for externally-led projects (owns the work or delegates it). Must be a member below.
+default_external_owner: Maya Lindqvist
+
+# Health/pulse thresholds (linear-pulse-check). Defaults applied if this block is omitted.
+pulse:
+  stale_days: 10                  # orphan issue stale after N calendar days with no activity
+  behind_pace_pct: 0.20           # >= this far behind expected pace -> at_risk
+  far_behind_pace_pct: 0.40       # >= this + a stale blocker -> off_track
+  blocker_age_business_days: 5    # open blocker older than this (business days) -> flag
+  due_soon_days: 7                # current target within N calendar days -> proximity risk
+  # Scope + emergency brake. The pulse fetches only work active (Linear updatedAt) or
+  # committed-to within scope_window_days; everything older/terminal is frozen (kept in
+  # the DB, counted in the hygiene tally, never re-fetched). The brake trips when the
+  # active scope exceeds these ceilings (~2x today's ~188 open-active issues / ~23 active
+  # projects) — a runaway signal. On trip: headless auto-narrows to the safe floor and
+  # flags for manual review; interactive stops and asks.
+  scope_window_days: 90
+  brake_max_issues: 400
+  brake_max_projects: 60
+  brake_max_relation_fetches: 300
+
+# slack_user_id is the deterministic @-mention target (no runtime user search).
+# slack_alias is a human-readable label / fallback.
+members:
+  - name: Scott McKeighen
+    slack_user_id: "U0DEMO0001"
+    slack_alias: "Scott McKeighen"
+    timezone: America/Los_Angeles
+    standup_tag_local: "08:00"
+  - name: Maya Lindqvist
+    slack_user_id: "U0DEMO0002"
+    slack_alias: "Maya Lindqvist"
+    timezone: America/Los_Angeles
+    standup_tag_local: "08:00"
+  - name: Priya Natarajan
+    slack_user_id: "U0DEMO0003"
+    slack_alias: "Priya Natarajan"
+    timezone: America/Chicago
+    standup_tag_local: "10:00"
+  - name: Tomas Reyes
+    slack_user_id: "U0DEMO0004"
+    slack_alias: "tomas"
+    timezone: Europe/Madrid
+    standup_tag_local: "09:00"

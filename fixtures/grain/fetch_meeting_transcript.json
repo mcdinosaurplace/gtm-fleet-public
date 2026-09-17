@@ -1,0 +1,29 @@
+{
+  "meeting_id": "mtg-demo-0001",
+  "title": "Northlake Fintech - discovery",
+  "recorded_at": "{{T-1d}}T17:00:00Z",
+  "duration_minutes": 38,
+  "_demo_note": "Verbatim transcript - the source of truth for any quote content-researcher writes into the voice bank. Trust tier: first_party.",
+  "segments": [
+    {"speaker": "Leo Marchetti", "internal": true, "start": "00:00:12",
+     "text": "Thanks for making time. Before we get into the product, tell me what today looks like when something breaks."},
+    {"speaker": "Renata Okafor", "internal": false, "start": "00:00:31",
+     "text": "Honestly? We page everyone. Nobody is confident who owns the service, so the safe move is to wake up the whole platform team. That is not sustainable and people are starting to opt out of the rotation."},
+    {"speaker": "Camila Restrepo", "internal": false, "start": "00:01:24",
+     "text": "The other half of it is that our MTTR dashboard is hand-built in a spreadsheet and nobody trusts the number. When leadership asks how we are doing, I cannot answer without three caveats."},
+    {"speaker": "Leo Marchetti", "internal": true, "start": "00:02:02",
+     "text": "How often does a rename or a team change break the on-call mapping?"},
+    {"speaker": "Renata Okafor", "internal": false, "start": "00:02:14",
+     "text": "Every reorg. That is actually my blocker for signing - if a group rename orphans the rotation, we are back to paging everyone, and I have to tell legal we solved nothing."},
+    {"speaker": "Camila Restrepo", "internal": false, "start": "00:03:40",
+     "text": "We also need the schedule exportable. Compliance wants a CSV they can read without a login. That sounds small but it is a hard requirement for us."},
+    {"speaker": "Scott McKeighen", "internal": true, "start": "00:04:55",
+     "text": "Both are answerable. Let me confirm the rename behavior with engineering rather than guess on this call."},
+    {"speaker": "Renata Okafor", "internal": false, "start": "00:05:10",
+     "text": "A yes or no by Thursday is enough. I do not need a ship date - I need to know whether it is possible."},
+    {"speaker": "Camila Restrepo", "internal": false, "start": "00:12:38",
+     "text": "One more thing. We looked at Beaconline and the postmortem workflow felt bolted on. What we actually want is the loop closing - the incident teaches us something and the runbook changes."},
+    {"speaker": "Renata Okafor", "internal": false, "start": "00:21:07",
+     "text": "Nobody on my team opens a runbook that is longer than the incident. If it is not three steps, it does not get read at two in the morning."}
+  ]
+}

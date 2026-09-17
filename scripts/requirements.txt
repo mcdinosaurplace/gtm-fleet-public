@@ -1,0 +1,45 @@
+# {{COMPANY}} Marketing — Python dependencies for scripts/.
+# Install: python3 -m pip install -r scripts/requirements.txt
+
+# Google API clients (used by google_auth.py and the *_pull.py scripts)
+google-analytics-data>=0.18,<1.0
+google-api-python-client>=2.130,<3.0
+google-auth>=2.30,<3.0
+# Keep google-ads current — old majors target sunset Ads API versions and
+# fail with "GRPC target method can't be resolved" (~12mo after release).
+google-ads>=31.0
+# cryptography's Rust extension imports this at runtime but some environments
+# don't pull it in transitively — without it, the google-ads import chain
+# panics with "ModuleNotFoundError: No module named '_cffi_backend'".
+cffi>=1.16
+# One-time OAuth token generation only (scripts/google_oauth_setup.py); not
+# imported by the runtime pull scripts.
+google-auth-oauthlib>=1.2,<2.0
+# Guarantees zoneinfo has a tz database in minimal containers (gcal_pull.py).
+tzdata>=2024.1
+
+# .env loader (used by google_auth.py)
+python-dotenv>=1.0,<2.0
+
+# brand-designer dither engine (scripts/brand_designer_dither.py)
+Pillow>=10.0
+numpy>=1.26
+
+# Luma MCP server (scripts/luma_mcp.py) — official MCP SDK (FastMCP) + HTTP
+# client. Pinned <2.0 on purpose: mcp 2.x swaps its HTTP dependency to httpx2
+# and pulls an OpenTelemetry tree; the 1.x line uses plain httpx, which is what
+# this server targets.
+mcp>=1.9,<2.0
+httpx>=0.27.1,<1.0
+
+# Content-research body extraction (scripts/content_research_pull.py). Strips
+# HTML/nav/boilerplate to readable text + markdown. Only ever parses bytes the
+# script already fetched under its own hardened egress — the network fetcher is
+# never called — so this adds a parsing dependency, not a new fetch path. Pulls
+# lxml + a small html-analysis tree transitively.
+trafilatura>=2.0,<3.0
+
+# Added during the gtm-fleet migration — imported but previously unpinned.
+requests>=2.31,<3.0          # scripts/hubspot/luma_scaffold.py
+openpyxl>=3.1,<4.0           # scripts/gsc_xlsx_to_pagequeries.py
+PyYAML>=6.0,<7.0             # scripts/pm/config.py, scripts/fleet_paths.py, profiles/, sanitize/

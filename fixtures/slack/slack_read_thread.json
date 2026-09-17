@@ -1,0 +1,26 @@
+{
+  "channel_id": "U0DEMO0001",
+  "channel_label": "@Scott McKeighen (DM)",
+  "thread_ts": "1786458135.000900",
+  "total": 2,
+  "_demo_note": "Yesterday's AM brief and the operator's one reply. chief-of-staff reads this before composing today's brief: the SAL to SQL item is acknowledged and explicitly not escalating, so today it is a one-line count, not a fresh ask.",
+  "messages": [
+    {
+      "ts": "1786458135.000900",
+      "user_id": "U0DEMOBOT1",
+      "user": "chief-of-staff",
+      "is_bot": true,
+      "posted_at": "{{T-1d}}T14:20:00Z",
+      "text": "*AM brief - {{T-1d}}*\n\n*1. SAL to SQL watch (day 3).* revops-watchdog has the conversion below the 35% threshold for a third consecutive day. Decision needed: keep watching, or escalate to sales leadership?\n*2. GTM scorecard.* performance-marketer's traffic block is ready and waiting on a Tier 2 greenlight for Wednesday's WBR.\n*3. Topic backlog.* Rulings due from Maya.\n\nCalendar: 2 meetings. Inbox: 1 real ask. Linear: 18 open, 2 High or Urgent due inside a week."
+    },
+    {
+      "ts": "1786458135.001400",
+      "user_id": "U0DEMO0001",
+      "user": "Scott McKeighen",
+      "is_bot": false,
+      "posted_at": "{{T-1d}}T16:02:00Z",
+      "thread_ts": "1786458135.000900",
+      "text": "Acknowledged on the SAL to SQL watch. Keep watching, do not escalate yet - I want to see whether the Event registration sync fix moves it first. Greenlight the scorecard."
+    }
+  ]
+}

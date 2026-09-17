@@ -1,0 +1,58 @@
+# Environment / secrets — never commit
+.env
+*.env
+.env.local
+.env.development
+.env.production
+!.env.example
+google-sa*.json
+service-account*.json
+*service-account*.json
+**/credentials.json
+*.private.yaml
+*.private.md
+
+# Claude Code machine-local files
+.claude/settings.local.json
+.claude/worktrees/
+
+# Agents' local scratch (prompts write drafts/payloads here) — never committed
+localwork/
+
+# Rendered profiles, scratch, scheduler logs
+build/
+state/working/tick-*.log
+state/working/last-session-*.json
+state/working/content_research/
+state/working/google/*
+!state/working/google/.gitkeep
+state/working/demo-mcp.resolved.json
+
+# DEMO_MODE outbox — where fixture writes land instead of Slack/Notion.
+# The folder is tracked so a demo has somewhere to write; its contents never are.
+state/demo-outbox/*
+!state/demo-outbox/.gitkeep
+
+# SQLite journals / WAL (the .db itself IS committed — it is fleet state)
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dated generated outputs (promote to templates/ manually if useful).
+# Exception: dated lifecycle-map snapshots are canonical artifacts.
+*-[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].*
+!docs/lifecycle-map-*.md
+!state/pending/**
+!state/journal/**

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="160" viewBox="0 0 640 160" role="img" aria-label="{{COMPANY}} wordmark">
+  <rect width="640" height="160" fill="#F9FAF9"/>
+  <circle cx="80" cy="80" r="34" fill="none" stroke="#0F766E" stroke-width="10"/>
+  <circle cx="80" cy="80" r="9" fill="#F2A900"/>
+  <text x="140" y="104" font-family="Inter, Helvetica, Arial, sans-serif" font-size="68" font-weight="600" fill="#282823">{{COMPANY}}</text>
+</svg>

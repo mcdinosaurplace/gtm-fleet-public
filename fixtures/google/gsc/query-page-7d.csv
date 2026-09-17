@@ -1,0 +1,16 @@
+query,page,clicks,impressions,ctr,position
+sidereal on call,https://orrery.example/blog/sidereal-on-call,61,4820,0.01266,27.4
+incident management platform,https://orrery.example/blog/incident-management-platform,5,1040,0.00481,29.8
+incident management software,https://orrery.example/blog/incident-management-software,128,1220,0.10492,4.3
+on call management software,https://orrery.example/blog/on-call-management-software,163,860,0.18953,2.1
+on call scheduling software,https://orrery.example/blog/on-call-scheduling-software,6,1470,0.00408,33.2
+alert fatigue,https://orrery.example/blog/alert-fatigue,4,1690,0.00237,38.6
+incident response tools,https://orrery.example/blog/incident-response-tools,57,1310,0.04351,8.7
+best incident management tools,https://orrery.example/blog/best-incident-management-tools,19,1120,0.01696,17.4
+what is mttr,https://orrery.example/blog/what-is-mttr,24,5270,0.00455,28.3
+mtta vs mttr,https://orrery.example/blog/mtta-vs-mttr,178,3840,0.04635,8.2
+incident severity levels,https://orrery.example/blog/incident-severity-levels,7,1960,0.00357,31.9
+slo vs sla,https://orrery.example/blog/slo-vs-sla,131,2510,0.05219,7.6
+error budget,https://orrery.example/blog/error-budget,92,6340,0.01451,19.3
+blameless postmortem,https://orrery.example/blog/blameless-postmortem,397,4420,0.08982,5.2
+postmortem template,https://orrery.example/blog/postmortem-template,78,3160,0.02468,12.8

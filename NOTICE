@@ -1,0 +1,14 @@
+gtm-agent-fleet
+Copyright 2026 Scott McKeighen
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This kit includes material derived from the "marketing" plugin in Anthropic's
+knowledge-work-plugins collection (Apache License 2.0): the brand-voice,
+content-creation, campaign-planning, competitive-analysis, performance-analytics,
+draft-content, campaign-plan, brand-review, competitive-brief, performance-report,
+and email-sequence skills, and the CONNECTORS.md `~~category` convention. Those
+files were adapted and tokenized for this fleet.
+
+The coding principles section of CLAUDE.md is adapted from
+https://github.com/forrestchang/andrej-karpathy-skills (see that repository for its license).

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Comparison bar chart: pages delivered per on-call responder per week, at four engineering-org sizes. Traditional platforms deliver 28, 33, 37 and 39 pages per responder per week; {{COMPANY}} delivers 9, 8, 8 and 7. Illustrative figures, not a customer benchmark." font-family="Inter, -apple-system, sans-serif">
+  <defs>
+    <pattern id="hatch-ink" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="#FFFBF5"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#282823" stroke-width="1.4"/>
+    </pattern>
+    <pattern id="hatch-orange" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="8" fill="#FFFBF5"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#FF8000" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="800" fill="#FFFBF5"/>
+
+  <!-- header -->
+  <text x="48" y="40" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#6C6C66">{{COMPANY}} · COMPARISON CHART · ILLUSTRATIVE FIGURES, NOT A BENCHMARK</text>
+  <text x="48" y="78" font-size="30" font-weight="600" letter-spacing="-0.8" fill="#282823">Same services. <tspan fill="#0F766E">Fewer pages.</tspan></text>
+  <text x="48" y="104" font-size="14" fill="#6C6C66">Pages delivered per on-call responder per week, by engineering-org size. Lower is better.</text>
+  <line x1="48" y1="124" x2="1152" y2="124" stroke="#E4E4E1"/>
+
+  <!-- legend -->
+  <rect x="48" y="140" width="14" height="14" fill="url(#hatch-orange)" stroke="#FF8000"/>
+  <text x="70" y="152" font-size="13" fill="#464641">Traditional platforms</text>
+  <rect x="236" y="140" width="14" height="14" fill="url(#hatch-ink)" stroke="#282823"/>
+  <text x="258" y="152" font-size="13" fill="#464641">{{COMPANY}}</text>
+  <text x="48" y="188" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66">PAGES PER RESPONDER, PER WEEK</text>
+
+  <!-- gridlines -->
+  <line x1="140" y1="240" x2="1060" y2="240" stroke="#E4E4E1"/>
+  <line x1="140" y1="340" x2="1060" y2="340" stroke="#E4E4E1"/>
+  <line x1="140" y1="440" x2="1060" y2="440" stroke="#E4E4E1"/>
+  <line x1="140" y1="540" x2="1060" y2="540" stroke="#E4E4E1"/>
+  <line x1="140" y1="640" x2="1060" y2="640" stroke="#282823"/>
+  <text x="124" y="244" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66" text-anchor="end">40</text>
+  <text x="124" y="344" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66" text-anchor="end">30</text>
+  <text x="124" y="444" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66" text-anchor="end">20</text>
+  <text x="124" y="544" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66" text-anchor="end">10</text>
+  <text x="124" y="644" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66" text-anchor="end">0</text>
+
+  <!-- group 1 — 25 engineers -->
+  <rect x="185" y="360" width="62" height="280" fill="url(#hatch-orange)" stroke="#FF8000"/>
+  <text x="216" y="348" font-size="26" font-weight="600" fill="#282823" text-anchor="middle">28</text>
+  <rect x="263" y="550" width="62" height="90" fill="url(#hatch-ink)" stroke="#282823"/>
+  <text x="294" y="538" font-size="26" font-weight="600" fill="#282823" text-anchor="middle">9</text>
+  <text x="255" y="666" font-size="15" font-weight="600" fill="#282823" text-anchor="middle">25</text>
+
+  <!-- group 2 — 50 engineers -->
+  <rect x="415" y="310" width="62" height="330" fill="url(#hatch-orange)" stroke="#FF8000"/>
+  <text x="446" y="298" font-size="26" font-weight="600" fill="#282823" text-anchor="middle">33</text>
+  <rect x="493" y="560" width="62" height="80" fill="url(#hatch-ink)" stroke="#282823"/>
+  <text x="524" y="548" font-size="26" font-weight="600" fill="#282823" text-anchor="middle">8</text>
+  <text x="485" y="666" font-size="15" font-weight="600" fill="#282823" text-anchor="middle">50</text>
+
+  <!-- group 3 — 100 engineers -->
+  <rect x="645" y="270" width="62" height="370" fill="url(#hatch-orange)" stroke="#FF8000"/>
+  <text x="676" y="258" font-size="26" font-weight="600" fill="#282823" text-anchor="middle">37</text>
+  <rect x="723" y="560" width="62" height="80" fill="url(#hatch-ink)" stroke="#282823"/>
+  <text x="754" y="548" font-size="26" font-weight="600" fill="#282823" text-anchor="middle">8</text>
+  <text x="715" y="666" font-size="15" font-weight="600" fill="#282823" text-anchor="middle">100</text>
+
+  <!-- group 4 — 200 engineers -->
+  <rect x="875" y="250" width="62" height="390" fill="url(#hatch-orange)" stroke="#FF8000"/>
+  <text x="906" y="238" font-size="26" font-weight="600" fill="#282823" text-anchor="middle">39</text>
+  <rect x="953" y="570" width="62" height="70" fill="url(#hatch-ink)" stroke="#282823"/>
+  <text x="984" y="558" font-size="26" font-weight="600" fill="#282823" text-anchor="middle">7</text>
+  <text x="945" y="666" font-size="15" font-weight="600" fill="#282823" text-anchor="middle">200</text>
+
+  <text x="600" y="694" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66" text-anchor="middle">ENGINEERS ON CALL</text>
+
+  <line x1="48" y1="722" x2="1152" y2="722" stroke="#E4E4E1"/>
+  <text x="48" y="752" font-size="15" fill="#464641">At 100 engineers that is <tspan font-weight="600" fill="#282823">29 fewer pages a week</tspan> for every responder on the rotation — the same services, the same alerts, far less of the night.</text>
+  <text x="48" y="778" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#A8A69E">ink hatching = {{COMPANY}} · orange hatching = the unfavorable comparison side · flat hatched fills only, no gradients, no solid colour blocks</text>
+</svg>

@@ -1,0 +1,307 @@
+{
+  "total": 20,
+  "window": "contacts created in the last 7 days",
+  "_demo_note": "20 new contacts in the 7-day window. 20 carry opsos__person_id, 19 carry opsos__company_id, 19 carry both (95.0%) - well above the 70% coverage threshold, so the enrichment leg of the demo reads CLEAR. No freemail or pseudo-inbox addresses appear, so opsos-watch quick and complete mode agree here.",
+  "results": [
+    {
+      "id": "7010000001",
+      "properties": {
+        "email": "renata.okafor@northlake-fintech.example",
+        "firstname": "Renata",
+        "lastname": "Okafor",
+        "company": "Northlake Fintech",
+        "jobtitle": "Director of Platform Engineering",
+        "createdate": "{{T+0d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000001",
+        "opsos__company_id": "kst-c-1000"
+      }
+    },
+    {
+      "id": "7010000002",
+      "properties": {
+        "email": "bilal.haddad@calloway-robotics.example",
+        "firstname": "Bilal",
+        "lastname": "Haddad",
+        "company": "Calloway Robotics",
+        "jobtitle": "SRE Lead",
+        "createdate": "{{T+0d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000002",
+        "opsos__company_id": "kst-c-1007"
+      }
+    },
+    {
+      "id": "7010000003",
+      "properties": {
+        "email": "sofia.iversen@harborlight-health.example",
+        "firstname": "Sofia",
+        "lastname": "Iversen",
+        "company": "Harborlight Health",
+        "jobtitle": "VP Engineering",
+        "createdate": "{{T-1d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000003",
+        "opsos__company_id": "kst-c-1014"
+      }
+    },
+    {
+      "id": "7010000004",
+      "properties": {
+        "email": "tobias.grant@ridgeway-logistics.example",
+        "firstname": "Tobias",
+        "lastname": "Grant",
+        "company": "Ridgeway Logistics",
+        "jobtitle": "Head of Infrastructure",
+        "createdate": "{{T-1d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000004",
+        "opsos__company_id": "kst-c-1021"
+      }
+    },
+    {
+      "id": "7010000005",
+      "properties": {
+        "email": "mira.chaudhry@quillon-data.example",
+        "firstname": "Mira",
+        "lastname": "Chaudhry",
+        "company": "Quillon Data",
+        "jobtitle": "Staff Engineer",
+        "createdate": "{{T-1d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000005",
+        "opsos__company_id": "kst-c-1028"
+      }
+    },
+    {
+      "id": "7010000006",
+      "properties": {
+        "email": "ewan.doyle@marchmont-retail.example",
+        "firstname": "Ewan",
+        "lastname": "Doyle",
+        "company": "Marchmont Retail",
+        "jobtitle": "Engineering Manager",
+        "createdate": "{{T-2d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000006",
+        "opsos__company_id": "kst-c-1035"
+      }
+    },
+    {
+      "id": "7010000007",
+      "properties": {
+        "email": "hana.sorensen@vellum-analytics.example",
+        "firstname": "Hana",
+        "lastname": "Sorensen",
+        "company": "Vellum Analytics",
+        "jobtitle": "Director of Operations",
+        "createdate": "{{T-2d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000007",
+        "opsos__company_id": "kst-c-1042"
+      }
+    },
+    {
+      "id": "7010000008",
+      "properties": {
+        "email": "andre.villalobos@stonebridge-payments.example",
+        "firstname": "Andre",
+        "lastname": "Villalobos",
+        "company": "Stonebridge Payments",
+        "jobtitle": "Platform Architect",
+        "createdate": "{{T-2d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000008",
+        "opsos__company_id": "kst-c-1049"
+      }
+    },
+    {
+      "id": "7010000009",
+      "properties": {
+        "email": "keiko.tanabe@aperture-grid.example",
+        "firstname": "Keiko",
+        "lastname": "Tanabe",
+        "company": "Aperture Grid",
+        "jobtitle": "Head of Reliability",
+        "createdate": "{{T-3d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000009",
+        "opsos__company_id": "kst-c-1056"
+      }
+    },
+    {
+      "id": "7010000010",
+      "properties": {
+        "email": "marcus.fenwick@fernhill-media.example",
+        "firstname": "Marcus",
+        "lastname": "Fenwick",
+        "company": "Fernhill Media",
+        "jobtitle": "DevOps Lead",
+        "createdate": "{{T-3d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000010",
+        "opsos__company_id": "kst-c-1063"
+      }
+    },
+    {
+      "id": "7010000011",
+      "properties": {
+        "email": "aisha.bello@cobalt-freight.example",
+        "firstname": "Aisha",
+        "lastname": "Bello",
+        "company": "Cobalt Freight",
+        "jobtitle": "VP Technology",
+        "createdate": "{{T-3d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000011",
+        "opsos__company_id": "kst-c-1070"
+      }
+    },
+    {
+      "id": "7010000012",
+      "properties": {
+        "email": "lars.ekstrom@tessellate-labs.example",
+        "firstname": "Lars",
+        "lastname": "Ekstrom",
+        "company": "Tessellate Labs",
+        "jobtitle": "Principal Engineer",
+        "createdate": "{{T-4d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000012",
+        "opsos__company_id": "kst-c-1077"
+      }
+    },
+    {
+      "id": "7010000013",
+      "properties": {
+        "email": "camila.restrepo@northlake-fintech.example",
+        "firstname": "Camila",
+        "lastname": "Restrepo",
+        "company": "Northlake Fintech",
+        "jobtitle": "Incident Commander",
+        "createdate": "{{T-4d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000013",
+        "opsos__company_id": "kst-c-1000"
+      }
+    },
+    {
+      "id": "7010000014",
+      "properties": {
+        "email": "owen.prentice@harborlight-health.example",
+        "firstname": "Owen",
+        "lastname": "Prentice",
+        "company": "Harborlight Health",
+        "jobtitle": "Systems Engineer",
+        "createdate": "{{T-4d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000014",
+        "opsos__company_id": "kst-c-1014"
+      }
+    },
+    {
+      "id": "7010000015",
+      "properties": {
+        "email": "nadia.kovac@quillon-data.example",
+        "firstname": "Nadia",
+        "lastname": "Kovac",
+        "company": "Quillon Data",
+        "jobtitle": "Head of Platform",
+        "createdate": "{{T-5d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000015",
+        "opsos__company_id": "kst-c-1028"
+      }
+    },
+    {
+      "id": "7010000016",
+      "properties": {
+        "email": "julian.meyers@aperture-grid.example",
+        "firstname": "Julian",
+        "lastname": "Meyers",
+        "company": "Aperture Grid",
+        "jobtitle": "Engineering Director",
+        "createdate": "{{T-5d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000016",
+        "opsos__company_id": "kst-c-1056"
+      }
+    },
+    {
+      "id": "7010000017",
+      "properties": {
+        "email": "priyanka.rao@vellum-analytics.example",
+        "firstname": "Priyanka",
+        "lastname": "Rao",
+        "company": "Vellum Analytics",
+        "jobtitle": "SRE Manager",
+        "createdate": "{{T-5d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000017",
+        "opsos__company_id": "kst-c-1042"
+      }
+    },
+    {
+      "id": "7010000018",
+      "properties": {
+        "email": "felix.adeyemi@cobalt-freight.example",
+        "firstname": "Felix",
+        "lastname": "Adeyemi",
+        "company": "Cobalt Freight",
+        "jobtitle": "Cloud Operations Lead",
+        "createdate": "{{T-6d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000018",
+        "opsos__company_id": "kst-c-1070"
+      }
+    },
+    {
+      "id": "7010000019",
+      "properties": {
+        "email": "ingrid.vasquez@ridgeway-logistics.example",
+        "firstname": "Ingrid",
+        "lastname": "Vasquez",
+        "company": "Ridgeway Logistics",
+        "jobtitle": "Director of IT",
+        "createdate": "{{T-6d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000019",
+        "opsos__company_id": "kst-c-1021"
+      }
+    },
+    {
+      "id": "7010000020",
+      "properties": {
+        "email": "theo.nakamura@tessellate-labs.example",
+        "firstname": "Theo",
+        "lastname": "Nakamura",
+        "company": "Tessellate Labs",
+        "jobtitle": "Observability Lead",
+        "createdate": "{{T-6d}}",
+        "lifecyclestage": "lead",
+        "hs_lead_status": "NEW",
+        "opsos__person_id": "kst-p-000020",
+        "opsos__company_id": null
+      }
+    }
+  ]
+}

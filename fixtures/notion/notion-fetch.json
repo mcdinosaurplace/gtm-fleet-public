@@ -1,0 +1,20 @@
+{
+  "id": "00000000000000000000000000000210",
+  "object": "page",
+  "title": "Marketing Update - {{T-2d}}",
+  "url": "https://www.notion.example/00000000000000000000000000000210",
+  "parent": {"type": "database_id", "database_id": "00000000-0000-4000-8000-000000000101"},
+  "properties": {
+    "Name": "Marketing Update - {{T-2d}}",
+    "Status": "On track",
+    "Department": "https://www.notion.example/00000000000000000000000000000201",
+    "Review in": "https://www.notion.example/00000000000000000000000000000202",
+    "date:Date:start": "{{T-2d}}",
+    "date:Date:is_datetime": 0,
+    "From": "Maya Lindqvist"
+  },
+  "last_edited_time": "{{T-2d}}T23:41:00Z",
+  "created_time": "{{T-7d}}T17:04:00Z",
+  "_demo_note": "Last week's published WBR. Section order and headings follow templates/wbr-audit-artifact.md, so wbr-prep can copy each section forward 1:1 and quote the prior-week callouts verbatim in the #team-marketing message.",
+  "content": "## Summary\n\nMTD through {{T-2d}}: 402 MELs, 67 MQLs (15 inbound demo requests, 37 auto, 15 outbound), 39 SALs, 13 SQLs. MQL to SAL 58.2%. SAL to SQL 33.3%. Active open pipeline: $1.09M across 85 open deals.\n\n## Traffic\n\n### Organic Search\n\nGains: \"incident management platform\" 7 to 4, \"on-call rotation software\" 14 to 11, \"postmortem template\" 22 to 19. Losses: \"alert fatigue\" 9 to 13, \"MTTR dashboard\" 16 to 20, \"runbook automation\" 11 to 14.\n\n### Channel Mix (users)\n\nOrganic sessions 30,100. Paid sessions 9,050. Demo requests 130.\n\n## Project Updates\n\nOwner: Maya Lindqvist.\n\n- 7 on track, 2 at risk, 1 off track.\n- Shipping the website repositioning checkpoint this week; pillar page rewrite is next.\n- Brand refresh is off track on legal review of the tagline. Target date has moved once.\n\n## Content and Product Marketing\n\nOwner: Priya Natarajan.\n\n- Two topics approved out of review, one sent back for a sharper angle toward platform engineers.\n- Runbook guide brief is ready and waiting on calibration review.\n- Blocked on topic rulings before committing the next two briefs.\n\n## Website and Design\n\nOwner: Tomas Reyes.\n\n- Webinar hero dither pack delivered, five channel outputs, alt text included.\n- Display ad set repainted in the new palette.\n\n## GTM Ops (MOPs / RevOps)\n\nOwner: Scott McKeighen.\n\n- SAL to SQL conversion opened as a MED anomaly and is still open.\n- Event registration sync workflow is exiting every enrollment at step 1. Under investigation.\n- Enrichment coverage recovered to 95% after last month's dip.\n\n## Challenges\n\n- Legal review is the long pole on Brand refresh.\n- Lead scoring 2.0 decay rules are still undocumented.\n\n## Next up\n\n- Confirm whether the lifecycle stage mapping is causing the SAL to SQL dip.\n- Publish the on-call fairness webinar landing page.\n\n## Asks\n\n- Sales leadership: 15 minutes on how SAL is being accepted in practice.\n\n## Notes\n\n- Definitions are locked at v1.5. No restatements this week.\n"
+}

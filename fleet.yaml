@@ -1,0 +1,13 @@
+# fleet.yaml — which profile this workspace runs, and what a composed client fleet
+# contains. `profile` is read at runtime (scripts/fleet_paths.py); the selection fields
+# are consumed by scripts/compose_fleet.py (docs/composer.md).
+name: gtm-fleet
+profile: orrery
+
+# --- Composer selection (compose_fleet.py --fleet fleet.yaml) ---
+agents: [chief-of-staff, revops-watchdog, performance-marketer, scribe, content-researcher, content-producer, brand-designer]
+capabilities: [funnel-stats, luma-events]
+skills: all
+connectors: {crm: account, chat: account, issue_tracker: account, knowledge_base: account}
+runner: {permission_mode: acceptEdits, max_turns: 80, max_budget_usd: 5}
+schedule: {enabled_entries: []}

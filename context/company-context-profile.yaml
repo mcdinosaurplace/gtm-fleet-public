@@ -1,0 +1,134 @@
+company_context_profile:
+  name: "{{COMPANY}}"
+  version: 2026.1
+  scope: company_level
+  audience: human_and_ai
+  status: active
+
+  purpose: >
+    Define {{COMPANY}}'s company-level context for 2026.
+    This document is intentionally neutral of teams, departments, tools,
+    and execution mechanics, and is safe for AI and human reference.
+
+  core_identity:
+    description: >
+      {{COMPANY}} is an incident management and on-call platform built for mid-market
+      B2B SaaS engineering organizations running their own production systems.
+    mission_statement: >
+      Turn alert noise into clear ownership, fast response, and learning loops,
+      so engineering teams spend their nights building instead of triaging.
+    continuity_note: >
+      {{COMPANY}}'s mission and product intent remain stable entering 2026.
+      The shift is one of focus, clarity, and presence — not purpose.
+
+  primary_customer_focus:
+    priority_segment:
+      description: >
+        Mid-market B2B SaaS engineering organizations of 50 to 500 engineers
+        where a platform engineer owns the paging stack and alert volume has
+        become the loudest operational problem.
+      designation: gold_medal
+    secondary_segments:
+      - Series A technical founders who are the on-call rotation themselves
+      - Series B and C engineering leaders carrying contractual uptime commitments
+      - Teams consolidating three overlapping reliability tools into one
+    strategic_note: >
+      {{COMPANY}} is engineer-first, not manager-first. Ownership and response are
+      treated as foundational infrastructure, not a late-stage process layer.
+
+  strategic_posture:
+    market_focus:
+      oriented_toward:
+        - Mid-market software companies that run their own production systems
+        - Engineer-led or engineer-influenced buying motions
+        - Product-led entry with sales assistance above roughly 75 responders
+        - Practical complexity
+      not_oriented_toward:
+        - Enterprise ITSM suites and change-management workflows
+        - Services-heavy deployments
+        - Feature breadth for its own sake
+    principle: >
+      Depth, clarity, and reliability matter more than surface area.
+
+  growth_model:
+    model_type: all_bound
+    description: >
+      Acquisition, activation, retention, and expansion are treated as a
+      continuous system rather than isolated motions.
+    current_reality:
+      retention: strong
+      constraint: insufficient market relevance and mindshare against better-known incumbents
+    success_dependency: >
+      Increase validated interest among the right audience without changing
+      {{COMPANY}}'s core identity.
+
+  success_indicators_without_metrics:
+    internal_signals:
+      - "{{COMPANY}} is easier to recognize and discover earlier in a team's reliability journey"
+      - Engagement leads more reliably to outcomes
+      - Engineers recommend {{COMPANY}} without qualification
+    brand_state:
+      feels_like:
+        - present
+        - trusted
+        - chosen
+      not_perceived_as:
+        - fallback_option
+        - namebrand_alternative
+        - tool_requiring_justification
+      canonical_positioning: >
+        The right platform for the teams that actually have this problem — by design.
+
+  product_evolution_principles:
+    guiding_rules:
+      - Reduce noise, do not introduce novelty
+      - Make capability felt through absence
+      - Prioritize speed over feature parity
+      - Absorb complexity silently
+      - Everything clickable is also declarable
+    ai_role:
+      exists_to:
+        - Democratize access to incident and ownership data
+        - Increase clarity and confidence during a response
+        - Reduce operational burden
+      does_not_exist_to:
+        - Showcase technical sophistication
+        - Compete in feature races
+        - Increase cognitive load
+        - Make judgment calls a responder has not approved
+
+  non_negotiable_guardrails:
+    founder_attention:   # the attention of whoever is on call — founder, platform engineer, or VP
+      must:
+        - preserve_momentum
+        - avoid_unnecessary_education
+        - close_loops_aggressively
+        - default_to_clarity_and_direction
+      must_not:
+        - surface_unresolved_edge_cases
+        - lead_with_fear_based_reliability
+        - transfer_complexity_to_users
+        - claim_{{company_slug}}_prevents_incidents
+    competitive_discipline:
+      do_not_compete_by:
+        - feature_checklists
+        - feature_announcement_positioning
+        - cheaper_smaller_framing
+      compete_by:
+        - solving_right_problems
+        - absorbing_complexity_over_time
+        - scaling_with_engineering_orgs
+
+  company_wide_implications:
+    messaging:
+      emphasize: removal_over_capability
+    growth:
+      compounds_through: trust
+    success_signal: silence_can_be_success
+    decision_rule: >
+      If an initiative introduces fear, requires excessive interpretation,
+      or creates unanswered questions, it should be reconsidered.
+
+  canonical_company_truth: >
+    {{COMPANY}} works because the pages stop arriving.
+    Engineers don't babysit alerts — they keep shipping.

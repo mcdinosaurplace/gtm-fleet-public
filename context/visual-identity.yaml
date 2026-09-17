@@ -1,0 +1,248 @@
+##############################################################
+# {{COMPANY_UPPER}} VISUAL IDENTITY — AGENT REFERENCE
+# Canonical source of truth for every visual token below. Derived from
+# the brand pack (context/brand-pack/) and the shipped site tokens and
+# assets; if this file and any other surface disagree, this file wins.
+#
+# Give this file to any agent or workflow that creates or revises
+# visual content: slides, social graphics, diagrams, one-pagers,
+# landing pages, email headers, charts, event assets.
+# This file covers VISUAL identity only. Brand voice and copy rules
+# live in context/marketing-project-context.yaml and
+# sops/brand-review-sop.md.
+#
+# Human walkthrough + curation queue: sops/visual-identity-sop.md
+# Example assets (logo refs, schematic/line-art/halftone examples,
+# palette + type-scale specimens): assets/visual-identity/
+##############################################################
+
+usage_instructions: |
+  Apply these guidelines to anything visual you produce for {{COMPANY}}.
+  Priority order when constraints conflict:
+  1. Use exact tokens (hex values, font names, weights) where the medium allows.
+  2. Where exact fonts are unavailable (Google Docs, email clients), use the
+     documented fallbacks — never substitute an unlisted font.
+  3. Match the imagery STYLE rules even when generating new images — {{COMPANY}}'s
+     look is schematic, monochrome-plus-accent, and flat. When in doubt:
+     fewer colors, thinner lines, more whitespace.
+  Anything in `prohibited` is a hard rule, equal in force to the brand-voice
+  cardinal sins.
+
+logo:
+  mark: "{{LOGO_MARK_DESCRIPTION}}"
+  wordmark: '"{{COMPANY}}" set in Inter, {{WORDMARK_CASE_RULE}}'
+  lockup: mark left of wordmark
+  color_rules:
+    on_light: black / ink (#282823)
+    on_dark_or_primary: white
+    app_icon_context: white mark on brand primary (#0F766E) field
+  og_card_pattern: "white logo lockup centered on flat #0F766E — no gradient, no texture, no tagline"
+  do_not: "recolor the mark outside black/white, add drop shadows, rotate, outline, or place on photographic backgrounds"
+
+typography:
+  primary_typeface: # the only sans in the system — there is no secondary face
+    name: Inter
+    foundry: Rasmus Andersson — open source (SIL OFL); self-host or load from Google Fonts
+    weights_in_use:
+      - { weight: 400, name: Inter Regular, role: body copy on web; small body text; UI text inside product schematics and mockups }
+      - { weight: 500, name: Inter Medium, role: small UI labels inside product schematics and mockups }
+      - { weight: 600, name: Inter SemiBold, role: ALL headlines and display — the signature weight }
+      - { weight: 700, name: Inter Bold, role: buttons, small labels, emphasis }
+      - { weight: 900, name: Inter Heavy, role: rare; available but not used on shipped pages }
+    italics: available at 400/600/700/900 but effectively unused — avoid italics
+  mono_typefaces:
+    - name: IBM Plex Mono
+      weight: 400
+      source: Google Fonts
+      role: terminal/CLI mockups, code, data labels
+    - name: Fragment Mono
+      weight: 400
+      source: Google Fonts
+      role: "eyebrow labels and section numbering (\"01\", \"05 · Now in beta\"), small annotations on diagrams"
+  fallback_stacks:
+    headings: '"Inter", -apple-system, sans-serif'
+    body: '"Inter", -apple-system, sans-serif'
+    mono: '"IBM Plex Mono", "Fragment Mono", ui-monospace, monospace'
+    no_custom_fonts_available: the system sans-serif for everything; mono falls back to system monospace
+
+  type_scale: # canonical desktop values; scale down ~30-40% for mobile
+    display_hero: { font: Inter SemiBold, size: 160px, line_height: 0.9em, letter_spacing: -0.03em, note: homepage hero only }
+    h1: { font: Inter SemiBold, size: 56-60px, line_height: 64px, letter_spacing: -0.04em }
+    h2: { font: Inter SemiBold, size: 40-48px, line_height: 48-56px, letter_spacing: -0.021em }
+    h3: { font: Inter SemiBold, size: 32px, line_height: 40px, letter_spacing: -0.04em }
+    h4: { font: Inter SemiBold, size: 24px, line_height: 32px, letter_spacing: -0.02em }
+    h5_card_title: { font: Inter SemiBold, size: 19px, line_height: 24px, letter_spacing: -0.02em }
+    body_lead: { font: Inter Regular, size: 24px, line_height: 32px }
+    body: { font: Inter Regular, size: 18px, line_height: 26px, letter_spacing: 0 }
+    body_ui: { font: Inter 400, size: 17px, line_height: 24px }
+    body_small: { font: Inter 400, size: 15px, line_height: 24px }
+    button_label: { font: Inter Bold, size: 15-19px, line_height: 24px, letter_spacing: 0 }
+    mono_eyebrow: { font: Fragment Mono or IBM Plex Mono, size: 12-14px, note: often paired with a section number }
+  scale_rules: |
+    Letter-spacing tightens as size grows (0 at body, up to -0.04em at display).
+    Line-height is tight on display (0.9em) and relaxes toward 1.45 at body sizes.
+
+  headline_conventions:
+    case: sentence case, never title case, never all-caps (except tiny mono labels)
+    punctuation: declarative headlines end with a period ("The pages stop arriving.")
+    two_tone_emphasis: |
+      Signature device: one key phrase inside a headline is set in a second color
+      while the rest stays ink. Two sanctioned variants:
+      - muted: emphasis phrase in light gray #BCBAB3 (hero: "Reliability, not
+        heroics.")
+      - brand: emphasis phrase in primary #0F766E ("Ownership is
+        infrastructure.")
+      Use on at most one phrase per headline; never two colors plus ink.
+
+color:
+  neutrals: # warm gray "ink" family — the backbone of the palette
+    ink: { hex: "#282823", role: primary text, dark section backgrounds }
+    ink_secondary: { hex: "#464641", role: secondary text }
+    ink_tertiary: { hex: "#575751", role: tertiary text, captions }
+    muted: { hex: "#6C6C66", role: muted text on light backgrounds }
+    slate: { hex: "#5C6670", role: cool-gray UI text inside product mockups }
+    faint: { hex: "#A8A69E", role: disabled / faint text }
+    light_gray: { hex: "#BCBAB3", role: muted headline emphasis, text on dark }
+    hairline: { hex: "#E4E4E1", role: borders, dividers, grid rules — 1px always }
+    bg_off_white: { hex: "#F9FAF9", role: page background }
+    bg_white: { hex: "#FFFFFF", role: cards, content surfaces }
+    bg_cream: { hex: "#FFFBF5", role: warm background for charts/illustrations }
+    near_black: { hex: "#131415", role: deepest dark-mode background (event pages) }
+  brand_primary:
+    primary: { hex: "#0F766E", role: THE brand primary — buttons, logo field, links on dark }
+    deep: { hex: "#0B4F47", role: dark primary, hover states, depth }
+    product_ui: { hex: "#13857C", role: primary used for text/icons inside product schematics }
+    light: { hex: "#7FC4BC", role: secondary primary tint, illustration accents }
+    tint: { hex: "#D5EFEB", role: pill/chip backgrounds, light fills }
+    tint_faint: { hex: "#EAF6F4", role: faint primary wash backgrounds }
+    vivid: { hex: "#F2A900", role: rare bright accent; small doses only }
+  functional: # status colors — appear INSIDE schematics and UI, not as page accents
+    success: { fg: "#2D8A36", alt: "#3A9C41", bg: "#F2FFE6", usage: '"Completed/Resolved/Triggered" pills' }
+    error: { fg: "#A11E12", alt: "#CE3300", bg: "#FFE8E6", usage: '"Failed" pills, error banners' }
+    warning: { fg: "#AB8700", alt: "#FFBF00", bg: "#FFF8DF", usage: '"Retrying"/pending states' }
+    info_blue: { fg: "#0099FF", deep: "#0060E6", bg: "#E5F6FF", usage: links, info banners, "Read the docs →" }
+    orange: { fg: "#FF8000", alt: "#F98E51", usage: "the competitor / unfavorable segment in comparison charts; never for {{COMPANY}} itself" }
+  usage_rules: |
+    - "Default page is ink-on-off-white. The primary color is an accent, not a flood: one filled button, one emphasized phrase, small icons."
+    - "Functional colors live inside diagram/UI content only; they do not decorate layouts."
+    - "Dark sections (#282823) are used for testimonials and closing CTAs; text on dark is white headlines + #BCBAB3 supporting text."
+    - No gradients anywhere. Flat fills only.
+    - Charts: ink for {{COMPANY}}'s numbers, hatched fills for bars, orange only
+      for the unfavorable comparison segment.
+
+theme_modes:
+  light: # default — homepage
+    background: "#F9FAF9 page, #FFFFFF cards"
+    text: "#282823 / #6C6C66"
+    borders: "#E4E4E1"
+  dark: # event pages, testimonial and CTA sections
+    background: "#282823 sections; #131415 full-page (events)"
+    text: "#FFFFFF headlines, #BCBAB3 body"
+    accents: "primary #0F766E buttons keep white labels; form fields are slightly lighter dark panels with subtle borders"
+    texture: fine dot-grid pattern over hero areas at low opacity
+
+layout_and_graphic_devices:
+  blueprint_grid: |
+    Signature page device — content sits inside a visible column grid with
+    1px #E4E4E1 vertical hairlines running full section height. The layout
+    looks drafted, like an engineering drawing.
+  hatching: |
+    45° diagonal thin-line hatching fills empty grid cells and bar-chart
+    bars. Monochrome ink lines on white/cream — reads as "technical drawing
+    shading", never a solid color fill.
+  dot_grid: "fine dotted/stipple texture behind schematic images and dark hero sections, low contrast"
+  numbered_sections: "features and steps carry mono-font index labels — \"01\", \"02\", \"03\", optionally suffixed (\"05 · Now in beta\")"
+  connector_arrows: "thin vertical arrows (↓) link stacked cards to show cause → effect; flows read top-to-bottom"
+  cards: "white, 1px #E4E4E1 border, 8-12px corner radius, no or barely-visible shadow; macOS window chrome (traffic-light dots, title bar) on product mockups"
+  status_pills: "fully rounded, tinted background + 1px border in the same hue, optional ✓/✕ glyph (\"✓ Rotation published\", \"✕ Failed\")"
+  buttons:
+    primary: "filled #0F766E, white Inter Bold label, ~6-8px radius (rounded rectangle, never a full pill)"
+    secondary: 1px outline (ink on light, white on dark), transparent fill
+    tertiary: "text link in blue #0099FF or primary, often with trailing \"→\""
+  spacing: generous — sections breathe; whitespace is a feature, not a gap to fill
+
+imagery:
+  overview: |
+    {{COMPANY}} does not use photography of offices, laptops, or smiling stock
+    people. Every image is either (a) a schematic explaining how the product
+    works, (b) a technical line drawing, or (c) a halftone-treated portrait
+    of a real person. The aesthetic is "engineering documentation, warmly
+    executed."
+  styles:
+    schematic_flow_diagrams:
+      description: |
+        The current flagship style (new homepage images). Simplified product-UI
+        cards stacked vertically and linked by thin down-arrows, narrating a
+        workflow: trigger event → system action → resolved outcome.
+      rules:
+        - "white cards, 1px #E4E4E1 borders, ~10px radius, flat (no shadow)"
+        - "header rows may carry a soft pastel tint keyed to status (light green = success, light red = failure, light blue = neutral event)"
+        - "text inside is Inter; product-UI primary #13857C for feature names/links; ink for data; #5C6670 for secondary"
+        - status pills mark every state change
+        - "real-looking but fictional data (responder names, service names, timestamps, incident ids) — always plausible, never lorem ipsum"
+        - exported as SVG where possible for crispness
+    line_art_diagrams:
+      description: |
+        Patent-drawing-style figures for abstract concepts: thin 1px ink
+        strokes, dotted construction lines, small filled dots as nodes,
+        isometric stacked layers, orbital ellipses. Strictly monochrome.
+      rules:
+        - one-color ink on transparent/white; no fills except small node dots
+        - geometry over metaphor — orbits, trees, layers, flows
+    halftone_portraits:
+      description: |
+        All people (customers, speakers, founders) get a black-and-white
+        halftone/dither treatment — newspaper-print stippling, background
+        removed or white. Used beside testimonials and on event pages.
+      rules:
+        - never full-color headshots in marketing surfaces
+        - small avatars may be circular crops of the same treatment
+    terminal_mockups:
+      description: "macOS terminal windows showing real {{company_slug}} CLI commands (mono font, \"❯\" prompt, muted output, green highlight row for success)"
+    comparison_charts:
+      description: "editorial bar charts on cream (#FFFBF5) — hatched bar fills, large Inter SemiBold numerals, orange segments only for the competitor/unfavorable side, minimal square-swatch legend"
+  prohibited:
+    - stock photography or lifestyle imagery
+    - 3D renders, glassmorphism, blurred-gradient "SaaS hero" backgrounds
+    - gradients of any kind
+    - full-color photographic headshots inline with content
+    - drop shadows heavier than a whisper
+    - illustration mascots or cartoon characters
+    - emoji as design elements
+
+application_recipes:
+  slide_deck: |
+    Off-white #F9FAF9 slides, ink text, Inter SemiBold titles (sentence
+    case, period), one primary-emphasis phrase max per title. Hairline rules
+    to divide regions. Numbered mono labels for agenda/steps. Dark #282823
+    closing slide with white headline + primary CTA button styling.
+  social_graphic: |
+    Two sanctioned looks: (1) light — off-white field, blueprint hairlines,
+    big two-tone Inter headline, optional schematic card; (2) dark —
+    #131415/#282823 field with dot-grid texture, white headline, mono date
+    eyebrow (event style). Logo small, single placement.
+  one_pager_pdf: |
+    White page, blueprint column grid, mono section numbers, schematic or
+    line-art figure per section, status pills for checklists. Footer: logo
+    lockup + primary accent rule.
+  email: |
+    System-safe: Inter (or Arial fallback), ink text on white, one primary
+    button (#0F766E, white label, 6-8px radius), hairline dividers. No
+    background textures — keep textures for web/PDF where rendering is reliable.
+  diagrams_generated_by_agents: |
+    When producing Mermaid/SVG/HTML diagrams: ink strokes on white, #E4E4E1
+    boxes borders, primary #0F766E for the focal node only, Fragment Mono or
+    IBM Plex Mono for labels, top-to-bottom flow with thin arrows. Status
+    coloring follows `color.functional`.
+
+compliance_checklist: # run before shipping any visual asset
+  - Headlines in Inter SemiBold (or the system sans-serif fallback), sentence case, period on declaratives
+  - At most one emphasis color inside any headline (gray or primary variant)
+  - "Primary is #0F766E and appears as accent, not flood"
+  - "Neutrals come from the warm-gray ink ramp, not pure #000/#888 grays"
+  - "Borders/dividers are 1px #E4E4E1"
+  - No gradients, no stock photos, no 3D, no heavy shadows
+  - People shown only as halftone B&W treatments
+  - Diagrams read top-to-bottom with thin connector arrows and status pills
+  - Mono font used for eyebrows, numbering, code, and data labels
+  - "Dark surfaces use #282823/#131415 with white + #BCBAB3 text"

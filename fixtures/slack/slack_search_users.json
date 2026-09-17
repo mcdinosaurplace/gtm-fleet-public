@@ -1,0 +1,14 @@
+{
+  "total": 4,
+  "_demo_note": "The four stand-up cadence members from state/identity/scribe-pm-cadence.yaml. A DM uses the user id as channel_id.",
+  "members": [
+    {"id": "U0DEMO0001", "name": "scott", "real_name": "Scott McKeighen", "tz": "America/Los_Angeles",
+     "profile": {"title": "RevOps / marketing operations", "email": "scott@orrery.example"}, "is_bot": false},
+    {"id": "U0DEMO0002", "name": "maya", "real_name": "Maya Lindqvist", "tz": "America/Los_Angeles",
+     "profile": {"title": "Head of Marketing", "email": "maya@orrery.example"}, "is_bot": false},
+    {"id": "U0DEMO0003", "name": "priya", "real_name": "Priya Natarajan", "tz": "America/Chicago",
+     "profile": {"title": "Content Lead", "email": "priya@orrery.example"}, "is_bot": false},
+    {"id": "U0DEMO0004", "name": "tomas", "real_name": "Tomas Reyes", "tz": "Europe/Madrid",
+     "profile": {"title": "Design Lead", "email": "tomas@orrery.example"}, "is_bot": false}
+  ]
+}

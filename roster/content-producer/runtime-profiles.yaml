@@ -1,0 +1,54 @@
+version: 1
+owner: marketing-fleet
+purpose: >
+  Describe how content-producer behaves on each supported AI platform. This file selects
+  operating defaults; it does not set a model in a client, API, or scheduler.
+
+platforms:
+  claude:
+    status: active
+    entrypoint: "/content-producer"
+    default_mode: daily
+    model:
+      display_name: "Fable 5"
+      model_id: null
+      source: "Operator-specified policy"
+      reasoning_effort: high
+      escalation: "Use the platform's strongest available model for factual-risk or multi-source editorial review."
+    capabilities:
+      primary: "Queue-driven content operations"
+      creative_assets: "Write a visual brief; use the designated design workflow for final assets."
+    modes:
+      daily: "Process gate outcomes, briefs, drafts, and packages in pipeline order."
+      brief: "Run the existing evidence-backed brief builder only."
+      production: "Run the creation pod after an approved brief is available."
+      publish: "Assemble a human-published Framer package only after a documented Pass."
+      derivatives: "Draft approved-post derivatives; humans post them."
+
+  codex:
+    status: pilot
+    entrypoint: "$content-producer-creative-production"
+    default_mode: production
+    model:
+      display_name: "GPT-5.6 Terra"
+      model_id: "gpt-5.6-terra"
+      reasoning_effort: high
+      rationale: "Default for evidence-backed content production where quality and run cost both matter."
+      escalation:
+        model_id: "gpt-5.6-sol"
+        use_for: "High-stakes factual review, difficult source reconciliation, or a second-pass editorial adjudication."
+    capabilities:
+      primary: "Evidence-backed content production with local artifact inspection."
+      creative_assets: "Generate or edit an image only when the approved brief calls for a visual asset; otherwise emit a visual brief."
+    modes:
+      production: "Turn an approved brief into a review-ready draft package; default in the pilot."
+      brief: "Build or revise the evidence-backed brief without drafting prose."
+      visual: "Create the specified featured or derivative visual after its text brief is approved."
+      publish: "Assemble a human-published package only after a documented Pass."
+      derivatives: "Draft channel derivatives only after human publication confirmation."
+
+selection_rules:
+  - "Use the profile for the current platform unless the operator names a different platform."
+  - "An explicit model or mode request overrides the profile default for that run."
+  - "Keep the content contract, approval gates, and no-external-publish rule identical across platforms."
+  - "Record the platform and effective mode in every content-producer packet and journal entry."

@@ -1,0 +1,494 @@
+buyer_persona_context_profile:
+  overview: >
+    Primary buyer personas for {{COMPANY}}, focusing on persona-level information for GTM, content, and product
+    alignment.
+
+  personas:
+    aaron_platform_engineer:
+      name: "Aaron the Platform Engineer"
+      core_identity:
+        titles:
+          - "Staff Platform Engineer"
+          - "Site Reliability Engineer"
+          - "SRE Lead"
+          - "Infrastructure Engineer"
+          - "Platform Team Lead"
+          - "Developer Experience Lead"
+          - "Head of Platform"
+          - "Production Engineering Lead"
+        company_stage: "Series B → growth (mid-market B2B SaaS)"
+        team_size_range: "50–500 engineers"
+        location: "Mostly US-based; the engineering org spans two or three time zones"
+        buyer_type: "Technical champion — runs the trial, writes the internal recommendation"
+        org_structure: "Platform or infrastructure team inside a larger engineering org"
+      decision_dynamics:
+        primary_decision_makers:
+          - "Staff Platform Engineer"
+          - "SRE Lead"
+          - "Head of Platform"
+          - "Head of Infrastructure"
+          - "Director of Platform Engineering"
+          - "Head of Reliability"
+        influencers:
+          - "VP Engineering (holds the budget)"
+          - "Engineering Managers whose teams carry the rotation"
+          - "The on-call engineers who will live with the routing"
+          - "Head of Security / CISO (access model review)"
+          - "Support lead (shares the incident process)"
+          - "Finance leader (annual contract)"
+      mindset_motivations:
+        mindset: "Systems-first and allergic to click-ops; believes on-call is infrastructure and infrastructure belongs in version control."
+        goals:
+          - "Build one ownership map — service to team to responder — that Engineering, Support, and Security all trust"
+          - "Define rotations, escalation policies, and routing rules as code, reviewed in a pull request"
+          - "Cut the page volume his team receives by half without losing a real incident"
+          - "Stop being the human router who forwards pages at 3 a.m."
+          - "Wire incident response into chat, the issue tracker, and the deploy pipeline"
+        values:
+          - "Open API and Terraform provider on every tier"
+          - "Reads and writes, not read-only"
+          - "Audit trail, dry-run mode, scoped tokens"
+          - "Docs that match the product"
+          - "No partner program, no enterprise gate, no waitlist"
+      pain_points:
+        - "Rotations and escalation policies live in a web UI nobody reviews; the setup drifts from the service catalog within a quarter"
+        - "Far more pages than incidents — the ratio is why two engineers left last year"
+        - "Acknowledging, reassigning, or suppressing a page still requires a login at the worst moment"
+        - "Shadow tooling: a cron job, a chat bot, and a spreadsheet rotation filling product gaps"
+        - "Has to justify 'another reliability tool' in hours reclaimed and attrition avoided"
+      discovery_evaluation:
+        channels:
+          - "Hacker News incident-tooling threads"
+          - "r/sre and r/devops"
+          - "SRE, CNCF, and platform-engineering Slacks and Discords"
+          - "GitHub and Lobsters"
+          - "Provider changelogs and engineering blogs"
+          - "LinkedIn (#SRE, #PlatformEngineering, #DevEx)"
+        content_types:
+          - "Provider docs and a real `.tf` file"
+          - "API examples and CLI snippets"
+          - "Public postmortems and alert-hygiene checklists"
+          - "Benchmark reports with method shown"
+        podcasts:
+          - "The Changelog"
+          - "Ship It!"
+          - "Software Engineering Daily"
+          - "Google SRE Prodcast"
+        events:
+          - "SREcon"
+          - "KubeCon platform track"
+          - "DevOpsDays"
+          - "QCon"
+          - "Incident-response and reliability webinars"
+      decision_style:
+        characteristics:
+          - "Reads the docs before he talks to anyone in sales"
+          - "Evaluates by piping one real service through in an afternoon"
+          - "Runs a shadow rotation alongside the incumbent before switching"
+          - "Distrusts feature checklists; trusts a reproducible example"
+          - "A gated or read-only API is a veto, not an objection"
+      customer_examples:
+        - "Devin Osei"
+        - "Petra Lindholm"
+        - "Naveen Iyer"
+        - "Bridget Halloran"
+        - "Ilya Berkovich"
+    erin_technical_founder:
+      name: "Erin the Technical Founder"
+      core_identity:
+        titles:
+          - "Founder"
+          - "Co-founder"
+          - "CTO"
+          - "Technical Co-founder"
+          - "Founding Engineer"
+          - "CEO (technical)"
+          - "Head of Engineering"
+        company_stage: "Pre-seed → Series A"
+        team_size_range: "5–40 engineers"
+        location: "US-based, with a distributed engineering team"
+        buyer_type: "Sole decision-maker & budget owner"
+        org_structure: "Founder-led; no platform or SRE hire for at least six months"
+      decision_dynamics:
+        primary_decision_makers:
+          - "Founder"
+          - "Co-founder"
+          - "CTO"
+          - "Technical Co-founder"
+          - "Founding Engineer"
+          - "CEO"
+        influencers:
+          - "The first two or three engineers who share the rotation"
+          - "An advisor who has already scaled an on-call org"
+          - "Angel/VC and other founders"
+          - "The first enterprise prospect's security questionnaire"
+          - "Whoever got woken up last week"
+      mindset_motivations:
+        mindset: "Scrappy, product-first, impatient with operational overhead; zero interest in becoming a part-time SRE."
+        goals:
+          - "Ship product — everything else is overhead"
+          - "Get off the 'everything routes to me' pattern before the next hire quits over it"
+          - "Have one place where an alert becomes an incident with an owner"
+          - "Answer a customer's 'what happened?' with a real timeline"
+          - "Stand it up in an afternoon: sign up, connect monitoring, route one real service"
+        values:
+          - "Transparent pricing and a usable free tier"
+          - "Simplicity"
+          - "Automation"
+          - "Fast setup"
+          - "Real human support"
+      pain_points:
+        - "Her phone is the escalation policy"
+        - "Fragmented signals: uptime checks, application errors, and customer email with nothing correlating them"
+        - "No one to delegate to — no platform or SRE hire for 6+ months"
+        - "Can't answer 'what's our actual MTTR?' — the data lives in four places and agrees in none"
+        - "A security questionnaire just asked about her incident-response process and the honest answer is 'me'"
+        - "Allergic to long sales cycles and heavyweight implementations"
+      discovery_evaluation:
+        channels:
+          - "Hacker News"
+          - "X/Twitter (founder and infrastructure accounts)"
+          - "Lobsters and GitHub trending"
+          - "Founder communities (Slack/Discord)"
+          - "Indie Hackers"
+          - "Product Hunt"
+          - "TLDR and other developer newsletters"
+          - "VC/advisor recommendations"
+        content_types:
+          - "TL;DR explainers"
+          - "A quickstart that actually runs"
+          - "Loom-style walkthroughs"
+          - "Honest 'what's live now vs. what's coming' posts"
+        podcasts:
+          - "Lenny's Podcast"
+          - "Acquired"
+          - "Latent Space"
+          - "The Changelog"
+        events:
+          - "DevOpsDays"
+          - "Local platform-engineering and SRE meetups"
+          - "Startup Grind"
+          - "Founder and accelerator alumni meetups"
+          - "SREcon (occasionally, when someone else buys the ticket)"
+      decision_style:
+        characteristics:
+          - "Fast, instinctive, solo decisions"
+          - "Prefers free tier / no contract / cancel anytime"
+          - "Heavily influenced by referrals and social proof"
+          - "Price-sensitive but will pay for time reclaimed"
+          - "Either it works the first afternoon or she closes the tab"
+      customer_examples:
+        - "Marta Kowalczyk"
+        - "Yusuf Demirel"
+        - "Camille Arsenault"
+        - "Rafael Duquesne"
+        - "Wren Sandoval"
+    hannah_vp_engineering:
+      name: "Hannah the VP Engineering"
+      core_identity:
+        titles:
+          - "VP Engineering"
+          - "Vice President of Engineering"
+          - "Head of Engineering"
+          - "Director of Engineering"
+          - "Senior Director of Engineering"
+          - "Head of Platform"
+          - "Head of Infrastructure"
+          - "Head of Reliability"
+          - "Director of SRE"
+        company_stage: "Series B / C growth"
+        team_size_range: "150–400 employees (90–200 engineers)"
+        location: "US HQ; engineering across two or three time zones"
+        buyer_type: "Business buyer and end-user"
+        org_structure: "Eight to twelve teams; budget shared with Platform and Security"
+      decision_dynamics:
+        primary_decision_makers_evaluators:
+          - "VP / Head of Engineering"
+          - "Director of Platform Engineering"
+          - "Head of Reliability"
+          - "CTO (at the smaller end of the range)"
+          - "Finance leader (on annual contracts)"
+        influencers:
+          - "Aaron — the platform engineer who runs the trial"
+          - "Engineering Managers who own rotations"
+          - "Head of Security / CISO (access model, audit evidence)"
+          - "Support lead (shared incident process)"
+          - "Procurement and Legal (DPA, retention terms)"
+          - "Peers in other engineering orgs who have already switched"
+      mindset_motivations:
+        mindset: "Strategic but stretched thin; owns the uptime number on the board slide and the rota that is costing her engineers."
+        goals:
+          - "Cut MTTR to something she can state in a customer commitment without hedging"
+          - "Stop losing engineers to on-call burnout"
+          - "Run one incident process across every team"
+          - "Know which services page most and which teams carry the heaviest night load"
+          - "Make retros a habit that produces tracked, closed action items"
+          - "Answer security-questionnaire and SLA questions from a system of record"
+        values:
+          - "Evidence over enthusiasm"
+          - "Fairness data she can act on"
+          - "SSO/SCIM and a clean security file"
+          - "Peer references"
+          - "A migration that does not eat a quarter"
+          - "A renewal price she can forecast"
+      pain_points:
+        - "Incident overhead eats a surprising fraction of her senior engineers' week"
+        - "Three-system patchwork during an incident means the timeline is rebuilt by hand afterward"
+        - "On-call fairness is invisible until someone resigns"
+        - "Retros sprawl across four documents; action items aren't tracked to close"
+        - "Vendors offer 'AI that summarizes your incident' when she needs the page to reach the right owner"
+        - "Budget shared with Platform and Security raises the procurement bar"
+        - "Vendor fatigue — she has already lived through one migration and is wary of another mid-year"
+      discovery_evaluation:
+        channels:
+          - "Peer references and VP-level Discords"
+          - "Rands Leadership Slack"
+          - "LinkedIn (mostly as a reader)"
+          - "The Pragmatic Engineer and LeadDev"
+          - "Software Lead Weekly and SRE Weekly"
+          - "InfoQ and the DORA reports"
+          - "Review sites (G2, Capterra)"
+        content_types:
+          - "Benchmark and ROI briefs with the method shown"
+          - "Vendor-neutral comparisons"
+          - "Named case studies with real numbers"
+          - "Reference calls"
+          - "Security and trust documentation"
+        podcasts:
+          - "The Pragmatic Engineer Podcast"
+          - "LeadDev sessions"
+          - "Software Engineering Daily"
+        events:
+          - "LeadDev"
+          - "SREcon"
+          - "QCon"
+          - "KubeCon platform and leadership tracks"
+          - "DevOpsDays"
+      decision_style:
+        characteristics:
+          - "Cross-functional input (Platform, Security, Finance)"
+          - "Documentation required for procurement and security review"
+          - "Peer references weighted above vendor claims"
+          - "Trust and a defensible SLA prioritized"
+          - "Wary of a rebuild mid-year; migration effort is a real line in the evaluation"
+          - "Risk mitigation prioritized over feature sets"
+      customer_examples:
+        - "Liesl Brandt"
+        - "Magnus Halvorsen"
+        - "Rhea Chandrasekaran"
+        - "Gideon Okonkwo"
+        - "Tanvi Ranganathan"
+    anna_finance_leader:
+      name: "Anna the Finance Leader"
+      core_identity:
+        titles:
+          - "CFO"
+          - "VP Finance"
+          - "Head of Finance"
+          - "Director of Finance"
+          - "Controller"
+          - "Head of Accounting"
+          - "Finance Lead"
+        company_stage: "Series A → Series B and later"
+        team_size_range: "50–1,000 employees"
+        location: "US-based, co-located with the leadership team and the legal entity"
+        buyer_type: "Co-buyer and required signoff on annual contracts"
+        org_structure: "Reports to the CEO; a procurement or vendor-management function appears at Series B+"
+      decision_dynamics:
+        primary_decision_makers:
+          - "CFO"
+          - "VP Finance"
+          - "Head of Finance"
+          - "Controller"
+          - "The technical founder wearing the finance hat (under ~40 engineers)"
+        influencers:
+          - "Procurement / vendor management"
+          - "The VP Engineering requesting the spend"
+          - "A fractional CFO or the outside accounting firm"
+          - "The spend-management tool that already flagged three overlapping reliability vendors"
+          - "The board, on burn discipline"
+      mindset_motivations:
+        mindset: "Doesn't want to think about incident management — wants it to cost a predictable number and to replace something she is already paying for."
+        goals:
+          - "Get a per-responder cost she can forecast two years out as engineering headcount grows"
+          - "Consolidate the reliability line item — uptime checks, an incident tool, a status page, and a chat add-on overlap today"
+          - "Maintain audit-ready controls: SSO enforcement, access reviews, a clean vendor security file"
+          - "Defend the spend to the board with a story per line item"
+          - "Size the investment honestly rather than accept a vendor's fear math"
+        values:
+          - "A per-seat price that does not move at renewal"
+          - "A clear answer to 'what does this replace?'"
+          - "No surprise true-ups and no overage invoice from a bad week of alerts"
+          - "A trust center she can hand to her auditor"
+          - "A customer number she can sanity-check"
+      pain_points:
+        - "Seat-based pricing on a growing engineering org is her least favorite shape of contract"
+        - "The tools she is asked to approve overlap in ways nobody on the engineering side can cleanly explain"
+        - "Approval trails and access reviews live across email, chat, and three vendor consoles"
+        - "Board pressure on burn — she needs the 'what does this replace' answer fast"
+        - "Every vendor has pitched her on AI in the last eighteen months; she wants proof it reduces her cost line"
+        - "Risk-averse about switching a production-critical vendor during a fundraise or an audit window"
+      discovery_evaluation:
+        channels:
+          - "Operator-finance newsletters (*The Close*, *Runway Notes*, *Only the Ledger*)"
+          - "Controller's Table Slack and the Spend Council peer group"
+          - "Northbound Capital's 'State of Software Spend'"
+          - "Review sites and reference calls"
+          - "The pricing page, read closely"
+        content_types:
+          - "Pricing that models two years of seat growth"
+          - "A 'what this replaces' one-pager"
+          - "Trust center and SOC 2 summary"
+          - "Customer outcomes with numbers she can verify"
+        podcasts:
+          - "Only the Ledger"
+          - "Runway Notes"
+          - "Spend Council roundtable recordings"
+        events:
+          - "Growth-stage CFO roundtables"
+          - "Spend Council peer sessions"
+          - "Finance-leader tracks at operator conferences"
+      decision_style:
+        characteristics:
+          - "Models the contract two years out before she signs it"
+          - "Requires a documented 'what does this replace' answer"
+          - "Will not sign ahead of the security file"
+          - "Prefers annual terms with a cap on true-ups"
+          - "Rarely blocks a tool the engineering org has consensus on — but sets the shape of the deal"
+      customer_examples:
+        - "Ulrika Vestergaard"
+        - "Malik Farhat"
+        - "Clara Boudreau"
+        - "Sunil Varma"
+        - "Hedda Whitlock"
+    jake_it_secops_leader:
+      name: "Jake the IT & SecOps Leader"
+      core_identity:
+        titles:
+          - "CISO"
+          - "CIO"
+          - "Head of Security"
+          - "Head of IT"
+          - "Director of IT"
+          - "Director of Security Operations"
+          - "Head of Information Security"
+          - "Security Engineering Manager"
+          - "Head of Corporate Engineering"
+          - "GRC Lead"
+        company_stage: "Series B and later (lighter, shared forms earlier)"
+        team_size_range: "250–1,000 employees"
+        location: "US-based at HQ, or in the operating hub of a remote-first company"
+        buyer_type: "Influencer / blocker — does not sign, can stop"
+        org_structure: "Security and IT reporting into the CTO or COO, with GRC attached"
+      decision_dynamics:
+        primary_decision_makers:
+          - "CISO"
+          - "CIO"
+          - "Head of Security"
+          - "Head of IT"
+          - "Director of Security Operations"
+        influencers:
+          - "The external auditor"
+          - "The compliance-automation platform that generates his SOC 2 evidence"
+          - "Legal (retention limits, breach notification terms)"
+          - "The identity platform owner"
+          - "Aaron — who absorbs Jake's review entirely at companies under 50 people"
+      mindset_motivations:
+        mindset: "Makes sure new tools inherit the company's access model and produce evidence an auditor will accept — and says so in writing when they don't."
+        goals:
+          - "Put every tool behind SSO with SCIM provisioning, so an offboarding is one action instead of eleven"
+          - "Keep the audit trail intact: who had access, who changed the escalation policy, who acknowledged the page"
+          - "Run one incident process across Engineering, Support, and Security"
+          - "Manage vendor risk: SOC 2 Type II, data residency, subprocessor list, retention, breach notification"
+          - "Get audit logs into the SIEM without a person exporting a CSV"
+        values:
+          - "SSO/SAML on every paid tier"
+          - "SCIM provisioning and scoped API tokens"
+          - "An immutable audit log"
+          - "A public trust center and a written retention policy"
+          - "Documents, not marketing pages"
+      pain_points:
+        - "Tools that look great in a demo but put SSO behind the top tier and SCIM behind a sales call"
+        - "Notification platforms that phone, text, and push to personal devices with no policy controls and no retention story"
+        - "Vendors that can't produce a SOC 2 report in under a week stall procurement past the quarter"
+        - "Audit data trapped in a vendor console"
+        - "Engineering wants speed, Support wants a shared process, Legal wants retention limits — tools that solve one and ignore the rest fail his review"
+        - "Security questions answered with a marketing page instead of a document"
+      discovery_evaluation:
+        channels:
+          - "Practitioner security newsletters (*Lockbox Weekly*, *Blastradius*)"
+          - "The national cyber agency's advisory feed"
+          - "IT-leadership and detection-engineering Slacks and Discords"
+          - "GRC Commons"
+          - "Vendor postmortems whenever a peer company has an incident"
+        content_types:
+          - "SOC 2 Type II report under NDA"
+          - "Public trust center"
+          - "Written retention and subprocessor policy"
+          - "SSO/SCIM and audit-log documentation"
+          - "API token scoping reference"
+        podcasts:
+          - "Blastradius"
+          - "Lockbox Weekly"
+          - "GRC Commons community calls"
+        events:
+          - "BSides regional events"
+          - "KubeCon security day"
+          - "Vendor-neutral GRC and audit roundtables"
+          - "SREcon, when the incident process is on the agenda"
+      decision_style:
+        characteristics:
+          - "Reviews in writing; the review is a veto, not a purchase decision"
+          - "A missing SSO tier or an unanswered questionnaire is a hard stop"
+          - "Wants evidence he can file, not assurances"
+          - "Converts from blocker to advocate once the security file is clean"
+          - "Kills the deal quietly when it isn't"
+      customer_examples:
+        - "Piotr Nowakowski"
+        - "Imogen Ashworth"
+        - "Thabo Molefe"
+        - "Saoirse Gallagher"
+        - "Dilan Karaca"
+
+  side_by_side_comparison:
+    attributes:
+      titles:
+        aaron: "Staff Platform Engineer, SRE Lead, Head of Platform"
+        erin: "Founder, CTO, Founding Engineer"
+        hannah: "VP Engineering, Head of Engineering, Director of SRE"
+      stage:
+        aaron: "Series B → growth"
+        erin: "Pre-seed → Series A"
+        hannah: "Series B → C"
+      team_size:
+        aaron: "50–500 engineers"
+        erin: "5–40 engineers"
+        hannah: "90–200 engineers"
+      buyer_role:
+        aaron: "Technical champion"
+        erin: "Sole decision-maker"
+        hannah: "Business buyer"
+      main_goal:
+        aaron: "Ownership and routing declared as code"
+        erin: "Stop being the escalation policy"
+        hannah: "Shorter incidents, a fairer rotation, engineers who stay"
+      knowledge_level:
+        aaron: "Deep — will read the provider docs and check your claims"
+        erin: "Practical — knows the failure modes, not the category vocabulary"
+        hannah: "Fluent in the outcomes, not in the configuration"
+      pain_aversion:
+        aaron: "Hates click-ops and gated APIs"
+        erin: "Hates operational overhead"
+        hannah: "Hates another migration and another dashboard"
+      trusted_channels:
+        aaron: "Hacker News, SRE Slacks, GitHub, provider changelogs"
+        erin: "Founder communities, X/Twitter, developer newsletters"
+        hannah: "Peer references, LeadDev, The Pragmatic Engineer, DORA"
+      preferred_content:
+        aaron: "A real `.tf` file, API examples, public postmortems"
+        erin: "TL;DR explainers, a quickstart that runs"
+        hannah: "Benchmarks with method shown, case studies, reference calls"
+      triggers:
+        aaron: "Open API on every tier; no enterprise gate"
+        erin: "Working in an afternoon; free tier; no contract"
+        hannah: "Proof, references, and a migration that doesn't eat a quarter"

@@ -1,0 +1,61 @@
+{
+  "total": 4,
+  "statusUpdates": [
+    {
+      "id": "00000000-0000-4000-8000-000000000901",
+      "type": "project",
+      "project": {
+        "name": "Brand refresh",
+        "url": "https://linear.app/orrery/project/brand-refresh-5/overview"
+      },
+      "health": "offTrack",
+      "createdAt": "{{T-3d}}T16:30:00Z",
+      "user": {
+        "name": "Maya Lindqvist"
+      },
+      "body": "Blocked on legal review of the new tagline. Target date has moved once; the next slip needs an RCA."
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000902",
+      "type": "project",
+      "project": {
+        "name": "Lead scoring model 2.0",
+        "url": "https://linear.app/orrery/project/lead-scoring-model-2.0-3/overview"
+      },
+      "health": "atRisk",
+      "createdAt": "{{T-2d}}T15:05:00Z",
+      "user": {
+        "name": "Tomas Reyes"
+      },
+      "body": "Decay rules still undocumented. Enrichment coverage recovered, so the input side is unblocked."
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000903",
+      "type": "project",
+      "project": {
+        "name": "SEO content sprint",
+        "url": "https://linear.app/orrery/project/seo-content-sprint-8/overview"
+      },
+      "health": "atRisk",
+      "createdAt": "{{T-2d}}T11:47:00Z",
+      "user": {
+        "name": "Scott McKeighen"
+      },
+      "body": "Keyword brief is waiting on the content lead. Two of five posts are drafted."
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000904",
+      "type": "project",
+      "project": {
+        "name": "Website repositioning",
+        "url": "https://linear.app/orrery/project/website-repositioning-1/overview"
+      },
+      "health": "onTrack",
+      "createdAt": "{{T-1d}}T16:12:00Z",
+      "user": {
+        "name": "Maya Lindqvist"
+      },
+      "body": "Pillar page rewrite in progress, pricing proof points next. No risks."
+    }
+  ]
+}

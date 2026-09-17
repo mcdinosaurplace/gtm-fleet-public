@@ -1,0 +1,42 @@
+{
+  "id": "00000000-0000-4000-8000-0000000007042",
+  "identifier": "MAR-7042",
+  "title": "Fix the SAL to SQL stage mapping in the lifecycle workflow",
+  "url": "https://linear.app/orrery/issue/MAR-7042",
+  "state": {
+    "name": "In Progress",
+    "type": "started"
+  },
+  "priority": 1,
+  "priorityLabel": "Urgent",
+  "assignee": {
+    "id": "00000000-0000-4000-8000-000000000504",
+    "name": "Scott McKeighen",
+    "displayName": "scott"
+  },
+  "team": {
+    "id": "00000000-0000-4000-8000-000000000401",
+    "key": "MAR",
+    "name": "Marketing"
+  },
+  "project": {
+    "id": "00000000-0000-4000-8000-000000000603",
+    "name": "Lead scoring model 2.0",
+    "url": "https://linear.app/orrery/project/lead-scoring-model-2.0-3/overview"
+  },
+  "dueDate": "{{T+2d}}",
+  "createdAt": "{{T-16d}}T16:04:00Z",
+  "updatedAt": "{{T-4d}}T12:20:00Z",
+  "labels": [],
+  "description": "The lifecycle workflow stamps `sal_date__latest_` before Sales has accepted the lead, so a slice of MQLs is being counted as SAL a day early. Suspected cause of the SAL to SQL conversion dip revops-watchdog has flagged three days running.\n\n- [ ] Re-read the enrollment trigger\n- [ ] Compare stamped dates against the accept event\n- [ ] Backfill or restate if the mapping is wrong",
+  "comments": {
+    "total": 2
+  },
+  "relations": [
+    {
+      "type": "related",
+      "identifier": "MAR-7046",
+      "url": "https://linear.app/orrery/issue/MAR-7046"
+    }
+  ]
+}

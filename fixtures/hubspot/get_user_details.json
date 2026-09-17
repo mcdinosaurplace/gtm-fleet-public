@@ -1,0 +1,27 @@
+{
+  "user": {
+    "user_id": "70100001",
+    "email": "scott@orrery.example",
+    "first_name": "Scott",
+    "last_name": "McKeighen",
+    "role": "RevOps Admin"
+  },
+  "portal": {
+    "portal_id": "12345678",
+    "account_name": "Orrery Systems, Inc.",
+    "account_type": "STANDARD",
+    "time_zone": "America/Los_Angeles",
+    "currency": "USD",
+    "ui_domain": "app.hubspot.example"
+  },
+  "scopes": [
+    "crm.objects.contacts.read",
+    "crm.objects.companies.read",
+    "crm.objects.deals.read",
+    "crm.schemas.contacts.read",
+    "crm.schemas.deals.read",
+    "automation.read"
+  ],
+  "object_types": ["contacts", "companies", "deals", "tickets", "line_items"],
+  "_demo_note": "DEMO_MODE credentials do not exist; this is the fixture the ~~crm preflight probe reads to confirm the connector is bound."
+}

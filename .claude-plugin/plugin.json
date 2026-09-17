@@ -1,0 +1,27 @@
+{
+  "name": "gtm-fleet",
+  "version": "0.1.0",
+  "description": "A portable GTM / marketing-operations agent fleet: seven stateful agents (chief-of-staff, revops-watchdog, performance-marketer, Scribe, content-researcher, content-producer, brand-designer) with a shared Librarian Protocol, plus capability layers and 17 one-shot marketing skills. Tokenized for any company; ships with the Orrery demo profile.",
+  "author": {
+    "name": "Scott McKeighen"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "marketing",
+    "revops",
+    "gtm",
+    "agents",
+    "hubspot",
+    "slack",
+    "linear",
+    "notion"
+  ],
+  "mcpServers": {
+    "luma": {
+      "command": "${CLAUDE_PLUGIN_ROOT}/scripts/pyexec.sh",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/scripts/luma_mcp.py"
+      ]
+    }
+  }
+}

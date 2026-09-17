@@ -1,0 +1,55 @@
+{
+  "total": 3,
+  "query": "Marketing Update",
+  "data_source_url": "collection://00000000-0000-4000-8000-000000000101",
+  "_demo_note": "The Updates database. The newest page (id ...0210, dated last Friday) is the one wbr-prep copies forward; the two older pages are there so 'most recent' is a real choice.",
+  "results": [
+    {
+      "id": "00000000000000000000000000000210",
+      "object": "page",
+      "title": "Marketing Update - {{T-2d}}",
+      "url": "https://www.notion.example/00000000000000000000000000000210",
+      "parent": {"type": "database_id", "database_id": "00000000-0000-4000-8000-000000000101"},
+      "properties": {
+        "Name": "Marketing Update - {{T-2d}}",
+        "Status": "On track",
+        "Department": "https://www.notion.example/00000000000000000000000000000201",
+        "Review in": "https://www.notion.example/00000000000000000000000000000202",
+        "date:Date:start": "{{T-2d}}",
+        "From": "Maya Lindqvist"
+      },
+      "last_edited_time": "{{T-2d}}T23:41:00Z",
+      "created_time": "{{T-7d}}T17:04:00Z"
+    },
+    {
+      "id": "00000000000000000000000000000209",
+      "object": "page",
+      "title": "Marketing Update - {{T-9d}}",
+      "url": "https://www.notion.example/00000000000000000000000000000209",
+      "parent": {"type": "database_id", "database_id": "00000000-0000-4000-8000-000000000101"},
+      "properties": {
+        "Name": "Marketing Update - {{T-9d}}",
+        "Status": "On track",
+        "date:Date:start": "{{T-9d}}",
+        "From": "Maya Lindqvist"
+      },
+      "last_edited_time": "{{T-9d}}T22:18:00Z",
+      "created_time": "{{T-14d}}T17:02:00Z"
+    },
+    {
+      "id": "00000000000000000000000000000208",
+      "object": "page",
+      "title": "Marketing Update - {{T-16d}}",
+      "url": "https://www.notion.example/00000000000000000000000000000208",
+      "parent": {"type": "database_id", "database_id": "00000000-0000-4000-8000-000000000101"},
+      "properties": {
+        "Name": "Marketing Update - {{T-16d}}",
+        "Status": "Complete",
+        "date:Date:start": "{{T-16d}}",
+        "From": "Maya Lindqvist"
+      },
+      "last_edited_time": "{{T-16d}}T21:55:00Z",
+      "created_time": "{{T-21d}}T17:01:00Z"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Schematic flow: the Learning Loops timeline for incident INC-2291 is assembled into a blameless postmortem draft, reviewed by the service owner, and exported as a page to the knowledge base with action items pushed to the issue tracker." font-family="Inter, -apple-system, sans-serif">
+  <defs>
+    <pattern id="pm-dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.9" fill="#E4E4E1"/>
+    </pattern>
+    <marker id="pm-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0.5,1 L8.5,5 L0.5,9" fill="none" stroke="#A8A69E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="800" fill="#F9FAF9"/>
+  <rect width="1200" height="800" fill="url(#pm-dots)"/>
+
+  <!-- header -->
+  <text x="48" y="38" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#6C6C66">{{COMPANY}} · SCHEMATIC FLOW · 03</text>
+  <text x="48" y="70" font-size="26" font-weight="600" letter-spacing="-0.7" fill="#282823">The incident writes <tspan fill="#0F766E">its own first draft.</tspan></text>
+  <text x="48" y="94" font-size="14" fill="#6C6C66">Learning Loops turns the recorded response into a blameless postmortem, then exports it where the team already reads.</text>
+  <line x1="48" y1="112" x2="1152" y2="112" stroke="#E4E4E1"/>
+
+  <!-- 01 learning loops timeline -->
+  <text x="208" y="161" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#A8A69E" text-anchor="end">01</text>
+  <rect x="240" y="136" width="640" height="216" rx="10" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <path d="M240,174 L240,146 A10,10 0 0 1 250,136 L870,136 A10,10 0 0 1 880,146 L880,174 Z" fill="#D5EFEB"/>
+  <line x1="240" y1="174" x2="880" y2="174" stroke="#E4E4E1"/>
+  <text x="258" y="161" font-size="13" font-weight="600" fill="#13857C">Learning Loops — INC-2291</text>
+  <text x="862" y="161" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#5C6670" text-anchor="end">nobody retyped this</text>
+
+  <line x1="330" y1="196" x2="330" y2="292" stroke="#E4E4E1"/>
+  <circle cx="330" cy="196" r="3.5" fill="#FFFFFF" stroke="#13857C" stroke-width="1.5"/>
+  <circle cx="330" cy="220" r="3.5" fill="#FFFFFF" stroke="#13857C" stroke-width="1.5"/>
+  <circle cx="330" cy="244" r="3.5" fill="#FFFFFF" stroke="#13857C" stroke-width="1.5"/>
+  <circle cx="330" cy="268" r="3.5" fill="#FFFFFF" stroke="#13857C" stroke-width="1.5"/>
+  <circle cx="330" cy="292" r="3.5" fill="#13857C"/>
+  <text x="258" y="200" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#5C6670">14:02:06</text>
+  <text x="350" y="200" font-size="13" fill="#282823">48 signals grouped into one incident on checkout-api</text>
+  <text x="258" y="224" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#5C6670">14:02:53</text>
+  <text x="350" y="224" font-size="13" fill="#282823">payments-primary paged — acknowledged by Soren V. in 47s</text>
+  <text x="258" y="248" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#5C6670">14:07:40</text>
+  <text x="350" y="248" font-size="13" fill="#282823">Response Room opened — 4 responders and 1 incident commander</text>
+  <text x="258" y="272" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#5C6670">14:19:02</text>
+  <text x="350" y="272" font-size="13" fill="#282823">mitigation applied — checkout-api rolled back to build 412</text>
+  <text x="258" y="296" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#5C6670">14:26:18</text>
+  <text x="350" y="296" font-size="13" fill="#282823">resolved — error-budget burn stopped, the room archived itself</text>
+  <rect x="258" y="309" width="84" height="22" rx="11" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <text x="300" y="324" font-size="12" font-weight="600" fill="#6C6C66" text-anchor="middle">MTTA 47s</text>
+  <rect x="352" y="309" width="112" height="22" rx="11" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <text x="408" y="324" font-size="12" font-weight="600" fill="#6C6C66" text-anchor="middle">MTTR 24m 12s</text>
+  <rect x="474" y="309" width="162" height="22" rx="11" fill="#F2FFE6" stroke="#2D8A36"/>
+  <text x="555" y="324" font-size="12" font-weight="600" fill="#2D8A36" text-anchor="middle">✓ Timeline complete</text>
+  <text x="910" y="153" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66">Every state change was<tspan x="910" dy="16">already a record. The</tspan><tspan x="910" dy="16">timeline is a read, not</tspan><tspan x="910" dy="16">a write-up.</tspan></text>
+
+  <line x1="560" y1="354" x2="560" y2="382" stroke="#A8A69E" stroke-width="1.25" marker-end="url(#pm-arrow)"/>
+  <text x="574" y="372" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66">assemble draft</text>
+
+  <!-- 02 draft assembled -->
+  <text x="208" y="405" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#A8A69E" text-anchor="end">02</text>
+  <rect x="240" y="380" width="640" height="160" rx="10" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <path d="M240,418 L240,390 A10,10 0 0 1 250,380 L870,380 A10,10 0 0 1 880,390 L880,418 Z" fill="#E5F6FF"/>
+  <line x1="240" y1="418" x2="880" y2="418" stroke="#E4E4E1"/>
+  <text x="258" y="405" font-size="13" font-weight="600" fill="#282823">Postmortem draft assembled</text>
+  <text x="862" y="405" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#5C6670" text-anchor="end">PM-2291 · draft</text>
+  <text x="258" y="444" font-size="13" fill="#282823">✓ Summary and customer impact</text>
+  <text x="570" y="444" font-size="13" fill="#282823">✓ Timeline, lifted from the room</text>
+  <text x="258" y="468" font-size="13" fill="#282823">✓ Contributing factors, ranked</text>
+  <text x="570" y="468" font-size="13" fill="#282823">✓ 3 action items with owners</text>
+  <text x="258" y="496" font-size="12" fill="#5C6670">Blameless by default — the draft names services and decisions, never a person as a cause.</text>
+  <rect x="258" y="509" width="224" height="22" rx="11" fill="#FFF8DF" stroke="#AB8700"/>
+  <text x="370" y="524" font-size="12" font-weight="600" fill="#AB8700" text-anchor="middle">Owner review before export</text>
+  <text x="910" y="397" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66">Assembled, not invented.<tspan x="910" dy="16">Every line traces back to</tspan><tspan x="910" dy="16">an event on the timeline.</tspan></text>
+
+  <line x1="560" y1="542" x2="560" y2="570" stroke="#A8A69E" stroke-width="1.25" marker-end="url(#pm-arrow)"/>
+  <text x="574" y="560" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66">owner approves → export</text>
+
+  <!-- 03 exported -->
+  <text x="208" y="593" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#A8A69E" text-anchor="end">03</text>
+  <rect x="240" y="568" width="640" height="112" rx="10" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <path d="M240,606 L240,578 A10,10 0 0 1 250,568 L870,568 A10,10 0 0 1 880,578 L880,606 Z" fill="#F2FFE6"/>
+  <line x1="240" y1="606" x2="880" y2="606" stroke="#E4E4E1"/>
+  <text x="258" y="593" font-size="13" font-weight="600" fill="#282823">Exported to ~~knowledge base (Notion)</text>
+  <text x="862" y="593" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#5C6670" text-anchor="end">PM-2291</text>
+  <text x="258" y="632" font-size="13" fill="#282823">Linked from the incident, the checkout-api service page, and the next rotation handoff</text>
+  <rect x="258" y="645" width="128" height="22" rx="11" fill="#F2FFE6" stroke="#2D8A36"/>
+  <text x="322" y="660" font-size="12" font-weight="600" fill="#2D8A36" text-anchor="middle">✓ Page created</text>
+  <rect x="396" y="645" width="250" height="22" rx="11" fill="#F2FFE6" stroke="#2D8A36"/>
+  <text x="521" y="660" font-size="12" font-weight="600" fill="#2D8A36" text-anchor="middle">✓ Action items → ~~issue tracker</text>
+  <text x="910" y="585" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66">A person approves the<tspan x="910" dy="16">export. The system drafts;</tspan><tspan x="910" dy="16">the owner publishes.</tspan></text>
+
+  <line x1="48" y1="706" x2="1152" y2="706" stroke="#E4E4E1"/>
+  <text x="48" y="734" font-size="13" fill="#464641">The loop closes where the team already reads. <tspan fill="#5C6670">No one opened a blank page.</tspan></text>
+  <text x="48" y="786" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#A8A69E">node dots mark recorded events · header tint keyed to status · pills mark every state change · reads top to bottom</text>
+</svg>

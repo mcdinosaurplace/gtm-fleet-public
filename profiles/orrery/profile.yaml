@@ -1,0 +1,80 @@
+# Orrery — the default demo profile. A fictional incident-management / on-call
+# platform for mid-market B2B SaaS engineering orgs. Every name, domain, and id
+# here is invented; `.example` TLDs can never resolve.
+name: orrery
+description: Orrery Systems, Inc. — turns alert noise into clear ownership, fast response, and learning loops.
+
+tokens:
+  COMPANY: Orrery
+  COMPANY_UPPER: ORRERY
+  COMPANY_LEGAL: Orrery Systems, Inc.
+  company_slug: orrery
+  COMPANY_DOMAIN: orrery.example
+  APP_DOMAIN: app.orrery.example
+  CDN_DOMAIN: cdn.orrery.example
+  API_DOMAIN: api.orrery.example
+  REPO_URL: https://github.com/orrery-systems/gtm-agent-fleet
+  FRAMER_SITE_HOST: orrery.framer.example
+  GCP_PROJECT_ID: orrery-marketing-fleet
+  GCP_SERVICE_ACCOUNT_EMAIL: contact2@example.com
+
+  OPERATOR_EMAIL: scott@orrery.example
+  HEAD_OF_MARKETING: Maya Lindqvist
+  HEAD_OF_MARKETING_FIRST: Maya
+  HEAD_OF_MARKETING_EMAIL: maya@orrery.example
+  CONTENT_LEAD: Priya Natarajan
+  CONTENT_LEAD_FIRST: Priya
+  CONTENT_LEAD_EMAIL: priya@orrery.example
+  DESIGN_LEAD: Tomas Reyes
+  DESIGN_LEAD_FIRST: Tomas
+  DESIGN_LEAD_FIRST_LOWER: tomas
+  CEO: Dana Whitfield
+  CEO_FIRST: Dana
+  AE: Leo Marchetti
+  AE_FIRST: Leo
+  SALES_LEAD_FIRST: Noah
+  SALES_ENG_FIRST: Sam
+  PRODUCT_LEAD_FIRST: Ravi
+  CS_LEAD_FIRST: Ines
+  EVENTS_HOST_FIRST: Kai
+  CONTRACTOR_FIRST: Jules
+  CONTRACTOR_B_FIRST: Mateo
+  FINANCE_LEAD_FIRST: Elena
+  LOST_DEAL_EXAMPLE: Northlake Fintech
+
+  COMPETITOR_A: Beaconline
+  COMPETITOR_A_DOMAIN: beaconline.example
+  COMPETITOR_B: Rostrum
+  COMPETITOR_B_DOMAIN: rostrum.example
+  COMPETITOR_C: Nightwatch Ops
+  COMPETITOR_D: Siren Stack
+  COMPETITOR_D_DOMAIN: sirenstack.example
+  COMPETITOR_E: Pager Harbor
+  COMPETITOR_F: Lanternly
+  COMPETITOR_F_DOMAIN: lanternly.example
+  COMPETITOR_G: Meridian Uptime
+  COMPETITOR_H: Quorum Signal
+  COMPETITOR_I: Tidewatch
+  COMPETITOR_J: Keelhaul
+  COMPETITOR_K: Halyard
+  COMPETITOR_L: Sextant Labs
+  COMPETITOR_M: Astrolabe
+  COMPETITOR_N: Windlass Relay
+  CUSTOMER_A: Calloway Robotics
+  ENRICHMENT_VENDOR: Kestrel
+  ENRICHMENT_DATA_PROVIDER: DataForge
+
+  # lowercase forms used in keyword lists, email local-parts, and slack aliases
+  AE_FIRST_LOWER: leo
+  CEO_FIRST_LOWER: dana
+  HEAD_OF_MARKETING_FIRST_LOWER: maya
+  COMPETITOR_A_LOWER: beaconline
+  COMPETITOR_B_LOWER: rostrum
+  COMPETITOR_C_LOWER: nightwatch ops
+  COMPETITOR_D_LOWER: siren stack
+  COMPETITOR_F_LOWER: lanternly
+
+  # ---- visual identity ----
+  LOGO_MARK_DESCRIPTION: a ring orbit — a thick teal circle with a single amber orbiting dot at its center, clear space equal to the ring's stroke width
+  WORDMARK_CASE_RULE: sentence case with a capital O only
+

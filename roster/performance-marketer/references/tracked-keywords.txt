@@ -1,0 +1,105 @@
+# Tracked keywords for performance-marketer's ranking-watch.
+# One keyword per line. Lines starting with '#' are comments.
+# Matched case-insensitively against GSC `query` values.
+#
+# Curated from the GSC year-to-date export (positions noted at curation time
+# as the initial baseline). Several terms have moved a long way since — that
+# gap between the note and the live reading is the point of the watch, not a
+# stale list. Five buckets:
+#
+# --- Brand sentinels (drift here = something is very wrong) ---
+# "{{company_slug}}" itself excluded: ambiguous with the astronomical-instrument
+# SERPs (pos 7.1 is normal for it). These are the qualified brand terms we
+# should own outright, so a slide here gets read before any category number.
+{{company_slug}} incident management
+{{company_slug}} on call
+{{company_slug}} pricing
+{{company_slug}} login
+{{company_slug}} terraform provider
+# Legacy brand bleed — the retired Sidereal product name still ranks; watch for decay
+sidereal on call
+
+# --- Category head terms (the strategic climb) ---
+# The terms {{COMPANY}} wants to own outright and mostly doesn't yet. Positions
+# here swing hardest, so the exits-top-20 HIGH rule applies to a term only once
+# it has actually been inside the top 20 — a climb that stalls is not an exit.
+# incident management platform: pos 31.4, 5.2k impressions YTD
+incident management platform
+# incident management software: pos 28.9, 6.1k impressions YTD
+incident management software
+# pos 24.7
+on call management software
+# pos 12.2 at curation, since slipped past 30 — the comparison page needs a
+# rebuild, not a refresh
+on call scheduling software
+# pos 6.3 at curation, since out of the top 20 — the clearest case of a term
+# we stopped defending, and the cheapest one to win back
+alert fatigue
+# pos 19.4
+incident response tools
+# striking distance (pos 14.0) — closest category win available
+best incident management tools
+
+# --- Content moats (high-traffic clusters that drive real clicks; defend) ---
+# Metrics & definitions cluster
+# what is mttr: pos 4.1, 26.4k impressions
+what is mttr
+# pos 3.8, 19.2k impressions
+mtta vs mttr
+# pos 5.6
+incident severity levels
+# pos 6.9
+slo vs sla
+# error budget: pos 4.4, 31.7k impressions — single largest impression source
+error budget
+# Practice cluster
+# pos 3.2, 22.1k impressions
+blameless postmortem
+# pos 5.1, 15.8k impressions
+postmortem template
+# pos 7.4
+incident response plan template
+# pos 6.2
+incident commander role
+# pos 4.9
+on call rotation best practices
+follow the sun support model
+# Alert hygiene cluster
+# pos 6.6, 12.9k impressions
+how to reduce alert noise
+# pos 7.8
+alert deduplication
+alerting best practices
+# On-call people cluster
+# pos 5.4, 14.3k impressions
+on call compensation
+# pos 4.7
+on call burnout
+on call policy template
+
+# --- Competitor cluster (commercial intent; comparison pages only) ---
+# SEO targets, NOT permission to name a competitor in the ranking copy —
+# see brand_voice.competitor_mentions.internal_exception.
+# pos 8.4 — highest-converting non-brand cluster
+{{COMPETITOR_A_LOWER}} alternative
+# pos 11.9
+{{COMPETITOR_A_LOWER}} vs {{company_slug}}
+# pos 9.7
+{{COMPETITOR_B_LOWER}} vs {{company_slug}}
+# pos 14.2
+{{COMPETITOR_B_LOWER}} alternative
+# pos 17.6
+{{COMPETITOR_D_LOWER}} alternative
+{{COMPETITOR_C_LOWER}} alternative
+
+# --- Striking distance (pos 10-20, high impressions; movement = action) ---
+# pos 13.5
+incident management for startups
+# pos 16.8
+on call scheduling for small teams
+# pos 11.1 — commercial-intent long-tail, matches the provider docs
+terraform on call rotation
+# pos 15.7
+escalation policy examples
+incident timeline tool
+service ownership model

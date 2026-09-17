@@ -1,0 +1,210 @@
+editorial_tone_context:
+  title: "{{COMPANY}} Editorial Tone Context"
+  purpose_usage: >
+    Defines {{COMPANY}}'s editorial voice, tone, and personality—how we sound, what we stand for, and how to flex
+    communication across personas and channels. Ensures content is clear, credible, and human across blogs,
+    docs, Slack, and social.
+
+  applicability:
+    - "{{COMPANY}} writers and editors"
+    - "Marketing and Ops teams"
+    - "AI editorial and creative agents"
+    - "Automation workflows referencing {{COMPANY}} voice"
+
+  core_voice_pillars:
+    - name: "Clear"
+      definition: "Simple, direct, and reader-first."
+      do:
+        - "Explain jargon once, use it confidently thereafter."
+      dont:
+        - "Assume expertise."
+        - "Pad with filler."
+    - name: "Authoritative"
+      definition: "Grounded in expertise; confident without arrogance."
+      do:
+        - "Support claims with facts."
+        - "Cite credible data."
+      dont:
+        - "Overstate certainty."
+        - "Sound legalistic or defensive."
+    - name: "Approachable"
+      definition: "Human, inclusive, and warm; the opposite of bureaucratic."
+      do:
+        - "Write as a smart, friendly colleague."
+      dont:
+        - "Sound robotic, corporate, or flippant."
+
+  supporting_tenets:
+    - "Concise"
+    - "Respectful"
+    - "Transparent"
+    - "Compelling"
+
+  tone_metaphor: "Trusted expert partner: confident in facts, kind in delivery."
+
+  voice_spectrum_map:
+    core_tone_axes:
+      clarity:
+        definition: "Make complex ideas simple."
+        range: "Always high."
+      authority:
+        definition: "Show mastery, not ego."
+        range: "High → Medium."
+      approachability:
+        definition: "Sound human and empathetic."
+        range: "Medium → High."
+    anchors:
+      - "🧭 Clarity (anchor)"
+      - "⚖️ Authority (control)"
+      - "✨ Approachability (flex)"
+
+  product_naming_rules:
+    correct: "{{COMPANY}}"
+    incorrect:
+      - "{{COMPANY_UPPER}} (shouted form; reserved for file banners and internal headers, never body copy)"
+      - "{{company_slug}} (lowercase mid-sentence; only correct in a URL, a CLI command, or a code identifier)"
+      - "{{COMPANY}}.io / {{COMPANY}}, Inc. in body copy (legal entity is {{COMPANY_LEGAL}}; use it only in contracts and footers)"
+      - "the {{COMPANY}} platform (redundant; say {{COMPANY}})"
+    feature_casing:
+      correct:
+        - "Signal Grouping"
+        - "Ownership Graph"
+        - "Rotation Studio"
+        - "Response Rooms"
+        - "Learning Loops"
+        - "Fairness Report"
+      rule: "Feature names are title case on first use and stay capitalized thereafter. Generic nouns are not: a rotation, an escalation policy, an incident, a page."
+    terminology:
+      use:
+        - "signal (raw inbound event from a monitor or integration)"
+        - "page (what a human receives)"
+        - "incident (a declared event with an owner and a timeline)"
+        - "responder (a person on a rotation) — not user, not seat, in customer-facing copy"
+        - "retro or learning loop — not blameless postmortem in headlines; blameless is a practice, not a product noun"
+      avoid:
+        - "alert as a synonym for page (an alert is a rule; a page is a human interruption)"
+        - "downtime as a scare noun"
+        - "war room (use response room)"
+        - "ticket for an incident record"
+
+  banned_phrases:
+    hard_fail:
+      - "Never miss an alert again"
+      - "Sleep soundly"
+      - "Peace of mind"
+      - "Single pane of glass"
+      - "Mission-critical"
+      - "Always-on, always-ready"
+      - "Downtime is not an option"
+      - "Take the pain out of on-call"
+    rationale: >
+      Each of these either promises something {{COMPANY}} cannot deliver (no platform
+      prevents incidents), leans on fear, or is category boilerplate a platform
+      engineer has learned to skip. Flagged as hard fails in the brand-voice
+      editing stage.
+
+  persona_lenses:
+    erin_technical_founder:
+      focus: "Speed, leverage, staying lean"
+      mindset: "Help me stop being the escalation policy."
+      tone_priority: "Energetic clarity"
+      language_style: "Conversational, pragmatic"
+      emotion: "Encouraging and optimistic"
+      humor_level: "A–B (lightly playful)"
+    hannah_vp_engineering:
+      focus: "MTTR, SLA commitments, on-call fairness, retention"
+      mindset: "Help me shorten incidents and spread the load so people stay."
+      tone_priority: "Reassuring authority"
+      language_style: "Precise, evidence-led"
+      emotion: "Confident and empathetic"
+      humor_level: "A (dry wit only)"
+    formality: "Constant across personas; depth and framing shift."
+
+  channel_tone_modes:
+    product_help_docs:
+      purpose: "Explain, instruct"
+      emotional_register: "Calm and reassuring"
+      humor_range: "A"
+      style_notes: "Direct, empathetic imperatives. Never joke inside a runbook."
+    guides_resources:
+      purpose: "Teach, build trust"
+      emotional_register: "Empathetic and insightful"
+      humor_range: "A–B"
+      style_notes: "Blend expertise with accessibility; show a real config."
+    blogs_articles:
+      purpose: "Engage, educate"
+      emotional_register: "Informed and approachable"
+      humor_range: "B"
+      style_notes: "Storytelling, examples, light humor."
+    social_slack_linkedin:
+      purpose: "Spark interest and humanize brand"
+      emotional_register: "Energetic and personable"
+      humor_range: "C"
+      style_notes: "Relatable quips, sparing emojis, always informative."
+    internal_docs_ops:
+      purpose: "Inform and align"
+      emotional_register: "Neutral and technical"
+      humor_range: "A"
+      style_notes: "Precision over personality."
+
+  emotional_humor_calibration:
+    ranges:
+      A:
+        label: "Dry & Understated"
+        description: "Clever phrasing, mild irony, no overt jokes."
+        typical_channels:
+          - "Docs"
+          - "Guides"
+          - "Internal"
+      B:
+        label: "Lightly Playful"
+        description: "Puns or relatable asides; human analogies."
+        typical_channels:
+          - "Blogs"
+          - "Emails"
+      C:
+        label: "Conversationally Funny"
+        description: "Gentle humor, emojis allowed, self-aware."
+        typical_channels:
+          - "Social"
+          - "Slack"
+    humor_avoid_list:
+      - "Sarcasm"
+      - "Self-deprecation"
+      - "Snark toward competitors"
+      - "Jokes about someone's bad night on call"
+      - "Humor that undercuts credibility"
+
+  example_tone_transformations:
+    too_corporate_to_{{company_slug}}:
+      before: "We are thrilled to announce our revolutionary AI-powered incident intelligence solution."
+      after: "We've made it simpler to get the right page to the right engineer—and to send far fewer of them."
+    too_casual_to_{{company_slug}}:
+      before: "Getting paged at 3am is a total nightmare, right?"
+      after: "Most on-call pain is a routing problem. Here's how to fix the routing."
+    too_verbose_to_{{company_slug}}:
+      before: "In order to ensure the mitigation of potential availability risks, teams should consider…"
+      after: "To keep response times short, get these three things right."
+    fear_based_to_{{company_slug}}:
+      before: "Every minute of downtime costs the average company $9,000. Can you afford to wait?"
+      after: "Teams that route by service ownership cut time-to-acknowledge from minutes to seconds. Here's the routing model."
+
+  persona_channel_reference:
+    erin:
+      product_docs: "A"
+      guides: "A–B"
+      blog: "B"
+      social: "C"
+      internal: "A"
+    hannah:
+      product_docs: "A"
+      guides: "A"
+      blog: "A–B"
+      social: "B"
+      internal: "A"
+
+  integration_guidelines:
+    ai_prompts: "Reference tone modes (e.g., tone_mode: blog_friendly or tone_mode: product_doc)."
+    human_review: "Align Voice Alignment checks to these pillars."
+    cross_team_use: "Link to the Editorial Research Context for factual and availability-claim validation."
+  tagline: "{{COMPANY}}'s editorial voice = Expert + Human. Clear facts, confident delivery, approachable tone."

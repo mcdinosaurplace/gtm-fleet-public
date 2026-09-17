@@ -1,0 +1,26 @@
+{
+  "total": 3,
+  "teams": [
+    {
+      "id": "00000000-0000-4000-8000-000000000401",
+      "key": "MAR",
+      "name": "Marketing",
+      "issueCount": 18,
+      "url": "https://linear.app/orrery/team/MAR"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000402",
+      "key": "ENG",
+      "name": "Engineering",
+      "issueCount": 64,
+      "url": "https://linear.app/orrery/team/ENG"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000403",
+      "key": "OPS",
+      "name": "GTM Ops",
+      "issueCount": 11,
+      "url": "https://linear.app/orrery/team/OPS"
+    }
+  ]
+}

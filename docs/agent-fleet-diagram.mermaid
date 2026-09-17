@@ -1,0 +1,69 @@
+flowchart TB
+    subgraph Operator["Operator surfaces"]
+        Scott["Scott (DM / decision queue)"]
+        Chat["~~chat (Slack) #team-marketing"]
+        KB["~~knowledge base (Notion) WBR + topic review"]
+    end
+
+    subgraph Runner["Scheduling (opt-in)"]
+        Sched["schedule.yaml → schedule_render.py<br/>(crontab / launchd / cloud routine)"]
+        Tick["scripts/tick.py<br/>Librarian steps 0-5 → claude -p /gtm-fleet:&lt;agent&gt; → proof-of-work → fleet_git commit"]
+    end
+
+    subgraph Hub["Steward"]
+        chief-of-staff(("chief-of-staff<br/>AM + PM Tick<br/>briefs · handoff routing · cross-agent audit"))
+    end
+
+    subgraph Specialists["Specialists (stateful, Librarian Protocol)"]
+        revops-watchdog["revops-watchdog<br/>~~crm watchdog<br/>funnel · workflows · scoring · enrichment"]
+        performance-marketer["performance-marketer<br/>paid + SEO/GEO<br/>spend · rankings · dossier · scorecard"]
+        Scribe["Scribe<br/>WBR · stand-up · PM pulse · topic sync"]
+        content-researcher["content-researcher<br/>voice-of-market → topic backlog"]
+        content-producer["content-producer<br/>briefs → (Ph2) drafts · packages"]
+        brand-designer["brand-designer<br/>visual identity · dither-pack"]
+    end
+
+    subgraph Capabilities["Capabilities + one-shot skills"]
+        FS["funnel-stats (subagent, model pin)"]
+        Luma["luma-events (in-repo MCP)"]
+        Skills["19 marketing skills<br/>draft-content · campaign-plan · brand-review · …"]
+    end
+
+    subgraph State["Shared state — FLEET_ROOT (git-versioned, local-commit by default)"]
+        Identity["state/identity/*.md"]
+        Journal["state/journal/*.md + handoffs.md"]
+        DB[("state/working/fleet.db<br/>34 tables · migrations 001-019")]
+        Pending["state/pending/ · wbr/"]
+    end
+
+    subgraph Profile["Profile layer"]
+        Tokens["profiles/&lt;name&gt;/profile.yaml + connectors.yaml<br/>→ profile_render.py → build/&lt;name&gt;/"]
+    end
+
+    subgraph External["External systems (by category — CONNECTORS.md)"]
+        CRM[("~~crm")]
+        Ads[("~~ads / ~~web analytics")]
+        Issues[("~~issue tracker")]
+        Meetings[("~~meeting notes")]
+    end
+
+    Sched -.renders.-> Tick
+    Tick --> chief-of-staff & revops-watchdog & performance-marketer & Scribe & content-researcher & content-producer & brand-designer
+    Scott <--> chief-of-staff
+    chief-of-staff --- revops-watchdog & performance-marketer & Scribe & content-researcher & content-producer & brand-designer
+    revops-watchdog --> State
+    performance-marketer --> State
+    Scribe --> State
+    content-researcher --> State
+    content-producer --> State
+    brand-designer --> State
+    chief-of-staff --> State
+    revops-watchdog -.reads.-> CRM
+    performance-marketer -.reads.-> Ads
+    Scribe -.reads.-> Issues
+    content-researcher -.reads.-> Meetings
+    revops-watchdog -.wraps.-> FS
+    chief-of-staff -.brief.-> Chat
+    Scribe -.drafts.-> KB
+    Pending -.approved by a human.-> External
+    Tokens -.substitutes into.-> Specialists

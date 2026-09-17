@@ -1,0 +1,27 @@
+{
+  "total": 2,
+  "issue": {
+    "identifier": "MAR-7042",
+    "url": "https://linear.app/orrery/issue/MAR-7042"
+  },
+  "comments": [
+    {
+      "id": "00000000-0000-4000-8000-000000000801",
+      "user": {
+        "name": "Scott McKeighen",
+        "displayName": "scott"
+      },
+      "createdAt": "{{T-2d}}T17:12:00Z",
+      "body": "Pulled the enrollment history. The stage stamp fires on the property update, not on the accept event. That is the bug."
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000802",
+      "user": {
+        "name": "Maya Lindqvist",
+        "displayName": "maya"
+      },
+      "createdAt": "{{T-1d}}T09:41:00Z",
+      "body": "Holding the WBR funnel narrative until this is confirmed. Do not restate last week's numbers yet."
+    }
+  ]
+}

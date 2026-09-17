@@ -1,0 +1,15 @@
+{
+  "meeting_id": "mtg-demo-0001",
+  "title": "Northlake Fintech - discovery",
+  "recorded_at": "{{T-1d}}T17:00:00Z",
+  "_demo_note": "Structural aid only. Quotes come from the transcript, never from this summary.",
+  "summary": "Discovery with Northlake Fintech's platform team. Current state is page-everyone because service ownership is unclear, plus a hand-built MTTR dashboard nobody trusts. Two concrete blockers to signing: on-call mapping must survive a group rename, and the schedule must be exportable as CSV for compliance. They evaluated Beaconline and found the postmortem workflow bolted on.",
+  "topics": [
+    {"name": "Alert fatigue and ownership", "sentiment": "pain", "mentions": 4},
+    {"name": "MTTR reporting credibility", "sentiment": "pain", "mentions": 2},
+    {"name": "SSO group rename resilience", "sentiment": "blocker", "mentions": 3},
+    {"name": "Schedule export for compliance", "sentiment": "blocker", "mentions": 2},
+    {"name": "Postmortem loop", "sentiment": "differentiator", "mentions": 2}
+  ],
+  "next_step": "Yes or no on both blockers by Thursday."
+}

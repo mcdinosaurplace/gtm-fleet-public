@@ -1,0 +1,24 @@
+{
+  "snapshot_date": "{{T+0d}}",
+  "property": "hubspotscore",
+  "total_scored_contacts": 2184,
+  "median_score": 55.9,
+  "mean_score": 57.4,
+  "top_decile_count": 231,
+  "top_decile_pct": 10.6,
+  "thresholds_in_use": {"mql_auto": 80, "sal_trigger": 95},
+  "distribution": {
+    "0-9": 118,
+    "10-19": 174,
+    "20-29": 231,
+    "30-39": 268,
+    "40-49": 297,
+    "50-59": 312,
+    "60-69": 264,
+    "70-79": 205,
+    "80-89": 158,
+    "90-99": 106,
+    "100+": 51
+  },
+  "_demo_note": "Median has crept up ~+1.3 pts/day for ten days in the seeded scoring_drift history; at 55.9 the 7-day drift is under the 10-point MED threshold, so scoring-watch records the snapshot and notes the trend without escalating."
+}

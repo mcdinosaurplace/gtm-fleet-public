@@ -1,0 +1,88 @@
+# profiles/<name>/profile.yaml — company identity tokens.
+#
+# Every `{{TOKEN}}` that appears in the base kit (prompts, context, docs, skills)
+# must have a value here or in connectors.yaml. `scripts/profile_render.py`
+# substitutes them into build/<name>/ and FAILS on any unresolved token, so this
+# file doubles as the contract. Copy this directory to profiles/<client>/ and
+# fill in the values; prose that tokens cannot carry (personas, brand voice,
+# tracked keywords, buyer journeys) goes in overrides/<relative path> as whole
+# files that replace the base file at render time.
+
+tokens:
+  # ---- company ----
+  COMPANY: Example Co                 # display name, e.g. "Orrery"
+  COMPANY_UPPER: EXAMPLE CO           # shouted form used in file banners
+  COMPANY_LEGAL: Example Co, Inc.        # legal entity name: contracts, footers, invoices
+  company_slug: example-co            # lowercase slug: ids, paths, hostnames
+  COMPANY_DOMAIN: example.com         # primary web domain (no scheme)
+  APP_DOMAIN: app.example.com
+  CDN_DOMAIN: cdn.example.com
+  API_DOMAIN: api.example.com
+  REPO_URL: https://github.com/example/gtm-agent-fleet   # where this fleet's state repo lives
+  FRAMER_SITE_HOST: example.framer.app                   # ~~cms site host (if any)
+  GCP_PROJECT_ID: example-project                        # Google Cloud project for GA4/GSC pulls
+  GCP_SERVICE_ACCOUNT_EMAIL: contact1@example.com
+
+  # ---- people (role-based; the fleet routes decisions to these humans) ----
+  OPERATOR_EMAIL: operator@example.com         # the fleet operator (RevOps / MOps owner)
+  HEAD_OF_MARKETING: Alex Example
+  HEAD_OF_MARKETING_FIRST: Alex
+  HEAD_OF_MARKETING_EMAIL: alex@example.com
+  CONTENT_LEAD: Casey Example
+  CONTENT_LEAD_FIRST: Casey
+  CONTENT_LEAD_EMAIL: casey@example.com
+  DESIGN_LEAD: Drew Example
+  DESIGN_LEAD_FIRST: Drew
+  DESIGN_LEAD_FIRST_LOWER: drew                # slack alias form
+  CEO: Jordan Example
+  CEO_FIRST: Jordan
+  AE: Riley Example                            # account executive who hosts sales calls
+  AE_FIRST: Riley
+  SALES_LEAD_FIRST: Sam
+  SALES_ENG_FIRST: Taylor
+  PRODUCT_LEAD_FIRST: Morgan
+  CS_LEAD_FIRST: Quinn
+  EVENTS_HOST_FIRST: Avery
+  CONTRACTOR_FIRST: Jules                      # external copywriter / contractor in PM examples
+  CONTRACTOR_B_FIRST: Mateo                    # second external agency contact in PM examples
+  FINANCE_LEAD_FIRST: Elena
+  LOST_DEAL_EXAMPLE: Example Lost Deal Inc     # a named lost deal used in buyer-journey lessons
+
+  # ---- market ----
+  COMPETITOR_A: Competitor A                   # A–M are referenced across brand/competitive skills
+  COMPETITOR_A_DOMAIN: competitor-a.example
+  COMPETITOR_B: Competitor B
+  COMPETITOR_B_DOMAIN: competitor-b.example
+  COMPETITOR_C: Competitor C
+  COMPETITOR_D: Competitor D
+  COMPETITOR_D_DOMAIN: competitor-d.example
+  COMPETITOR_E: Competitor E
+  COMPETITOR_F: Competitor F
+  COMPETITOR_F_DOMAIN: competitor-f.example
+  COMPETITOR_G: Competitor G
+  COMPETITOR_H: Competitor H
+  COMPETITOR_I: Competitor I
+  COMPETITOR_J: Competitor J
+  COMPETITOR_K: Competitor K
+  COMPETITOR_L: Competitor L
+  COMPETITOR_M: Competitor M
+  COMPETITOR_N: Competitor N
+  CUSTOMER_A: Customer A                       # named customer used in case-study examples
+  ENRICHMENT_VENDOR: Enricher                  # the contact-enrichment pipeline revops-watchdog watches
+  ENRICHMENT_DATA_PROVIDER: DataProvider       # the data source behind it
+
+  # lowercase forms used in keyword lists, email local-parts, and slack aliases
+  AE_FIRST_LOWER: riley
+  CEO_FIRST_LOWER: jordan
+  HEAD_OF_MARKETING_FIRST_LOWER: alex
+  COMPETITOR_A_LOWER: competitor-a
+  COMPETITOR_B_LOWER: competitor-b
+  COMPETITOR_C_LOWER: competitor-c
+  COMPETITOR_D_LOWER: competitor-d
+  COMPETITOR_F_LOWER: competitor-f
+
+  # ---- visual identity (prose the identity file and SOP quote) ----
+  LOGO_MARK_DESCRIPTION: a simple geometric mark (describe the shape, its construction, and clear-space rule)
+  WORDMARK_CASE_RULE: sentence case
+
+  # ---- workspace ids referenced by skills (siblings of these live in connectors.yaml) ----

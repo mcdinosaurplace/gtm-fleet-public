@@ -1,0 +1,26 @@
+{
+  "total": 1,
+  "cursor": null,
+  "_demo_note": "One external prospect call in the window. content-researcher's call-miner filters to participant_scope=external, so this is the only candidate.",
+  "meetings": [
+    {
+      "id": "mtg-demo-0001",
+      "title": "Northlake Fintech - discovery",
+      "url": "https://grain.example/share/recording/mtg-demo-0001",
+      "start_datetime": "{{T-1d}}T17:00:00Z",
+      "end_datetime": "{{T-1d}}T17:38:00Z",
+      "duration_minutes": 38,
+      "participant_scope": "external",
+      "host": {"name": "Leo Marchetti", "email": "leo@orrery.example"},
+      "participants": [
+        {"name": "Leo Marchetti", "email": "leo@orrery.example", "internal": true},
+        {"name": "Scott McKeighen", "email": "scott@orrery.example", "internal": true},
+        {"name": "Renata Okafor", "email": "renata.okafor@northlake-fintech.example", "internal": false},
+        {"name": "Camila Restrepo", "email": "camila.restrepo@northlake-fintech.example", "internal": false}
+      ],
+      "call_type": "prospect_sales",
+      "company_size": "50-200",
+      "has_transcript": true
+    }
+  ]
+}

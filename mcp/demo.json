@@ -1,0 +1,40 @@
+{
+  "_comment": "DEMO_MODE connector registry (Phase 2). A template: {PLUGIN_ROOT} and {FLEET_ROOT} are substituted by scripts/demo/render_config.py into state/working/demo-mcp.resolved.json, which is what --mcp-config actually loads. Server names match mcp/connectors.example.json so tool names stay mcp__<server>__<tool> in demo and live alike.",
+  "mcpServers": {
+    "hubspot": {
+      "command": "{PLUGIN_ROOT}/scripts/pyexec.sh",
+      "args": ["{PLUGIN_ROOT}/scripts/demo/fixture_mcp.py", "hubspot"],
+      "env": {"FLEET_ROOT": "{FLEET_ROOT}"}
+    },
+    "linear": {
+      "command": "{PLUGIN_ROOT}/scripts/pyexec.sh",
+      "args": ["{PLUGIN_ROOT}/scripts/demo/fixture_mcp.py", "linear"],
+      "env": {"FLEET_ROOT": "{FLEET_ROOT}"}
+    },
+    "google-calendar": {
+      "command": "{PLUGIN_ROOT}/scripts/pyexec.sh",
+      "args": ["{PLUGIN_ROOT}/scripts/demo/fixture_mcp.py", "google-calendar"],
+      "env": {"FLEET_ROOT": "{FLEET_ROOT}"}
+    },
+    "gmail": {
+      "command": "{PLUGIN_ROOT}/scripts/pyexec.sh",
+      "args": ["{PLUGIN_ROOT}/scripts/demo/fixture_mcp.py", "gmail"],
+      "env": {"FLEET_ROOT": "{FLEET_ROOT}"}
+    },
+    "slack": {
+      "command": "{PLUGIN_ROOT}/scripts/pyexec.sh",
+      "args": ["{PLUGIN_ROOT}/scripts/demo/fixture_mcp.py", "slack"],
+      "env": {"FLEET_ROOT": "{FLEET_ROOT}"}
+    },
+    "notion": {
+      "command": "{PLUGIN_ROOT}/scripts/pyexec.sh",
+      "args": ["{PLUGIN_ROOT}/scripts/demo/fixture_mcp.py", "notion"],
+      "env": {"FLEET_ROOT": "{FLEET_ROOT}"}
+    },
+    "grain": {
+      "command": "{PLUGIN_ROOT}/scripts/pyexec.sh",
+      "args": ["{PLUGIN_ROOT}/scripts/demo/fixture_mcp.py", "grain"],
+      "env": {"FLEET_ROOT": "{FLEET_ROOT}"}
+    }
+  }
+}

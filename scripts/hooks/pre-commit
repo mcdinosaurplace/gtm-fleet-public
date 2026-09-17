@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# Path-scoped PM test gate.
+#
+# Runs `pytest tests/pm` ONLY when PM files are staged, so it never fires on the
+# automated [state-bot] state commits (which touch state/journal, the DB, wbr/).
+# Fail-closed: if PM files are staged but pytest can't run, the commit is blocked.
+#
+# Install (once per clone): scripts/hooks/install-hooks.sh
+set -euo pipefail
+
+repo_root="$(git rev-parse --show-toplevel)"
+staged="$(git diff --cached --name-only --diff-filter=ACM)"
+
+# Files whose changes must pass the PM suite before commit.
+pm_re='^(scripts/pm/|tests/pm/|state/working/queries/pm_|state/identity/scribe-pm-cadence\.yaml|state/working/migrations/[0-9]+_pm|state/working/schema\.sql|scripts/fleet_paths\.py)'
+
+if ! grep -Eq "$pm_re" <<<"$staged"; then
+  exit 0   # no PM files staged — skip (e.g. state-bot commits)
+fi
+
+py="$repo_root/.venv/bin/python"
+[ -x "$py" ] || py="$(command -v python3 || true)"
+
+if [ -z "$py" ] || ! "$py" -c "import pytest" >/dev/null 2>&1; then
+  echo "PM pre-commit gate: pytest unavailable. Set up the venv:" >&2
+  echo "  python3 -m venv .venv && .venv/bin/pip install -r scripts/pm/requirements.txt" >&2
+  exit 1
+fi
+
+echo "PM pre-commit gate: PM files staged — running pytest tests/pm ..." >&2
+exec "$py" -m pytest "$repo_root/tests/pm" -q

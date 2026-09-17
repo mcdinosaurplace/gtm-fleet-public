@@ -1,0 +1,88 @@
+{
+  "total": 8,
+  "checked_at": "{{T+0d}}T13:42:00Z",
+  "window": "24h",
+  "results": [
+    {
+      "workflow_id": "900001001",
+      "name": "MQL routing",
+      "is_active": true,
+      "enrollments_24h": 41,
+      "exits_24h": 3,
+      "first_step_exit_rate": 0.073,
+      "action_failures_24h": 0,
+      "last_updated": "{{T-18d}}"
+    },
+    {
+      "workflow_id": "900001002",
+      "name": "SAL auto-accept",
+      "is_active": true,
+      "enrollments_24h": 22,
+      "exits_24h": 1,
+      "first_step_exit_rate": 0.045,
+      "action_failures_24h": 0,
+      "last_updated": "{{T-31d}}"
+    },
+    {
+      "workflow_id": "900001003",
+      "name": "Disqualification sweep",
+      "is_active": true,
+      "enrollments_24h": 14,
+      "exits_24h": 2,
+      "first_step_exit_rate": 0.143,
+      "action_failures_24h": 0,
+      "last_updated": "{{T-44d}}"
+    },
+    {
+      "workflow_id": "900001004",
+      "name": "Demo-request alert",
+      "is_active": true,
+      "enrollments_24h": 9,
+      "exits_24h": 0,
+      "first_step_exit_rate": 0.0,
+      "action_failures_24h": 0,
+      "last_updated": "{{T-9d}}"
+    },
+    {
+      "workflow_id": "900001005",
+      "name": "Lifecycle backfill",
+      "is_active": true,
+      "enrollments_24h": 57,
+      "exits_24h": 6,
+      "first_step_exit_rate": 0.105,
+      "action_failures_24h": 1,
+      "last_updated": "{{T-63d}}"
+    },
+    {
+      "workflow_id": "900001006",
+      "name": "Nurture - top-of-funnel",
+      "is_active": true,
+      "enrollments_24h": 33,
+      "exits_24h": 4,
+      "first_step_exit_rate": 0.121,
+      "action_failures_24h": 0,
+      "last_updated": "{{T-27d}}"
+    },
+    {
+      "workflow_id": "900001007",
+      "name": "Event registration sync",
+      "is_active": true,
+      "enrollments_24h": 18,
+      "exits_24h": 18,
+      "first_step_exit_rate": 1.0,
+      "action_failures_24h": 0,
+      "last_updated": "{{T-2d}}",
+      "_demo_note": "Every enrollment exits at step 1 - the HIGH workflow anomaly the demo story turns on. The enrollment trigger was edited two days ago."
+    },
+    {
+      "workflow_id": "900001008",
+      "name": "Re-engagement",
+      "is_active": true,
+      "enrollments_24h": 12,
+      "exits_24h": 1,
+      "first_step_exit_rate": 0.083,
+      "action_failures_24h": 0,
+      "last_updated": "{{T-88d}}"
+    }
+  ]
+}

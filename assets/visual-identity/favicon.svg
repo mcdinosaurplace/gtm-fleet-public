@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="{{COMPANY}} favicon">
+  <rect width="32" height="32" rx="7" fill="#0F766E"/>
+  <circle cx="16" cy="16" r="8" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <circle cx="16" cy="16" r="2.5" fill="#F2A900"/>
+</svg>

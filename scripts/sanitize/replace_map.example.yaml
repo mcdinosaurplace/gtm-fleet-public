@@ -1,0 +1,26 @@
+# Example replace map — copy to a PRIVATE file outside the repo and fill in the real terms.
+# Rules apply top-to-bottom. See apply.py's docstring for every field.
+concrete_paths: ["tests/**", "state/**"]          # where `concrete:` values are used instead of tokens
+code_extensions: [".py", ".sql", ".js", ".ts", ".sh", ".json", ".csv", ".svg"]
+
+renames:
+  - {from: "context/OldCo GTM Handbook (export).yaml", to: "context/gtm-handbook.yaml"}
+
+rules:
+  # longest literals first
+  - {id: repo-url, find: "https://github.com/oldco/marketing", replace: "{{REPO_URL}}", code: "https://example.invalid/fleet.git"}
+  - {id: domain, regex: '\boldco\.com\b', replace: '{{COMPANY_DOMAIN}}', code: 'example.com'}
+  # people: tokens in prose, concrete names in tests/state
+  - {id: hom, find: "Jane Doe", replace: "{{HEAD_OF_MARKETING}}", concrete: "Alex Example"}
+  - {id: hom-first, regex: '\bJane\b', replace: '{{HEAD_OF_MARKETING_FIRST}}', concrete: 'Alex', review: true}
+  # ids
+  - {id: hs-portal, find: "12345678", replace: "{{HUBSPOT_PORTAL_ID}}", code: "12345678"}
+  - {id: notion-catchall, regex: '\b(?!0{16})[0-9a-f]{32}\b', replace: '{{NOTION_PAGE_ID}}', code: '00000000000000000000000000000299', review: true}
+  - {id: emails, type: email_map, allow: ["example.com", "fleet.local"]}
+  # renumber: id -> base + (id * mult) % mod, so outputs land in 3000–3899. The
+  # lookahead skips ids already in that range so a re-run is idempotent. Pick a
+  # mult coprime with mod (53 here) to keep the mapping collision-free.
+  - {id: issue-numbers, type: renumber, regex: '\bOLD-(?!3\d{3}\b)(\d+)\b', base: 3000, mod: 900, mult: 53}
+  # brand last
+  - {id: brand-title, find: "OldCo", replace: "{{COMPANY}}", code: "GTM Fleet"}
+  - {id: brand-lower, find: "oldco", replace: "{{company_slug}}", code: "gtm-fleet"}

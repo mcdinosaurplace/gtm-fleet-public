@@ -1,0 +1,40 @@
+flowchart TD
+ classDef moment fill:#EAF7EF,stroke:#1F9D55,color:#0c3b22;
+ classDef decision fill:#EAF0FF,stroke:#3358CC,color:#10204d;
+ classDef gap fill:#FDECEA,stroke:#D7322B,color:#5b1411,stroke-width:1px,stroke-dasharray:4;
+
+ A["I come across {{COMPANY}} (ad, peer, post, newsletter, event invite)"]:::moment
+ A --> B{"Do I take the first step? (register / RSVP / sign up)"}:::decision
+ B -->|Not now| B1["I keep seeing {{COMPANY}} around, no pressure"]
+ B1 -.->|later| A
+ B -->|Yes| C["I get a clear confirmation + what to expect"]:::moment
+ C --> D["I get helpful reminders so I actually show up"]
+ D --> E{"Do I show up / engage?"}:::decision
+ E -->|No| E1["I get a low-key 'here's what you missed' + an easy way back in"]
+ E1 --> G
+ E -->|Yes| F["I have a genuinely useful first experience"]:::moment
+
+ F --> G["I'm treated like a person, not a record: follow-up that references what I just did"]:::moment
+ G --> H{"Who am I to {{COMPANY}}?"}:::decision
+ H -->|High-fit platform engineer Aaron| I["Someone real from {{COMPANY}} reaches out personally about my actual problem"]:::moment
+ H -->|Eng leader Hannah| I2["I get role-relevant proof + an invite to the right next step"]:::moment
+ H -->|Not a fit right now| F2["I get useful content at a human pace, no spam"]
+ F2 -.->|re-engage later| A
+
+ I --> J{"Am I interested enough to have a conversation?"}:::decision
+ I2 --> J
+ J -->|Not yet| F2
+ J -->|Yes| K["I have a conversation about ME, not a generic pitch (discovery)"]:::moment
+ K --> L["I see {{COMPANY}} do the thing I care about — and proof it won't drop a page (delivery SLA, logos, case study)"]:::moment
+ L --> M{"Do I trust this is real and worth it?"}:::decision
+ M -->|I have objections| N["My concerns get answered by someone who actually can"]
+ N --> M
+ M -->|Yes| O["I get a clear, professional path to yes (proposal / quote)"]:::moment
+ O --> P["I become a customer"]:::moment
+
+ P --> Q["I said yes — now what? (handoff to onboarding)"]:::gap
+ Q --> R["I get to first value fast (first real service routed)"]:::gap
+ R --> R2["If I'm API / Terraform-first: who guides my migration?"]:::gap
+ R2 --> S["I keep getting value and expand"]:::gap
+ S --> T["I'm happy enough to refer / be a case study"]:::gap
+ T -.->|fuels the next buyer's discovery| A

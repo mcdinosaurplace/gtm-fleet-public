@@ -1,0 +1,13 @@
+{
+  "meeting_id": "mtg-demo-0001",
+  "title": "Northlake Fintech - discovery",
+  "total": 3,
+  "action_items": [
+    {"id": "ai-demo-0001", "text": "Confirm whether an SSO group rename preserves the on-call rotation mapping.",
+     "owner": "Scott McKeighen", "due": "{{T+2d}}", "status": "open", "source_timestamp": "00:04:55"},
+    {"id": "ai-demo-0002", "text": "Confirm CSV export (or read-only endpoint) for the on-call schedule.",
+     "owner": "Scott McKeighen", "due": "{{T+2d}}", "status": "open", "source_timestamp": "00:03:40"},
+    {"id": "ai-demo-0003", "text": "Send the postmortem loop walkthrough Renata asked about.",
+     "owner": "Leo Marchetti", "due": "{{T+4d}}", "status": "open", "source_timestamp": "00:12:38"}
+  ]
+}

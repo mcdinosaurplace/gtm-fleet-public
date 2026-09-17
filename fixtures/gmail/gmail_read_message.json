@@ -1,0 +1,30 @@
+{
+  "id": "msg0demo0000001a",
+  "threadId": "thr0demo00000001",
+  "subject": "Re: Orrery rollout - two blockers before we sign",
+  "from": {
+    "name": "Renata Okafor",
+    "email": "renata.okafor@northlake-fintech.example"
+  },
+  "to": [
+    {
+      "name": "Scott McKeighen",
+      "email": "scott@orrery.example"
+    }
+  ],
+  "cc": [
+    {
+      "name": "Leo Marchetti",
+      "email": "leo@orrery.example"
+    }
+  ],
+  "receivedAt": "{{T+0d}}T13:26:00Z",
+  "labelIds": [
+    "INBOX",
+    "UNREAD",
+    "IMPORTANT"
+  ],
+  "link": "https://mail.example/u/0/#inbox/thr0demo00000001",
+  "body": "Scott,\n\nTwo blockers before we can sign, and both are small:\n\n1. SSO group mapping has to survive a group rename on our side. Today a rename orphans the on-call assignment and we lose the rotation.\n2. We need the on-call schedule as a CSV export for our compliance reviewer. A read-only API endpoint would work too.\n\nLegal is holding on my answer, so a yes/no on both by Thursday is enough - I do not need a ship date, just whether they are possible.\n\nThanks,\nRenata Okafor\nDirector of Platform Engineering, Northlake Fintech",
+  "_demo_note": "The one real customer ask in the 30 unread. Deadline is Thursday; the answer is a yes/no, not a ship date."
+}

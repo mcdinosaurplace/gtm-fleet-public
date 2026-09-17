@@ -1,0 +1,729 @@
+{
+  "resultSizeEstimate": 30,
+  "total": 30,
+  "query": "is:unread in:inbox",
+  "nextPageToken": null,
+  "_demo_note": "30 unread inbox threads. Exactly one is a real ask that survives chief-of-staff's classification filter - Renata Okafor at Northlake Fintech, thread thr0demo00000001, with a Thursday deadline. One Linear digest (thr0demo00000002) is worth a glance; the other 28 are vendor outreach, newsletters, and routine system notifications that the filter excludes.",
+  "messages": [
+    {
+      "id": "msg0demo0000001a",
+      "threadId": "thr0demo00000001",
+      "subject": "Re: Orrery rollout - two blockers before we sign",
+      "snippet": "Two things before Thursday: our SSO group mapping needs to survive a rename, and we need the on-call schedule export as CSV. Can you confirm both by Thursday? Legal is holding on my answer.",
+      "from": {
+        "name": "Renata Okafor",
+        "email": "renata.okafor@northlake-fintech.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T20:07:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "IMPORTANT"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000001",
+      "_demo_class": "customer"
+    },
+    {
+      "id": "msg0demo00000002",
+      "threadId": "thr0demo00000002",
+      "subject": "Marketing: 6 updates today",
+      "snippet": "MAR-7042 moved to In Progress - MAR-7053 moved to In Review - 2 comments on MAR-7042 - Brand refresh health changed to Off track.",
+      "from": {
+        "name": "Linear",
+        "email": "notifications@linear.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T18:14:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000002",
+      "_demo_class": "digest"
+    },
+    {
+      "id": "msg0demo00000003",
+      "threadId": "thr0demo00000003",
+      "subject": "Quick question about your data stack",
+      "snippet": "Noticed Orrery is scaling fast. Do you have 15 minutes this week to talk about pipeline observability?",
+      "from": {
+        "name": "Priyanka Shah",
+        "email": "priyanka@dataplume.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T21:21:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000003",
+      "_demo_class": "vendor"
+    },
+    {
+      "id": "msg0demo00000004",
+      "threadId": "thr0demo00000004",
+      "subject": "Final reminder: your Brightrail trial expires Friday",
+      "snippet": "Your evaluation ends in 3 days. Reply to extend or book a call with your account team.",
+      "from": {
+        "name": "Colin Farr",
+        "email": "colin.farr@brightrail.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T19:28:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000004",
+      "_demo_class": "vendor"
+    },
+    {
+      "id": "msg0demo00000005",
+      "threadId": "thr0demo00000005",
+      "subject": "This week: error budgets, and why nobody reads your runbook",
+      "snippet": "Five links on incident practice, plus a reader survey. Unsubscribe at the bottom.",
+      "from": {
+        "name": "The Reliability Digest",
+        "email": "hello@reliabilitydigest.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T17:35:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000005",
+      "_demo_class": "newsletter"
+    },
+    {
+      "id": "msg0demo00000006",
+      "threadId": "thr0demo00000006",
+      "subject": "Pricing for QuantifyOps - offer expires end of month",
+      "snippet": "Attaching the proposal we discussed. 20% off if we close before the 30th.",
+      "from": {
+        "name": "Aden Mercer",
+        "email": "aden@quantifyops.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T16:42:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000006",
+      "_demo_class": "vendor"
+    },
+    {
+      "id": "msg0demo00000007",
+      "threadId": "thr0demo00000007",
+      "subject": "Your weekly marketing performance summary is ready",
+      "snippet": "Sessions, contacts, and deals for the past 7 days. Open the dashboard to view.",
+      "from": {
+        "name": "HubSpot",
+        "email": "no-reply@hubspot.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T15:49:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000007",
+      "_demo_class": "system"
+    },
+    {
+      "id": "msg0demo00000008",
+      "threadId": "thr0demo00000008",
+      "subject": "Issue 214: on-call rotations that do not burn people out",
+      "snippet": "Plus: three postmortem templates and a reader question about paging policy.",
+      "from": {
+        "name": "Platform Weekly",
+        "email": "editor@platformweekly.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T14:56:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000008",
+      "_demo_class": "newsletter"
+    },
+    {
+      "id": "msg0demo00000009",
+      "threadId": "thr0demo00000009",
+      "subject": "Lanternly + Orrery - partnership idea",
+      "snippet": "We are seeing overlap in our customer bases. Worth a conversation?",
+      "from": {
+        "name": "Simone Baptiste",
+        "email": "simone@lanternly.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T13:03:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000009",
+      "_demo_class": "vendor"
+    },
+    {
+      "id": "msg0demo00000010",
+      "threadId": "thr0demo00000010",
+      "subject": "Coverage issues detected on orrery.example",
+      "snippet": "3 pages with a redirect error. See the coverage report for details.",
+      "from": {
+        "name": "Google Search Console",
+        "email": "sc-noreply@searchconsole.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T12:10:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000010",
+      "_demo_class": "system"
+    },
+    {
+      "id": "msg0demo00000011",
+      "threadId": "thr0demo00000011",
+      "subject": "Re: following up (3rd attempt)",
+      "snippet": "Just floating this back to the top of your inbox in case it got buried.",
+      "from": {
+        "name": "Nate Ellison",
+        "email": "nate@pipelinesignal.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T11:17:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000011",
+      "_demo_class": "vendor"
+    },
+    {
+      "id": "msg0demo00000012",
+      "threadId": "thr0demo00000012",
+      "subject": "The alert fatigue issue",
+      "snippet": "Curated reading on alert design, plus a job board.",
+      "from": {
+        "name": "SRE Notes",
+        "email": "list@srenotes.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T10:24:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000012",
+      "_demo_class": "newsletter"
+    },
+    {
+      "id": "msg0demo00000013",
+      "threadId": "thr0demo00000013",
+      "subject": "12 new registrations for On-call fairness in practice",
+      "snippet": "Your event has 84 registered guests. View the guest list.",
+      "from": {
+        "name": "Luma",
+        "email": "notifications@luma.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T09:31:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000013",
+      "_demo_class": "system"
+    },
+    {
+      "id": "msg0demo00000014",
+      "threadId": "thr0demo00000014",
+      "subject": "Competitive analysis: Orrery vs Meridian Uptime",
+      "snippet": "We put together a side-by-side. Happy to walk you through it.",
+      "from": {
+        "name": "Harriet Bloom",
+        "email": "harriet@meridianuptime.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T08:38:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000014",
+      "_demo_class": "vendor"
+    },
+    {
+      "id": "msg0demo00000015",
+      "threadId": "thr0demo00000015",
+      "subject": "Your site published successfully",
+      "snippet": "orrery.example was published 6 minutes ago. View the deploy log.",
+      "from": {
+        "name": "Framer",
+        "email": "no-reply@framer.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T07:45:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000015",
+      "_demo_class": "system"
+    },
+    {
+      "id": "msg0demo00000016",
+      "threadId": "thr0demo00000016",
+      "subject": "15 minutes on your GTM stack?",
+      "snippet": "We help teams like Orrery cut reporting time in half. Open to a quick intro?",
+      "from": {
+        "name": "Devon Marks",
+        "email": "devon@scaleforge.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T06:52:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000016",
+      "_demo_class": "vendor"
+    },
+    {
+      "id": "msg0demo00000017",
+      "threadId": "thr0demo00000017",
+      "subject": "The demand gen playbook everyone is copying",
+      "snippet": "Long-form breakdown plus a template pack. Sponsored by a vendor you have heard of.",
+      "from": {
+        "name": "B2B Marketing Brief",
+        "email": "brief@b2bmarketingbrief.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T05:59:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000017",
+      "_demo_class": "newsletter"
+    },
+    {
+      "id": "msg0demo00000018",
+      "threadId": "thr0demo00000018",
+      "subject": "Maya Lindqvist commented on Marketing Update",
+      "snippet": "\"Holding the funnel narrative until MAR-7042 is confirmed.\"",
+      "from": {
+        "name": "Notion",
+        "email": "no-reply@notion.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T04:06:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000018",
+      "_demo_class": "system"
+    },
+    {
+      "id": "msg0demo00000019",
+      "threadId": "thr0demo00000019",
+      "subject": "Beaconline for incident management - worth a look?",
+      "snippet": "Teams switching from homegrown tooling see faster acknowledgement times.",
+      "from": {
+        "name": "Tessa Lund",
+        "email": "tessa@beaconline.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T03:13:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000019",
+      "_demo_class": "vendor"
+    },
+    {
+      "id": "msg0demo00000020",
+      "threadId": "thr0demo00000020",
+      "subject": "Your campaign Nonbrand - Incident Mgmt is limited by budget",
+      "snippet": "Consider raising the daily budget to capture more impressions.",
+      "from": {
+        "name": "Google Ads",
+        "email": "noreply@googleads.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T02:20:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000020",
+      "_demo_class": "system"
+    },
+    {
+      "id": "msg0demo00000021",
+      "threadId": "thr0demo00000021",
+      "subject": "Siren Stack case study - 40% faster MTTR",
+      "snippet": "Sharing a customer result in your segment. Want the full write-up?",
+      "from": {
+        "name": "Owen Radcliffe",
+        "email": "owen@sirenstack.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T01:27:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000021",
+      "_demo_class": "vendor"
+    },
+    {
+      "id": "msg0demo00000022",
+      "threadId": "thr0demo00000022",
+      "subject": "Editorial calendars that survive contact with reality",
+      "snippet": "This week's roundup, plus a tool comparison.",
+      "from": {
+        "name": "Content Ops Digest",
+        "email": "hello@contentopsdigest.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-0d}}T00:34:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000022",
+      "_demo_class": "newsletter"
+    },
+    {
+      "id": "msg0demo00000023",
+      "threadId": "thr0demo00000023",
+      "subject": "Your recording is ready: Northlake Fintech discovery",
+      "snippet": "Transcript and highlights are available. Open in Grain.",
+      "from": {
+        "name": "Grain",
+        "email": "no-reply@grain.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-1d}}T23:41:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000023",
+      "_demo_class": "system"
+    },
+    {
+      "id": "msg0demo00000024",
+      "threadId": "thr0demo00000024",
+      "subject": "Rostrum pricing update for 2027",
+      "snippet": "New tiers take effect in January. Locking in current pricing is possible until then.",
+      "from": {
+        "name": "Iris Hollander",
+        "email": "iris@rostrum.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-1d}}T22:48:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000024",
+      "_demo_class": "vendor"
+    },
+    {
+      "id": "msg0demo00000025",
+      "threadId": "thr0demo00000025",
+      "subject": "You have 4 unread mentions in #team-marketing",
+      "snippet": "Catch up on what you missed while you were away.",
+      "from": {
+        "name": "Slack",
+        "email": "feedback@slack.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-1d}}T21:55:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000025",
+      "_demo_class": "system"
+    },
+    {
+      "id": "msg0demo00000026",
+      "threadId": "thr0demo00000026",
+      "subject": "Nightwatch Ops - free migration for teams under 200",
+      "snippet": "We will move your escalation policies at no cost. Interested?",
+      "from": {
+        "name": "Callum Reyes-Vance",
+        "email": "callum@nightwatchops.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-1d}}T20:02:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000026",
+      "_demo_class": "vendor"
+    },
+    {
+      "id": "msg0demo00000027",
+      "threadId": "thr0demo00000027",
+      "subject": "How RevOps teams are wiring agents into their stack",
+      "snippet": "Interview plus a template. Unsubscribe any time.",
+      "from": {
+        "name": "GTM Operators",
+        "email": "list@gtmoperators.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-1d}}T19:09:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000027",
+      "_demo_class": "newsletter"
+    },
+    {
+      "id": "msg0demo00000028",
+      "threadId": "thr0demo00000028",
+      "subject": "New backlinks to orrery.example",
+      "snippet": "7 new referring domains this week. View the report.",
+      "from": {
+        "name": "Ahrefs",
+        "email": "alerts@ahrefs.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-1d}}T18:16:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000028",
+      "_demo_class": "system"
+    },
+    {
+      "id": "msg0demo00000029",
+      "threadId": "thr0demo00000029",
+      "subject": "Keelhaul + Orrery: co-marketing webinar?",
+      "snippet": "We have an audience of platform engineers. Interested in a joint session?",
+      "from": {
+        "name": "Nadia Ferreira",
+        "email": "nadia@keelhaul.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-1d}}T17:23:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_PROMOTIONS"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000029",
+      "_demo_class": "vendor"
+    },
+    {
+      "id": "msg0demo00000030",
+      "threadId": "thr0demo00000030",
+      "subject": "Weekly digest for orrery-systems",
+      "snippet": "12 pull requests merged, 3 issues opened.",
+      "from": {
+        "name": "GitHub",
+        "email": "noreply@github.example"
+      },
+      "to": [
+        {
+          "name": "Scott McKeighen",
+          "email": "scott@orrery.example"
+        }
+      ],
+      "receivedAt": "{{T-1d}}T16:30:00Z",
+      "labelIds": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "link": "https://mail.example/u/0/#inbox/thr0demo00000030",
+      "_demo_class": "system"
+    }
+  ]
+}

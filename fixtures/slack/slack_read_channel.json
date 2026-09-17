@@ -1,0 +1,51 @@
+{
+  "channel_id": "C0DEMO0001",
+  "channel_label": "#team-marketing",
+  "total": 5,
+  "_demo_note": "Recent #team-marketing traffic: the Monday stand-up anchor, two owner replies, and last week's WBR notification.",
+  "messages": [
+    {
+      "ts": "1786976271.100000",
+      "user_id": "U0DEMOBOT2",
+      "user": "Scribe",
+      "is_bot": true,
+      "posted_at": "{{T-3d}}T16:00:00Z",
+      "text": "*Weekly stand-up*\nReply in thread by end of day: what shipped last week, what you are driving this week, what is blocking you. Link the Linear issue for anything you name."
+    },
+    {
+      "ts": "1786976271.100400",
+      "user_id": "U0DEMO0002",
+      "user": "Maya Lindqvist",
+      "is_bot": false,
+      "thread_ts": "1786976271.100000",
+      "posted_at": "{{T-3d}}T17:12:00Z",
+      "text": "Last week: shipped the website repositioning checkpoint. This week: pillar page rewrite to review (MAR-7041). Blockers: none."
+    },
+    {
+      "ts": "1786976271.100700",
+      "user_id": "U0DEMO0004",
+      "user": "Tomas Reyes",
+      "is_bot": false,
+      "thread_ts": "1786976271.100000",
+      "posted_at": "{{T-3d}}T18:35:00Z",
+      "text": "Last week: display ad set repainted in the new palette. This week: alert-fatigue infographics. Blocker: legal review on the tagline is still open, so Brand refresh stays off track."
+    },
+    {
+      "ts": "1786890000.200000",
+      "user_id": "U0DEMOBOT2",
+      "user": "Scribe",
+      "is_bot": true,
+      "posted_at": "{{T-7d}}T17:05:00Z",
+      "text": "*Marketing WBR* is ready for your input. Sections and owners: Project Updates - Maya Lindqvist. Content and Product Marketing - Priya Natarajan. Website and Design - Tomas Reyes. GTM Ops - Scott McKeighen. Updates due Thursday, 07:00 AM PT."
+    },
+    {
+      "ts": "1786890000.200600",
+      "user_id": "U0DEMO0003",
+      "user": "Priya Natarajan",
+      "is_bot": false,
+      "thread_ts": "1786890000.200000",
+      "posted_at": "{{T-6d}}T15:44:00Z",
+      "text": "Content section filled in. One ask: I need the topic rulings before I can commit the next two briefs."
+    }
+  ]
+}

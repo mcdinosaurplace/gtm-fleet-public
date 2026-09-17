@@ -1,0 +1,113 @@
+editorial_research_context:
+  title: "{{COMPANY}} Editorial Research Context"
+  purpose_philosophy: >
+    Ensures every {{COMPANY}} content artifact—human or AI—is accurate, on-brand, risk-free, and genuinely readable.
+    Guided by the principle: trust through transparency. Applies to validation workflows in `~~automation` (Zapier),
+    `~~chat`, and manual editorial review.
+
+  core_principles:
+    - "Accuracy: Facts first. Verify before publishing."
+    - "Transparency: Acknowledge limits and sources."
+    - "Trust: Protect {{COMPANY}}’s reputation and customers."
+    - "Collaboration: AI supports humans, never replaces judgment."
+
+  guardrails_prohibitions:
+    competitors_critical_block:
+      - "{{COMPETITOR_A}}"
+      - "{{COMPETITOR_C}}"
+      - "{{COMPETITOR_D}}"
+      - "{{COMPETITOR_G}}"
+      - "{{COMPETITOR_B}}"
+      - "{{COMPETITOR_F}}"
+      - "{{COMPETITOR_H}}"
+      - "{{COMPETITOR_E}}"
+      - "{{COMPETITOR_I}}"
+      - "{{COMPETITOR_M}}"
+    prohibited_topics_phrases:
+      - "Sales-y or pushy language"
+      - "Pricing, uptime, or delivery guarantees not published on {{COMPANY_DOMAIN}} or in the current SLA"
+      - "Any claim that {{COMPANY}} prevents incidents — it shortens, routes, and helps teams learn from them"
+      - "Category misdescription: calling a status-page tool an incident management platform, or describing {{COMPANY}} as an observability or monitoring product"
+      - "AI-generated Reddit/LinkedIn/forum sources used as facts"
+    source_of_truth_hierarchy:
+      - "{{COMPANY}} docs, status page, and official communications"
+      - "{{COMPANY}}'s own aggregate product telemetry (cited as an internal benchmark, never as a customer's data)"
+      - "Published, citable research (DORA, the Google SRE books, vendor-neutral industry surveys)"
+      - "Reputable media (AP/Reuters) and named customer case studies with written approval"
+      - "Trusted partners (non-competitors)"
+      - "Fallback: flag as Needs Human Validation"
+
+  review_categories_recommendations:
+    severities:
+      critical:
+        description: "Must fix before use (competitors, broken links, false claims)."
+        action: "Do Not Publish"
+      warning:
+        description: "Style/tone deviations, unsupported soft claims, outdated references."
+        action: "Review Before Publishing"
+      info:
+        description: "Non-blocking improvements (clarity, SEO opportunities)."
+        action: "OK to Publish"
+    availability_claim_rule: >
+      If a piece states an uptime, delivery, latency, or MTTR figure, it cites the SLA or the
+      status page the number came from. Aggregate product benchmarks say “across {{COMPANY}}
+      customers” and never imply a single account; named customer outcomes need a signed
+      approval on file.
+    legal_disclaimer_rule: >
+      If a piece interprets a reader's contractual or regulatory obligations — SLA credits,
+      breach-notification timelines, data-residency or retention duties — add:
+      “This content is for informational purposes only and does not constitute legal advice.”
+
+  confidence_scoring:
+    required_scores:
+      - "Voice Alignment → High / Medium / Low + percentile estimate."
+      - "Claim / Link Accuracy → High / Medium / Low + percentile estimate."
+    voice_alignment_source: "Uses standards from the Editorial Tone Context document."
+
+  output_schema_automation_ready:
+    review_results:
+      - review_id: "rev_{{zap_meta_human_now}}"
+        timestamp: "{{zap_meta_timestamp}}"
+        content_id: "{{content_id}}"
+        category: ""
+        severity: ""
+        snippet: ""
+        reasoning: ""
+        confidence_voice:
+          label: ""
+          percent: 0
+        confidence_claim:
+          label: ""
+          percent: 0
+        general_recommendation: ""
+        disclaimer_needed: false
+        needs_human_validation: false
+
+  slack_notification_guidance:
+    message_format:
+      title: "Editorial Review Ready"
+      fields:
+        - "Critical: X"
+        - "Warning: Y"
+        - "Info: Z"
+        - "View full review: [Sheet Link] 🌟"
+    tone_notes: "Use emoji sparingly; avoid excessive casual tone."
+
+  rerun_think_deeper_logic:
+    rules:
+      - "Critical issues → stricter validation (narrow sources)."
+      - "Warnings / Info → broader contextual check."
+      - "Append results under same review_id with suffixes (_rerun1, _rerun2, …)."
+      - "Post Slack thread updates: 'Re-run complete — stricter/broader check applied.'"
+
+  meta_analysis_logging:
+    tracking_focus:
+      - "Flag frequency & severity"
+      - "Average confidence scores"
+      - "False positive / negative feedback"
+      - "Weekly summary embedded in Notion for trend tracking"
+
+  cross_reference:
+    voice_alignment_fail_action: "Review the Editorial Tone Context for correction guidance."
+    uncertainty_action: "Mark needs_human_validation: true and escalate to Marketing Ops for manual review."
+  ethos: "Accuracy builds trust. Trust builds brand."

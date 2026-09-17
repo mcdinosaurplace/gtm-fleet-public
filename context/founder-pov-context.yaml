@@ -1,0 +1,34 @@
+
+founder_pov:
+  source: "{{CEO}}, CEO and co-founder, {{COMPANY_LEGAL}}"
+  narrative_north_star: >
+    Reliability should be a habit, not a heroic act. Engineers should be building
+    momentum, not absorbing alert noise. On-call succeeds when it goes quiet.
+  attention_model:
+    priority: momentum_preservation
+    success_signals:
+      - quiet_nights
+      - uninterrupted_focus
+      - pages_not_sent
+  communication_rules:
+    allowed:
+      - closes_loops
+      - resolves_uncertainty
+      - names_the_owner
+    disallowed:
+      - introduces_questions
+      - surfaces_unresolved_edge_cases
+      - implies_incidents_are_preventable
+  explanation_boundary:
+    allow_decisions: true
+    suppress_edge_cases: true
+  tone_under_stress:
+    primary: transparent_factual
+    secondary: directive_efficient
+  incident_lens:
+    blameless: true
+    heroics_are_a_symptom: true
+    note: >
+      A team that celebrates the engineer who stayed up until 4 a.m. has a
+      routing problem it has decided to admire instead of fix.
+  cardinal_sin: fear_based_reliability

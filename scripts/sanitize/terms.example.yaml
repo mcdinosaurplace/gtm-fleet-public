@@ -1,0 +1,13 @@
+# Example banned-terms file for verify.py — copy to a PRIVATE file outside the repo.
+# Every regex is matched case-insensitively unless case_sensitive: true.
+terms:
+  - {id: brand, regex: 'oldco'}
+  - {id: people, regex: 'jane doe|j\.doe@'}
+  - {id: hosts, regex: 'oldco\.slack\.com|linear\.app/oldco'}
+  - {id: ids, regex: '12345678|<real-channel-id>|<real-user-id>'}
+  # vendor names that are also ordinary words — match case-sensitively so prose
+  # like "a quorum of reviewers" or "speaking from the rostrum" is not flagged
+  - {id: ambiguous-names, regex: '\bQuorum\b|\bRostrum\b', case_sensitive: true}
+allow_emails:
+  - example.com
+  - fleet.local

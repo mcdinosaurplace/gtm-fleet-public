@@ -1,0 +1,42 @@
+flowchart TD
+ classDef moment fill:#EAF7EF,stroke:#1F9D55,color:#0c3b22;
+ classDef decision fill:#EAF0FF,stroke:#3358CC,color:#10204d;
+ classDef gap fill:#FDECEA,stroke:#D7322B,color:#5b1411,stroke-width:1px,stroke-dasharray:4;
+
+ A["I see the Reliability Roundtable promoted (an SRE Slack, a founder's LinkedIn, TLDR, paid social, email)"]:::moment
+ A --> B{"Do I register?"}:::decision
+ B -->|No — but I'm a fit engineer| B1["I get a personal note from someone who has run a rotation, not just retargeting"]
+ B1 -.->|maybe later| A
+ B -->|No — not a fit yet| B2["I see a little light retargeting, nothing pushy"]
+ B2 -.->|stays aware| A
+ B -->|Yes| C["I get a confirmation + why this session is worth my hour"]:::moment
+ C --> D["I get a T-7 day and a T-24 hour nudge"]
+ D --> E{"Roundtable happens — do I attend?"}:::decision
+ E -->|No| E1["I get a 'sorry we missed you' + the recording + one real takeaway"]
+ E1 --> G
+ E -->|Yes| F["I attend a useful, practitioner-to-practitioner session (not a sales pitch)"]:::moment
+
+ F --> G["I get a thank-you that references the session — quickly"]:::moment
+ G --> H{"Who am I to {{COMPANY}}?"}:::decision
+ H -->|Platform engineer high-fit Aaron| I["Someone who has actually carried a pager reaches out personally about my routing and alert-volume problem"]:::moment
+ H -->|Eng leader Hannah| I2["I get role-relevant proof + an invite to the right next step (e.g. the operators dinner waitlist)"]:::moment
+ H -->|Not a fit right now| J2["I get helpful content at a human pace"]
+ J2 -.->|re-engage later| A
+
+ I --> J{"Am I interested enough to talk?"}:::decision
+ I2 --> J
+ J -->|Not yet| J2
+ J -->|Yes| K["I have a discovery chat about my services, rotations and page volume — not a generic pitch"]:::moment
+ K --> L["I see a demo of routing and Signal Grouping on a service like mine — plus proof {{COMPANY}} won't drop a page (delivery SLA, logos, a case study)"]:::moment
+ L --> M{"Do I trust this enough to move forward?"}:::decision
+ M -->|I have objections| N["My concerns get handled by someone who can actually answer them"]
+ N --> M
+ M -->|Yes| O["I get a clear, professional proposal — they look buttoned-up"]:::moment
+ O --> P["I become an {{COMPANY}} customer"]:::moment
+
+ P --> Q["I said yes — now what? (handoff to onboarding)"]:::gap
+ Q --> R["I get to first value fast (first real service routed, first page acknowledged)"]:::gap
+ R --> R2["I'm API / Terraform-first: who guides my migration, and how?"]:::gap
+ R2 --> S["I keep getting value and expand (more teams, more services)"]:::gap
+ S --> T["I'm happy enough to refer or be a case study"]:::gap
+ T -.->|fuels the next engineer's discovery| A

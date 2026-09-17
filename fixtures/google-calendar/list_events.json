@@ -1,0 +1,47 @@
+{
+  "calendarId": "scott@orrery.example",
+  "timeZone": "America/Los_Angeles",
+  "window": {"start": "{{T+0d}}T00:00:00-07:00", "end": "{{T+0d}}T23:59:59-07:00"},
+  "total": 2,
+  "_demo_note": "Two real meetings today. The all-hands has an agenda doc attached; the Northlake demo has none, which is the gap chief-of-staff flags in the AM brief.",
+  "events": [
+    {
+      "id": "evt0demo00000001",
+      "summary": "Orrery all-hands",
+      "status": "confirmed",
+      "event_type": "default",
+      "start": {"dateTime": "{{T+0d}}T09:00:00-07:00", "timeZone": "America/Los_Angeles"},
+      "end": {"dateTime": "{{T+0d}}T09:45:00-07:00", "timeZone": "America/Los_Angeles"},
+      "organizer": {"email": "dana@orrery.example", "displayName": "Dana Whitfield"},
+      "attendees": [
+        {"email": "dana@orrery.example", "displayName": "Dana Whitfield", "responseStatus": "accepted"},
+        {"email": "scott@orrery.example", "displayName": "Scott McKeighen", "responseStatus": "accepted"},
+        {"email": "maya@orrery.example", "displayName": "Maya Lindqvist", "responseStatus": "accepted"},
+        {"email": "priya@orrery.example", "displayName": "Priya Natarajan", "responseStatus": "accepted"},
+        {"email": "tomas@orrery.example", "displayName": "Tomas Reyes", "responseStatus": "tentative"}
+      ],
+      "conferenceData": {"entryPoints": [{"entryPointType": "video", "uri": "https://meet.example/orrery-allhands"}]},
+      "attachments": [
+        {"title": "All-hands agenda - {{T+0d}}", "fileUrl": "https://www.notion.example/00000000000000000000000000000221", "mimeType": "application/vnd.notion.page"}
+      ],
+      "description": "Standing weekly all-hands. Agenda doc attached."
+    },
+    {
+      "id": "evt0demo00000002",
+      "summary": "Northlake Fintech - platform demo",
+      "status": "confirmed",
+      "event_type": "default",
+      "start": {"dateTime": "{{T+0d}}T13:30:00-07:00", "timeZone": "America/Los_Angeles"},
+      "end": {"dateTime": "{{T+0d}}T14:15:00-07:00", "timeZone": "America/Los_Angeles"},
+      "organizer": {"email": "leo@orrery.example", "displayName": "Leo Marchetti"},
+      "attendees": [
+        {"email": "leo@orrery.example", "displayName": "Leo Marchetti", "responseStatus": "accepted"},
+        {"email": "scott@orrery.example", "displayName": "Scott McKeighen", "responseStatus": "needsAction"},
+        {"email": "renata.okafor@northlake-fintech.example", "displayName": "Renata Okafor", "responseStatus": "accepted"}
+      ],
+      "conferenceData": {"entryPoints": [{"entryPointType": "video", "uri": "https://meet.example/orrery-northlake-demo"}]},
+      "attachments": [],
+      "description": "Demo for Renata's platform team. No agenda attached."
+    }
+  ]
+}

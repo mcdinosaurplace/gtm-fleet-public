@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Schematic flow: escalation policy payments-p1 pages the primary responder at zero minutes, re-pages the secondary and opens a Response Room at five minutes, is acknowledged at six minutes twelve seconds, and never reaches level three." font-family="Inter, -apple-system, sans-serif">
+  <defs>
+    <pattern id="ep-dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.9" fill="#E4E4E1"/>
+    </pattern>
+    <marker id="ep-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0.5,1 L8.5,5 L0.5,9" fill="none" stroke="#A8A69E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="800" fill="#F9FAF9"/>
+  <rect width="1200" height="800" fill="url(#ep-dots)"/>
+
+  <!-- header -->
+  <text x="48" y="38" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#6C6C66">{{COMPANY}} · SCHEMATIC FLOW · 02</text>
+  <text x="48" y="70" font-size="26" font-weight="600" letter-spacing="-0.7" fill="#282823">Escalation stops <tspan fill="#0F766E">when someone answers.</tspan></text>
+  <text x="48" y="94" font-size="14" fill="#6C6C66">One incident on policy payments-p1 — three levels defined, one level used, two nights left alone.</text>
+  <line x1="48" y1="112" x2="1152" y2="112" stroke="#E4E4E1"/>
+
+  <!-- policy definition -->
+  <text x="176" y="161" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#A8A69E" text-anchor="end">policy</text>
+  <rect x="200" y="136" width="640" height="128" rx="10" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <path d="M200,174 L200,146 A10,10 0 0 1 210,136 L830,136 A10,10 0 0 1 840,146 L840,174 Z" fill="#D5EFEB"/>
+  <line x1="200" y1="174" x2="840" y2="174" stroke="#E4E4E1"/>
+  <text x="218" y="161" font-size="13" font-weight="600" fill="#13857C">Escalation policy — payments-p1</text>
+  <text x="822" y="161" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#5C6670" text-anchor="end">ownership as code</text>
+  <text x="218" y="200" font-size="13" fill="#282823">Level 1 → rotation payments-primary, wait 5m for an acknowledgement</text>
+  <text x="218" y="224" font-size="13" fill="#282823">Level 2 → payments-secondary, open a Response Room, wait 5m</text>
+  <text x="218" y="248" font-size="13" fill="#5C6670">Level 3 → VP Engineering and the on-duty incident commander</text>
+  <text x="872" y="153" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66">Declared once, in the<tspan x="872" dy="16">Terraform provider. The</tspan><tspan x="872" dy="16">policy is reviewed in a</tspan><tspan x="872" dy="16">pull request, not a ticket.</tspan></text>
+
+  <line x1="520" y1="266" x2="520" y2="294" stroke="#A8A69E" stroke-width="1.25" marker-end="url(#ep-arrow)"/>
+  <text x="534" y="284" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66">INC-2291 opens</text>
+
+  <!-- level 1 -->
+  <text x="176" y="317" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#575751" text-anchor="end">00:00</text>
+  <rect x="200" y="292" width="640" height="110" rx="10" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <path d="M200,330 L200,302 A10,10 0 0 1 210,292 L830,292 A10,10 0 0 1 840,302 L840,330 Z" fill="#E5F6FF"/>
+  <line x1="200" y1="330" x2="840" y2="330" stroke="#E4E4E1"/>
+  <text x="218" y="317" font-size="13" font-weight="600" fill="#282823">Level 1 — page the primary</text>
+  <text x="822" y="317" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#5C6670" text-anchor="end">push → SMS → voice</text>
+  <text x="218" y="356" font-size="13" fill="#282823">payments-primary — Soren V. on shift, three delivery attempts over 5 minutes</text>
+  <rect x="218" y="369" width="146" height="22" rx="11" fill="#FFE8E6" stroke="#A11E12"/>
+  <text x="291" y="384" font-size="12" font-weight="600" fill="#A11E12" text-anchor="middle">✕ No ack in 5:00</text>
+  <rect x="374" y="369" width="168" height="22" rx="11" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <text x="458" y="384" font-size="12" font-weight="600" fill="#6C6C66" text-anchor="middle">device asleep, not ignored</text>
+  <text x="872" y="309" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66">No answer is a routing<tspan x="872" dy="16">fact, not a verdict on the</tspan><tspan x="872" dy="16">responder.</tspan></text>
+
+  <line x1="520" y1="404" x2="520" y2="432" stroke="#A8A69E" stroke-width="1.25" marker-end="url(#ep-arrow)"/>
+  <text x="534" y="422" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66">timer expires</text>
+
+  <!-- level 2 -->
+  <text x="176" y="455" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#575751" text-anchor="end">05:00</text>
+  <rect x="200" y="430" width="640" height="110" rx="10" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <path d="M200,468 L200,440 A10,10 0 0 1 210,430 L830,430 A10,10 0 0 1 840,440 L840,468 Z" fill="#FFF8DF"/>
+  <line x1="200" y1="468" x2="840" y2="468" stroke="#E4E4E1"/>
+  <text x="218" y="455" font-size="13" font-weight="600" fill="#282823">Level 2 — re-page and widen</text>
+  <text x="822" y="455" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#5C6670" text-anchor="end">Response Room opened</text>
+  <text x="218" y="494" font-size="13" fill="#282823">payments-secondary — Yuki A. paged, incident context attached, room live</text>
+  <rect x="218" y="507" width="184" height="22" rx="11" fill="#F2FFE6" stroke="#2D8A36"/>
+  <text x="310" y="522" font-size="12" font-weight="600" fill="#2D8A36" text-anchor="middle">✓ Acknowledged at 06:12</text>
+  <rect x="412" y="507" width="146" height="22" rx="11" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <text x="485" y="522" font-size="12" font-weight="600" fill="#6C6C66" text-anchor="middle">escalation halted</text>
+  <text x="872" y="447" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66">The acknowledgement is<tspan x="872" dy="16">the stop signal. Nothing</tspan><tspan x="872" dy="16">below this line fires.</tspan></text>
+
+  <line x1="520" y1="542" x2="520" y2="570" stroke="#A8A69E" stroke-width="1.25" marker-end="url(#ep-arrow)"/>
+  <text x="534" y="560" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66">halted</text>
+
+  <!-- level 3 — never reached -->
+  <text x="176" y="593" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#A8A69E" text-anchor="end">10:00</text>
+  <rect x="200" y="568" width="640" height="110" rx="10" fill="#FFFFFF" stroke="#E4E4E1" stroke-dasharray="4 4"/>
+  <line x1="200" y1="606" x2="840" y2="606" stroke="#E4E4E1" stroke-dasharray="4 4"/>
+  <text x="218" y="593" font-size="13" font-weight="600" fill="#A8A69E">Level 3 — never reached</text>
+  <text x="822" y="593" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#A8A69E" text-anchor="end">would have fired at 10:00</text>
+  <text x="218" y="632" font-size="13" fill="#A8A69E">VP Engineering and the on-duty incident commander were not paged</text>
+  <rect x="218" y="645" width="120" height="22" rx="11" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <text x="278" y="660" font-size="12" font-weight="600" fill="#A8A69E" text-anchor="middle">Not reached</text>
+  <rect x="348" y="645" width="196" height="22" rx="11" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <text x="446" y="660" font-size="12" font-weight="600" fill="#A8A69E" text-anchor="middle">2 people kept out of the night</text>
+  <text x="872" y="585" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#6C6C66">The level that never fires<tspan x="872" dy="16">is the one worth drawing.</tspan></text>
+
+  <line x1="48" y1="706" x2="1152" y2="706" stroke="#E4E4E1"/>
+  <text x="48" y="734" font-size="13" fill="#464641">Incident closed at level 2. <tspan fill="#5C6670">MTTA 6m 12s · 2 responders touched · 1 of 3 levels used.</tspan></text>
+  <text x="48" y="786" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#A8A69E">dashed card = a state that did not happen · timers in the left rail · pills mark every state change · reads top to bottom</text>
+</svg>

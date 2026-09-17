@@ -1,0 +1,69 @@
+# schedule.yaml — the fleet's cadence manifest. Nothing here is installed by the kit.
+#
+# Every entry is `enabled: false`. To run a Tick on a schedule, render the entry for
+# your scheduler and install it yourself:
+#
+#   python3 scripts/schedule_render.py --format crontab          # paste into `crontab -e`
+#   python3 scripts/schedule_render.py --format launchd --only revops-watchdog-daily > ~/Library/LaunchAgents/com.gtm-fleet.revops-watchdog-daily.plist
+#   python3 scripts/schedule_render.py --format routine --only chief-of-staff-am  # prompt text for a Claude Code cloud routine
+#
+# Each entry maps to `python3 scripts/tick.py --agent <agent> --mode <mode>`, which runs the
+# Librarian Protocol and a headless `claude -p "/gtm-fleet:<agent> <mode> --harness"` session.
+# Times are expressed in `tz`; cron fields are minute hour day-of-month month day-of-week.
+
+defaults:
+  tz: America/Los_Angeles
+  runner: tick                 # tick = scripts/tick.py; routine = claude.ai cloud routine (no local machine)
+  enabled: false
+
+entries:
+  - name: chief-of-staff-am
+    agent: chief-of-staff
+    mode: am
+    cron: "0 7 * * 1-5"
+    notes: Morning brief — meetings, inbox signals, handoffs, decision queue. Runs first so specialists' overnight handoffs are curated before the humans start.
+  - name: revops-watchdog-daily
+    agent: revops-watchdog
+    mode: daily
+    cron: "0 8 * * 1-5"
+    notes: Funnel snapshot, workflow health, scoring drift, enrichment coverage. Fridays run the weekly summary (mode weekly).
+  - name: performance-marketer-daily
+    agent: performance-marketer
+    mode: daily
+    cron: "30 8 * * 1-5"
+    notes: Spend watch + ranking watch. Wednesday adds the GTM scorecard pass (must finish before Scribe's WBR); Thursday adds the position pass (optimization dossier).
+  - name: scribe-standup
+    agent: scribe
+    mode: standup
+    cron: "0 9 * * 1"
+    notes: Monday async stand-up post in the team channel.
+  - name: scribe-pulse
+    agent: scribe
+    mode: pulse
+    cron: "0 9 * * 2-5"
+    notes: Tue–Fri read-only Linear health pulse (accountability_mode from state/identity/scribe-pm-cadence.yaml).
+  - name: scribe-standup-sweep
+    agent: scribe
+    mode: standup
+    cron: "15 0 * * 2"
+    notes: Tuesday 00:15 EOD capture of Monday's stand-up thread.
+  - name: scribe-wbr
+    agent: scribe
+    mode: weekly
+    cron: "0 9 * * 3"
+    notes: Wednesday WBR draft from revops-watchdog + performance-marketer state; pings section owners with the Thursday 07:00 deadline.
+  - name: content-researcher-weekly
+    agent: content-researcher
+    mode: weekly
+    cron: "30 9 * * 1"
+    notes: Monday voice-of-market sweep → topic backlog submission.
+  - name: content-producer-daily
+    agent: content-producer
+    mode: daily
+    cron: "0 10 * * 1-5"
+    notes: Weekday queue check — approved topics → briefs. (Creation pod is Phase 2; until then most days are no-ops.)
+  - name: chief-of-staff-pm
+    agent: chief-of-staff
+    mode: pm
+    cron: "0 16 * * 1-5"
+    notes: Evening wrap — carry-forward, cross-agent audit, meditation.

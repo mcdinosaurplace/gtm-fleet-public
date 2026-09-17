@@ -1,0 +1,14 @@
+{
+  "total": 4,
+  "_demo_note": "Channel ids match state/identity/scribe-pm-cadence.yaml: #team-marketing is C0DEMO0001, the stand-up and WBR anchor.",
+  "channels": [
+    {"id": "C0DEMO0001", "name": "team-marketing", "is_channel": true, "is_private": false, "num_members": 9,
+     "topic": "Marketing team - stand-up, WBR, agent notifications", "purpose": "Where the fleet posts and the team replies"},
+    {"id": "C0DEMO0002", "name": "marketing-agent-approvals", "is_channel": true, "is_private": true, "num_members": 3,
+     "topic": "Tier 2 approvals", "purpose": "Drafts waiting on a human"},
+    {"id": "C0DEMO0003", "name": "gtm-ops", "is_channel": true, "is_private": false, "num_members": 6,
+     "topic": "RevOps / MOps", "purpose": "Lifecycle, scoring, workflow changes"},
+    {"id": "C0DEMO0004", "name": "incidents", "is_channel": true, "is_private": false, "num_members": 21,
+     "topic": "Product incidents", "purpose": "Not a marketing channel - listed so a name search has to choose"}
+  ]
+}

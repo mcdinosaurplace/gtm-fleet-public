@@ -1,0 +1,8 @@
+# Marketing PM (Scribe extension) — Python dependencies. Target: Python 3.9+.
+# Install: pip install -r scripts/pm/requirements.txt
+
+# Runtime
+PyYAML>=6.0,<7.0        # cadence config parsing (scripts/pm/config.py)
+
+# Dev / test
+pytest>=7.0,<9.0        # the pinned regression gate (tests/pm/)

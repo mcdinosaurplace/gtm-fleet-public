@@ -1,0 +1,14 @@
+{
+  "name": "gtm-fleet-local",
+  "owner": {
+    "name": "Scott McKeighen"
+  },
+  "plugins": [
+    {
+      "name": "gtm-fleet",
+      "source": "./",
+      "description": "GTM / marketing-operations agent fleet (this repository)."
+    }
+  ],
+  "description": "Local marketplace for the gtm-fleet plugin \u2014 a portable GTM / marketing-operations agent fleet."
+}

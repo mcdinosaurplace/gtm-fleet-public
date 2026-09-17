@@ -1,0 +1,148 @@
+##############################################################
+# {{COMPANY_UPPER}} BRAND VOICE — COMPACT AGENT REFERENCE
+#
+# The short, loadable form of the brand pack. Written for the checks that
+# need a single file rather than the whole pack: `/email-qa` (see
+# sops/email-qa-sop.md), `/brand-review`, and the brand-voice editing stage
+# of any content skill.
+#
+# Depth lives elsewhere and wins on conflict:
+#   context/brand-pack/brand.md           voice pillars, persona lenses, humor scale
+#   context/editorial-tone-context.yaml   channel tone modes, tone transformations
+#   context/personas/                     per-persona hard-fail terms
+#   context/visual-identity.yaml          anything visual
+##############################################################
+
+brand_voice:
+  company: "{{COMPANY}}"
+  version: 2026.1
+  tone_metaphor: "Trusted expert partner: confident in facts, kind in delivery."
+
+  pillars:
+    - name: Clear
+      definition: Simple, direct, reader-first.
+      do: ["Explain jargon once, then use it confidently", "Lead with the outcome"]
+      dont: ["Assume expertise the reader doesn't have", "Pad with filler"]
+    - name: Authoritative
+      definition: Grounded in expertise; confident without arrogance.
+      do: ["Support claims with facts", "Cite credible sources"]
+      dont: ["Overstate certainty", "Sound legalistic or defensive"]
+    - name: Approachable
+      definition: Human, inclusive, warm — the opposite of bureaucratic.
+      do: ["Write as a smart, friendly colleague"]
+      dont: ["Sound robotic, corporate, or flippant"]
+
+  supporting_tenets: [Concise, Respectful, Transparent, Compelling]
+
+  messaging_principle:
+    name: removal_over_capability
+    rule: >
+      Emphasize what disappears, not what is added. The win is the page that never
+      fires, the escalation that never needed a human router, the Sunday that stayed
+      a Sunday. Lead with the outcome; explain the mechanism second.
+
+  cardinal_sin:
+    name: fear_based_reliability
+    rule: >
+      Never lead with fear, outage-shaming, or downtime-cost math. {{COMPANY}} closes
+      loops — it does not open new ones. Copy that introduces unanswered questions,
+      surfaces edge cases, or transfers anxiety to the reader fails review. Never
+      claim or imply that {{COMPANY}} prevents incidents; it shortens them, routes them,
+      and helps teams learn from them.
+    email_qa_note: >
+      This is the check behind the "fear-based language" failure in
+      sops/email-qa-sop.md. In this category it usually arrives as cost-of-downtime
+      arithmetic ("every minute costs you $9,000") or as an implied accusation
+      that the reader's last outage was their fault.
+
+  # ---- product naming: the "wrong product name casing" check ----
+  product_naming:
+    correct: "{{COMPANY}}"
+    incorrect:
+      - "{{COMPANY_UPPER}} — the shouted form. Reserved for file banners and internal headers; never body copy, subject lines, or preview text."
+      - "{{company_slug}} — the lowercase slug. Correct only inside a URL, a CLI command, a code identifier, or an email local-part; never mid-sentence in prose."
+      - "\"the {{COMPANY}} platform\" — redundant. Say {{COMPANY}}."
+    legal_entity_rule: >
+      {{COMPANY_LEGAL}} belongs in contracts, invoices, and email footers only.
+      Marketing copy says {{COMPANY}}.
+    domain: "{{COMPANY_DOMAIN}}"
+    feature_names: >
+      Product surface names are title case on first use and stay capitalized
+      thereafter: Signal Grouping, Ownership Graph, Rotation Studio, Response Rooms,
+      Learning Loops, Fairness Report. Generic nouns are not capitalized — a
+      rotation, an escalation policy, an incident, a page.
+
+  # ---- terminology: preferred vs. avoided vocabulary ----
+  terminology:
+    use:
+      - "signal — a raw inbound event from a monitor or integration"
+      - "page — what a human actually receives; the interruption"
+      - "incident — a declared event with an owner and a timeline"
+      - "responder — a person on a rotation; not user, not seat, in customer-facing copy"
+      - "retro / learning loop — the practice after the incident"
+      - "platform engineer, VP Engineering — who the reader is"
+    avoid:
+      - "alert as a synonym for page — an alert is a rule, a page is an interruption"
+      - "easy-to-use, all-in-one — signals we don't understand a technical buyer"
+      - "streamline, simplify — legacy category language the reader has learned to skip"
+      - "war room — say response room"
+      - "ticket for an incident record"
+      - "revolutionary, thrilled to announce, game-changing — corporate throat-clearing"
+      - "seamless, frictionless, effortless — unfalsifiable claims"
+      - "leverage as a verb, utilize, in order to — verbose"
+    banned_phrases:
+      - "Never miss an alert again"
+      - "Sleep soundly"
+      - "Peace of mind"
+      - "Single pane of glass"
+      - "Mission-critical"
+      - "Always-on, always-ready"
+      - "Downtime is not an option"
+      - "Take the pain out of on-call"
+    humor_avoid: [Sarcasm, Self-deprecation, Snark toward competitors, "Jokes about someone's bad night on call", Humor that undercuts credibility]
+
+  # ---- the competitor-mention rule ----
+  competitor_mentions:
+    rule: >
+      Never name a competitor in external content — blog, email, social, ads,
+      landing pages, or sales collateral sent outside the company. Competitive
+      framing uses a category phrase instead.
+    allowed_substitutes: ["traditional platforms", "legacy tools", "the alternatives"]
+    blocked_names:
+      - "{{COMPETITOR_A}}"
+      - "{{COMPETITOR_B}}"
+      - "{{COMPETITOR_C}}"
+      - "{{COMPETITOR_D}}"
+      - "{{COMPETITOR_E}}"
+      - "{{COMPETITOR_F}}"
+      - "{{COMPETITOR_G}}"
+      - "{{COMPETITOR_H}}"
+      - "{{COMPETITOR_I}}"
+      - "{{COMPETITOR_M}}"
+    internal_exception: >
+      Competitive briefs, battlecards, and internal enablement may name
+      competitors. The rule governs what leaves the building. Comparison keywords
+      in the tracked-keyword list (for example "{{COMPETITOR_A_LOWER}} alternative") are SEO
+      targets, not permission to name a competitor in the copy that ranks for them.
+    email_qa_note: >
+      This is the check behind "identifies any competitor names in the copy" in
+      sops/email-qa-sop.md. A blocked name in an email body is a Do Not Send.
+
+  # ---- the ordered checklist an editing pass runs ----
+  review_checklist:
+    - Product name cased correctly everywhere, including subject line and preview text
+    - Feature names title-cased; generic nouns left lowercase
+    - No blocked competitor name anywhere in the copy
+    - No fear-based framing, no downtime-cost math, no implied blame
+    - No claim that {{COMPANY}} prevents incidents
+    - Leads with the outcome, not the mechanism
+    - No avoided terminology or banned phrase from the lists above
+    - Humor level matches the channel (see context/editorial-tone-context.yaml)
+    - Availability, MTTR, and customer numbers are sourced, or removed
+    - Named customer outcomes have a signed approval on file
+
+  availability_claim_rule:
+    trigger: copy states an uptime, delivery, latency, or MTTR figure
+    rule: >
+      Cite the SLA or the status page the number came from. Aggregate product
+      benchmarks say "across {{COMPANY}} customers" and never imply a single account.

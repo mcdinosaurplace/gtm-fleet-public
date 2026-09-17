@@ -1,0 +1,45 @@
+%% {{COMPANY}} Buyer's Journey — REUSABLE TEMPLATE (the buyer's point of view)
+%% One marketing tactic, mapped as the BUYER experiences it — not our internal mechanics.
+%% Detail runs through the early sales motion; everything post-sale is shown as GAPS to define.
+%% Owners, touchpoints, content and entry/exit criteria live in the companion doc.
+flowchart TD
+    classDef moment fill:#EAF7EF,stroke:#1F9D55,color:#0c3b22;
+    classDef decision fill:#EAF0FF,stroke:#3358CC,color:#10204d;
+    classDef gap fill:#FDECEA,stroke:#D7322B,color:#5b1411,stroke-width:1px,stroke-dasharray:4;
+
+    A["I come across {{COMPANY}}<br/>(ad, peer, post, newsletter, event invite)"]:::moment
+    A --> B{"Do I take the first step?<br/>(register / RSVP / sign up)"}:::decision
+    B -->|"Not now"| B1["I keep seeing {{COMPANY}} around,<br/>no pressure"]
+    B1 -.->|"later"| A
+    B -->|"Yes"| C["I get a clear confirmation +<br/>what to expect"]:::moment
+    C --> D["I get helpful reminders<br/>so I actually show up"]
+    D --> E{"Do I show up / engage?"}:::decision
+    E -->|"No"| E1["I get a low-key 'here's what you<br/>missed' + an easy way back in"]
+    E1 --> G
+    E -->|"Yes"| F["I have a genuinely useful<br/>first experience"]:::moment
+
+    F --> G["I'm treated like a person, not a record:<br/>follow-up that references what I just did"]:::moment
+    G --> H{"Who am I to {{COMPANY}}?"}:::decision
+    H -->|"High-fit platform engineer (Aaron)"| I["Someone real from {{COMPANY}} reaches out<br/>personally about my actual problem"]:::moment
+    H -->|"Eng leader (Hannah)"| I2["I get role-relevant proof + an invite<br/>to the right next step"]:::moment
+    H -->|"Not a fit right now"| F2["I get useful content at a<br/>human pace, no spam"]
+    F2 -.->|"re-engage later"| A
+
+    I --> J{"Am I interested enough<br/>to have a conversation?"}:::decision
+    I2 --> J
+    J -->|"Not yet"| F2
+    J -->|"Yes"| K["I have a conversation about ME,<br/>not a generic pitch (discovery)"]:::moment
+    K --> L["I see {{COMPANY}} do the thing I care about —<br/>and proof it won't drop a page<br/>(delivery SLA, logos, case study)"]:::moment
+    L --> M{"Do I trust this is real<br/>and worth it?"}:::decision
+    M -->|"I have objections"| N["My concerns get answered by<br/>someone who actually can"]
+    N --> M
+    M -->|"Yes"| O["I get a clear, professional<br/>path to yes (proposal / quote)"]:::moment
+    O --> P["I become a customer"]:::moment
+
+    %% ---------- GAP ZONE: the '{{COMPANY}} black hole' — real experience, undefined today ----------
+    P --> Q["I said yes — now what?<br/>(handoff to onboarding)"]:::gap
+    Q --> R["I get to first value fast<br/>(first real service routed)"]:::gap
+    R --> R2["If I'm API / Terraform-first:<br/>who guides my migration?"]:::gap
+    R2 --> S["I keep getting value<br/>and expand"]:::gap
+    S --> T["I'm happy enough to refer /<br/>be a case study"]:::gap
+    T -.->|"fuels the next buyer's discovery"| A
